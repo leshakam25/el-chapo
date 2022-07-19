@@ -1,4 +1,3 @@
-import React from "react";
 import image1 from "../../../image/photo/2022-07-05 00-57-01 (1).png";
 import image2 from "../../../image/photo/2022-07-05 00-57-01 (2).png";
 import image3 from "../../../image/photo/2022-07-05 00-57-01 (3).png";

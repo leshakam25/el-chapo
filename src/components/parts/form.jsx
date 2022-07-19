@@ -97,7 +97,7 @@ const ModalForm = () => {
             disabled={!isValid}
             variant="outlined"
             color="warning"
-            sx={{ color: "black" }}
+            sx={{ color: "black", mt: "12px" }}
           >
             Отправить заявку
           </Button>
