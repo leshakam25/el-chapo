@@ -1,0 +1,20 @@
+.headerContent {
+}
+
+.headerContainer{
+   height: 60px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
+   background-color: #212121;
+   opacity: 0.8;
+   padding: 0 48px;
+}
+.headerMenu span:not(:last-child) {
+padding-right: 16px;
+}
+
+

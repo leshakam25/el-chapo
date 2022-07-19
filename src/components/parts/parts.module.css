@@ -1,0 +1,52 @@
+/*Желтая кнопка*/
+
+.yellowButton {
+   border: none;
+   background-color: #f2ee6f;
+   height: 40px;
+   max-width: 240px;
+   border-radius: 4px;
+   padding: 0 32px;
+   opacity: 0.9;
+   text-transform: uppercase;
+}
+.yellowButton:hover {
+   opacity: 1;
+
+}
+
+/*Кнопка меню*/
+
+.menuButton {
+   font-size: 20px;
+   border: none;
+color: white;
+opacity: 0.9;
+background-color: inherit;
+text-transform: uppercase;
+}
+.menuButton:hover {
+   color: #f2ee6f;
+   opacity: 1;
+}
+
+/*Кнопка ссылки*/
+
+.linkButton:active,
+.linkButton:hover,
+.linkButton {
+   text-decoration: none;
+   text-decoration: underline;
+   color: inherit;
+}
+
+/*Кнопка отправки формы */
+ .outlinedButton {
+   border: none;
+   height: 40px;
+   background-color: white;
+border: 2px solid #f2ee6f; }
+.outlinedButton:hover {
+   background-color: #f2ee6f;
+
+}
