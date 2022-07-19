@@ -1,6 +1,6 @@
 import { Box, Container, Typography, TextField } from "@mui/material";
 import React from "react";
-import { OutlinedButton } from "../../parts/buttons";
+import { LinkButton, OutlinedButton } from "../../parts/buttons";
 
 const Form = () => {
   return (
@@ -18,22 +18,35 @@ const Form = () => {
         <Typography variant="subtitle1">Ждём вас с нетерпением</Typography>
         <form>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
-            <label>
+            <Box sx={{ marginY: 2 }}>
               <Typography>Как вас зовут?</Typography>
-              <TextField id="outlined-basic" label="Имя" variant="outlined" />
-            </label>
-            <label>
+              <TextField
+                id="outlined-basic"
+                Box="Имя"
+                variant="outlined"
+                fullWidth
+              />
+            </Box>
+            <Box sx={{ marginY: 2 }}>
               <Typography>Ваш номер телефона</Typography>
               <TextField
                 id="outlined-basic"
-                label="+7(999)999-99-99"
+                Box="+7(999)999-99-99"
                 variant="outlined"
+                fullWidth
               />
-            </label>
-            <label>
+            </Box>
+            <Box sx={{ marginY: 2 }}>
               <Typography>Сколько человек?</Typography>
-            </label>
+            </Box>
             <OutlinedButton title="Отправить заявку" />
+            <Typography>
+              Нажимая кнопку отправить заявку вы соглашаетесь с нашей{" "}
+              <LinkButton
+                link="http://elchapogrande.store/grande-rf/privacy"
+                title="политикой конфиденциальности"
+              />
+            </Typography>
           </Box>
         </form>
       </Box>
