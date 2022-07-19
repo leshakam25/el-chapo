@@ -1,22 +1,35 @@
 /*Желтая кнопка*/
 
 .yellowButton {
+   font-family: 'Empresso';
    border: none;
    background-color: #f2ee6f;
    height: 40px;
    max-width: 240px;
    border-radius: 4px;
    padding: 0 32px;
-   opacity: 0.9;
+   opacity: 0.8;
    text-transform: uppercase;
+   transition: .1s ease-in;
+   transition-delay: 0.1s;
 }
 .yellowButton:hover {
    opacity: 1;
-
+}
+.yellowButton:focus {
+   background-color: #b8ac48;
 }
 
 /*Кнопка меню*/
-
+.menuButton button {
+   background-color: inherit;
+   text-decoration: inherit;
+   border: inherit;
+   color: inherit;
+   font-size: inherit;
+   text-transform: inherit;
+   opacity: inherit;
+}
 .menuButton {
    font-size: 20px;
    border: none;
@@ -24,12 +37,18 @@ color: white;
 opacity: 0.9;
 background-color: inherit;
 text-transform: uppercase;
+padding: 0 16px;
+   transition: .1s ease-in;
+   transition-delay: 0.1s;
 }
 .menuButton:hover {
    color: #f2ee6f;
    opacity: 1;
 }
-
+.menuButton:focus {
+   color: #b8ac48;
+   opacity: 1;
+}
 /*Кнопка ссылки*/
 
 .linkButton:active,
@@ -38,6 +57,8 @@ text-transform: uppercase;
    text-decoration: none;
    text-decoration: underline;
    color: inherit;
+   transition: .1s ease-in;
+   transition-delay: 0.1s;
 }
 
 /*Кнопка отправки формы */
@@ -45,8 +66,13 @@ text-transform: uppercase;
    font-weight: bold;
    border: none;
    height: 40px;
+   color: #000;
    background-color: white;
-border: 2px solid #f2ee6f; }
+   border: 2px solid #f2ee6f; 
+   transition: .1s ease-in;
+   transition-delay: 0.1s;
+}
+
 .outlinedButton:hover {
    background-color: #f2ee6f;
 

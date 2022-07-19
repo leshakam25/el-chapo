@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Contacts from "./components/pages/contacts/contacts";
-import Form from "./components/pages/form/form";
 import Gallery from "./components/pages/gallery/gallery";
 import Header from "./components/pages/header/header";
 import BarMenu from "./components/pages/menu/barMenu";
@@ -14,7 +13,6 @@ const App = () => {
       <Welcome />
       <BarMenu />
       <Gallery />
-      <Form />
       <Contacts />
     </>
   );

@@ -3,12 +3,9 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { MenuItem } from "@mui/material";
-import { YellowButton } from "../../parts/buttons";
+import { MenuButton, YellowButton } from "../../parts/buttons";
 
 export default function ButtonAppBar() {
-  const pages = ["Меню", "Фото", "Контакты"];
-
   return (
     <Box sx={{ flexGrow: 1, opacity: "0.9" }}>
       <AppBar position="fixed">
@@ -233,13 +230,9 @@ export default function ButtonAppBar() {
             </svg>
           </Box>
           <Box sx={{ display: "flex" }}>
-            {pages.map((page) => (
-              <MenuItem key={page}>
-                <Typography textAlign="center" textTransform="uppercase">
-                  {page}
-                </Typography>
-              </MenuItem>
-            ))}
+            <MenuButton title="Меню" href="#menu" />
+            <MenuButton title="Фото" href="#photo" />
+            <MenuButton title="Контакты" href="#contacts" />
           </Box>
           <YellowButton title="Забронировать" />
         </Toolbar>

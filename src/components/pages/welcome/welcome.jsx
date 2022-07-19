@@ -1,29 +1,37 @@
+import s from "./welcome.module.css";
 import { CardMedia, Box, Container, Typography } from "@mui/material";
 import React from "react";
-import women from "../../../image/image_222.webp";
 import Timer from "./timer";
 import logo from "../../../image/logo2.svg";
 import { YellowButton } from "../../parts/buttons";
 
 const Welcome = () => {
   return (
-    <Container maxWidth="xl">
-      <CardMedia component="img" src={women} sx={{ width: "50%" }}></CardMedia>
-      <Box sx={{ color: "white", marginY: "120px" }}>
-        <Box>
-          {/* women */}
-
+    <Container className={s.content} maxWidth="xl" sx={{ marginTop: "-12px" }}>
+      <Box
+        sx={{
+          minHeight: "100vh",
+          color: "white",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Box sx={{}}>
           {/* content */}
           <Box
             sx={{
+              width: "70vw",
               display: "flex",
               flexDirection: "row",
-              justifyContent: "space-around",
+              justifyContent: "space-between",
             }}
           >
             {/* left */}
             <Box
               sx={{
+                paddingTop: "320px",
                 maxWidth: "400px",
                 display: "flex",
                 flexDirection: "column",
