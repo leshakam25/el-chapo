@@ -1,6 +1,7 @@
 import { Box, Typography, TextField, Button } from "@mui/material";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { LinkButton } from "./buttons";
 import s from "./parts.module.css";
 
 const ModalForm = () => {
@@ -20,14 +21,20 @@ const ModalForm = () => {
 
   return (
     <div>
-      <Typography variant="h5" textAlign="center">
+      <Typography fontFamily="Oswald" variant="h4" textAlign="center">
         Заявка на бронь столика
       </Typography>
-      <Typography variant="subtitle2" textAlign="center" gutterBottom>
+      <Typography
+        fontFamily="Oswald"
+        fontWeight="light"
+        variant="subtitle2"
+        textAlign="center"
+        gutterBottom
+      >
         Ждём вас с нетерпением!
       </Typography>
 
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
         <Box
           sx={{
             display: "flex",
@@ -36,7 +43,12 @@ const ModalForm = () => {
           }}
         >
           <Box sx={{ pt: "12px" }}>
-            <Typography sx={{ pb: 1 }} variant="body2">
+            <Typography
+              fontFamily="Oswald"
+              fontWeight="light"
+              sx={{ pb: 1 }}
+              variant="body2"
+            >
               Как вас зовут?
             </Typography>
             <TextField
@@ -50,10 +62,24 @@ const ModalForm = () => {
             />
           </Box>
           <Box sx={{ height: "20px", pb: "12px", color: "#8a2727" }}>
-            {errors?.firstName && <p>Введите имя</p>}
+            {errors?.firstName && (
+              <Typography
+                fontFamily="Oswald"
+                fontWeight="light"
+                sx={{ pb: 1 }}
+                variant="body2"
+              >
+                Введите имя
+              </Typography>
+            )}
           </Box>
           <Box sx={{ pt: "12px" }}>
-            <Typography sx={{ pb: 1 }} variant="body2">
+            <Typography
+              fontFamily="Oswald"
+              fontWeight="light"
+              sx={{ pb: 1 }}
+              variant="body2"
+            >
               Ваш номер телефона
             </Typography>
             <TextField
@@ -71,10 +97,24 @@ const ModalForm = () => {
             />
           </Box>
           <Box sx={{ height: "20px", pb: "12px", color: "#8a2727" }}>
-            {errors?.phoneNumber && <p>Введите номер</p>}
+            {errors?.phoneNumber && (
+              <Typography
+                fontFamily="Oswald"
+                fontWeight="light"
+                sx={{ pb: 1 }}
+                variant="body2"
+              >
+                Введите номер
+              </Typography>
+            )}
           </Box>
           <Box sx={{ pt: "12px" }}>
-            <Typography sx={{ pb: 1 }} variant="body2">
+            <Typography
+              fontFamily="Oswald"
+              fontWeight="light"
+              sx={{ pb: 1 }}
+              variant="body2"
+            >
               Сколько человек
             </Typography>
             <TextField
@@ -88,19 +128,34 @@ const ModalForm = () => {
             />
           </Box>
           <Box sx={{ height: "20px", pb: "12px", color: "#8a2727" }}>
-            {errors?.number && <p>Введите Количество</p>}
+            {errors?.number && (
+              <Typography
+                fontFamily="Oswald"
+                fontWeight="light"
+                sx={{ pb: 1 }}
+                variant="body2"
+              >
+                Введите количество
+              </Typography>
+            )}
           </Box>
 
-          <Button
-            className={s.outlinedButton}
-            type="submit"
-            disabled={!isValid}
-            variant="outlined"
-            color="warning"
-            sx={{ color: "black", mt: "12px" }}
+          <input type="submit" disabled={!isValid} />
+
+          <Typography
+            textAlign="center"
+            fontFamily="Oswald"
+            fontWeight="light"
+            sx={{ pt: 3 }}
+            variant="body2"
+            fontSize="12px"
           >
-            Отправить заявку
-          </Button>
+            Нажимая кнопку отправить заявку вы соглашаетесь с нашей
+            <LinkButton
+              link="http://elchapogrande.store/grande-rf/privacy"
+              title=" политикой конфиденциальности"
+            />
+          </Typography>
         </Box>
       </form>
     </div>

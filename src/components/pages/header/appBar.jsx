@@ -14,6 +14,7 @@ export default function ButtonAppBar() {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
+            alignItems: "center",
             backgroundColor: "#111",
           }}
         >
@@ -230,8 +231,10 @@ export default function ButtonAppBar() {
             </svg>
           </Box>
           <Box sx={{ display: "flex" }}>
+            <MenuButton title="О нас" href="#abot" />
             <MenuButton title="Меню" href="#menu" />
             <MenuButton title="Фото" href="#photo" />
+            <MenuButton title="Мероприятия" href="#events" />
             <MenuButton title="Контакты" href="#contacts" />
           </Box>
           <YellowButton title="Забронировать" />

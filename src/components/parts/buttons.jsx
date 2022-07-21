@@ -3,6 +3,7 @@ import s from "./parts.module.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import ModalForm from "./form";
+import { Typography } from "@mui/material";
 
 const style = {
   position: "absolute",
@@ -22,7 +23,7 @@ export const YellowButton = (props) => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <Box>
+    <Box sx={{ margin: "12px 0" }}>
       <button onClick={handleOpen} className={s.yellowButton}>
         {props.title}
       </button>
@@ -42,12 +43,7 @@ export const YellowButton = (props) => {
 
 export const MenuButton = (props) => {
   return (
-    <a
-      className={s.menuButton}
-      href={props.link}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a className={s.menuButton} href={props.link}>
       <button>{props.title}</button>
     </a>
   );
@@ -66,6 +62,10 @@ export const LinkButton = (props) => {
   );
 };
 
-export const OutlinedButton = (props) => {
-  return <button className={s.outlinedButton}>{props.title}</button>;
+export const SubmitButton = () => {
+  return <div>buttons</div>;
 };
+
+// export const OutlinedButton = (props) => {
+//   return <button className={s.outlinedButton}> {props.title}</button>;
+// };

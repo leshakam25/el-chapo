@@ -1,6 +1,7 @@
 import { Typography, Box } from "@mui/material";
 import React from "react";
 import Countdown from "react-countdown";
+import s from "./welcome.module.css";
 
 export default function Timer() {
   const date = "2022-07-27T18:00:00";
@@ -15,15 +16,17 @@ export default function Timer() {
     } else {
       // Render a countdown
       return (
-        <Box sx={{ textAlign: "center" }}>
-          <Typography variant="h6" fontWeight="bold">
+        <Box
+          className={s.timer}
+          sx={{ width: "320px", height: "auto", textAlign: "center" }}
+        >
+          <Typography fontFamily="Oswald" variant="h6" fontWeight="normal">
             Мы откроемся через: <br />
           </Typography>
-          <Typography variant="h3">
+          <Typography fontFamily="Oswald" variant="h3">
             {days} : {hours} : {minutes} : {seconds}
           </Typography>{" "}
-          <br />
-          <Typography variant="h7" fontWeight="">
+          <Typography fontFamily="Oswald" variant="body2" fontWeight="light">
             ДНЕЙ ЧАСОВ МИНУТ СЕКУНД
           </Typography>
         </Box>

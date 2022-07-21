@@ -23,21 +23,34 @@ const Contacts = () => {
             top: "10%",
             left: "5%",
             bgcolor: "black",
-            padding: "60px 40px",
+            padding: "60px 80px",
+            paddingRight: "180px",
           }}
         >
-          <Typography gutterBottom>КОНТАКТЫ</Typography>
-          <Typography>Мы находимся:</Typography>
-          <Typography gutterBottom>
-            Литейный проспект, 57 Тел: +7 (812) 425 3090
+          <Typography
+            variant="h5"
+            fontFamily="Oswald"
+            fontWeight="normal"
+            gutterBottom
+          >
+            КОНТАКТЫ
           </Typography>
-          <Typography gutterBottom>
+          <br />{" "}
+          <Typography fontWeight="normal" fontFamily="Oswald">
+            Мы находимся:
+          </Typography>
+          <Typography fontFamily="Oswald" fontWeight="light" gutterBottom>
+            Литейный проспект, 57 <br /> Тел: +7 (812) 425 3090
+          </Typography>
+          <br />
+          <Typography fontFamily="Oswald" gutterBottom>
             <ul>
-              <li>TG</li>
-              <li>INSTA</li>
-              <li>VK</li>
+              <li> TG</li>
+              <li> INSTA</li>
+              <li> VK</li>
             </ul>
           </Typography>
+          <br />
           <Typography>
             <LinkButton
               link="http://elchapogrande.store/grande-rf/privacy"

@@ -25,13 +25,14 @@ const Welcome = () => {
               width: "70vw",
               display: "flex",
               flexDirection: "row",
-              justifyContent: "space-between",
+              justifyContent: "space-around",
             }}
           >
             {/* left */}
             <Box
               sx={{
                 paddingTop: "320px",
+                paddingRight: "190px",
                 maxWidth: "400px",
                 display: "flex",
                 flexDirection: "column",
@@ -43,7 +44,7 @@ const Welcome = () => {
               <CardMedia
                 component="img"
                 src={logo}
-                sx={{ width: "220px" }}
+                sx={{ maxWidth: "300px" }}
               ></CardMedia>
               {/* timer */}
               <Box>
@@ -53,7 +54,7 @@ const Welcome = () => {
             {/* right */}
             <Box
               sx={{
-                maxWidth: "540px",
+                maxWidth: "560px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
@@ -61,20 +62,21 @@ const Welcome = () => {
               }}
             >
               <Typography
-                variant="h3"
-                fontWeight="bold"
+                variant="h2"
                 gutterBottom
+                fontFamily="Oswald"
+                fontWeight="450"
                 sx={{ margin: "12px 0" }}
               >
                 ДОБРО ПОЖАЛОВАТЬ В МЕКСИКУ!
               </Typography>
               <Typography
                 variant="body1"
-                fontWeight="bold"
+                fontFamily="Oswald"
                 gutterBottom
                 sx={{ margin: "12px 0" }}
               >
-                L Chapo – это иммерсивный бар, где каждый может погрузиться в
+                EL Chapo – это иммерсивный бар, где каждый может погрузиться в
                 мир мексиканской культуры и её незабываемого колорита <br />
                 <br /> Огненная текила, ароматы специй, ритмы латино с
                 вкраплениями фанка и диско захлестнут улицу любого города, где
@@ -91,10 +93,11 @@ const Welcome = () => {
               ></Box>
               <Typography
                 sx={{ margin: "12px 0" }}
+                fontFamily="Oswald"
                 variant="body1"
-                fontWeight="bold"
+                fontWeight="normal"
               >
-                Мы находимся:Литейный проспект, 57
+                Мы находимся: <br /> Литейный проспект, 57
               </Typography>
               <YellowButton title="Забронировать столик" />
             </Box>

@@ -14,10 +14,10 @@ const BarMenu = () => {
         }}
       >
         {/* left */}
-        <Box sx={{ maxWidth: "400px" }}>
+        <Box sx={{ maxWidth: "320px" }}>
           <Box>
             <Typography
-              sx={{ margin: "12px 0" }}
+              sx={{ margin: "12px 0", fontFamily: "Oswald" }}
               variant="h2"
               fontWeight="bold"
             >
@@ -25,7 +25,14 @@ const BarMenu = () => {
             </Typography>
           </Box>
           <Box sx={{ height: "3px", bgcolor: "#f2ee6f", width: "220px" }}></Box>
-          <Typography sx={{ margin: "12px 0" }} variant="body1">
+          <Typography
+            sx={{ margin: "12px 0" }}
+            fontFamily="Oswald"
+            fontWeight="light"
+            variant="body1"
+            fontSize="18px"
+            textAlign="justify"
+          >
             <Box>
               Подача эксклюзивных блюд от нашего шеф-повара, перенесёт вас в
               изысканный мир мексиканской кухни
@@ -42,8 +49,15 @@ const BarMenu = () => {
             src={chief}
             sx={{ width: "400px" }}
           ></CardMedia>
-          <Typography variant="h5">Дэвид Алехандро</Typography>
-          <Typography variant="body1">
+          <Typography variant="h5" fontFamily="Oswald">
+            Дэвид Алехандро
+          </Typography>
+          <Typography
+            textAlign="justify"
+            variant="body1"
+            fontFamily="Oswald"
+            fontWeight="light"
+          >
             Шеф-повар <br />
             <br /> "Я приехал из Мексики, чтобы отправить ваши вкусовые
             рецепторы в путешествие по Латинской Америке. Далеко ходить не
