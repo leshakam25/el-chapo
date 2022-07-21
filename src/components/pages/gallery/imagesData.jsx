@@ -171,8 +171,4 @@ export const imagesData = [
     img: `${image34}`,
     title: "no img",
   },
-  {
-    img: `${image35}`,
-    title: "no img",
-  },
 ];
