@@ -38,21 +38,15 @@
    font-size: 20px;
    border: none;
    color: white;
-   opacity: 0.9;
    background-color: inherit;
    text-transform: uppercase;
    padding: 0 16px;
-   transition: .2s ease-in;
-   transition-delay: 0.2s;
+  
 }
 .menuButton:hover {
-   color: #f2ee6f;
-   opacity: 1;
+  
 }
-.menuButton:focus {
-   color: red;
-   opacity: 1;
-}
+
 /*Кнопка ссылки*/
 
 .linkButton:active,

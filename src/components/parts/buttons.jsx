@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import ModalForm from "./form";
 import { Typography } from "@mui/material";
+import { motion } from "framer-motion";
 
 const style = {
   position: "absolute",
@@ -43,9 +44,16 @@ export const YellowButton = (props) => {
 
 export const MenuButton = (props) => {
   return (
-    <a className={s.menuButton} href={props.link}>
+    <motion.a
+      whileHover={{
+        scale: 1.3,
+        color: "#f2ee6f",
+      }}
+      className={s.menuButton}
+      href={props.link}
+    >
       <button>{props.title}</button>
-    </a>
+    </motion.a>
   );
 };
 
