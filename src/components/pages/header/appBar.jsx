@@ -3,7 +3,8 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { MenuButton, YellowButton } from "../../parts/buttons";
+import RegistryButton from "../../parts/buttons/registryButton";
+import MenuButton from "../../parts/buttons/menuButton";
 
 export default function ButtonAppBar() {
   return (
@@ -237,7 +238,7 @@ export default function ButtonAppBar() {
             <MenuButton title="Мероприятия" href="#events" />
             <MenuButton title="Контакты" href="#contacts" />
           </Box>
-          <YellowButton title="Забронировать" />
+          <RegistryButton title="Забронировать" />
         </Toolbar>
       </AppBar>
     </Box>

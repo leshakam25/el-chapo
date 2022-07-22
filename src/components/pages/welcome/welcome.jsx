@@ -3,7 +3,7 @@ import { CardMedia, Box, Container, Typography } from "@mui/material";
 import React from "react";
 import Timer from "./timer";
 import logo from "../../../image/logo2.svg";
-import { YellowButton } from "../../parts/buttons";
+import RegistryButton from "../../parts/buttons/registryButton";
 
 const Welcome = () => {
   return (
@@ -99,7 +99,7 @@ const Welcome = () => {
               >
                 Мы находимся: <br /> Литейный проспект, 57
               </Typography>
-              <YellowButton title="Забронировать столик" />
+              <RegistryButton title="Забронировать столик" />
             </Box>
           </Box>
         </Box>

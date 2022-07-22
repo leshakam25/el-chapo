@@ -88,3 +88,11 @@
    font-family: 'Empresso';
 
 }
+   /* event */
+   .eventButton{
+      background: inherit;
+      color: white;
+      border: inherit;
+      font-family: 'Oswald';
+      font-size: 36px;
+   }

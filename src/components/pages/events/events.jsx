@@ -1,9 +1,20 @@
 import { Box, CardMedia, Container, Typography } from "@mui/material";
 import React from "react";
-import motion from "framer-motion";
+import { motion } from "framer-motion";
+import { EventButton } from "../../parts/buttons";
 
 const Events = () => {
-  const events = [
+  const listVariants = {
+    visible: (i) => ({
+      opacity: 1,
+      transition: {
+        delay: i * 1,
+      },
+    }),
+    hidden: { opacity: 0 },
+  };
+
+  const upcomingEvents = [
     {
       name: "Summer party",
       date: "05.06.22",
@@ -13,37 +24,13 @@ const Events = () => {
     {
       name: "Night party",
       date: "11.06.22",
-      img: "https://www.tzkolan-mandre.com/images/galerijafotografija/Plaza_Katarelec/1.jpg",
+      img: "https://cdn-asset.jawapos.com/wp-content/uploads/2019/08/63085489_ML-640x480.jpg",
       desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
     },
     {
       name: "Yellow party",
       date: "21.06.22",
-      img: "https://www.tzkolan-mandre.com/images/galerijafotografija/Plaza_Katarelec/1.jpg",
-      desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-    },
-    {
-      name: "Crazy party",
-      date: "05.07.22",
-      img: "https://www.tzkolan-mandre.com/images/galerijafotografija/Plaza_Katarelec/1.jpg",
-      desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-    },
-    {
-      name: "Ugly party",
-      date: "11.07.22",
-      img: "https://www.tzkolan-mandre.com/images/galerijafotografija/Plaza_Katarelec/1.jpg",
-      desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-    },
-    {
-      name: "Hichkok party",
-      date: "21.07.22",
-      img: "https://www.tzkolan-mandre.com/images/galerijafotografija/Plaza_Katarelec/1.jpg",
-      desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-    },
-    {
-      name: "Winter coming party",
-      date: "29.07.22",
-      img: "https://www.tzkolan-mandre.com/images/galerijafotografija/Plaza_Katarelec/1.jpg",
+      img: "https://showprokat.pro/wp-content/uploads/2017/01/lasershow.jpg",
       desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
     },
   ];
@@ -62,16 +49,21 @@ const Events = () => {
             color: "white",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "space-between",
+            justifyContent: "left",
+            minWidth: "200px",
           }}
         >
-          <ul>
-            <li>Event list</li>
-            <li>Event list</li>
-            <li>Event list</li>
-            <li>Event list</li>
-            <li>Event list</li>
-          </ul>
+          {upcomingEvents &&
+            upcomingEvents.map((el, i) => (
+              <motion.span
+                variants={listVariants}
+                initial="hidden"
+                animate="visible"
+                custom={i}
+              >
+                <EventButton key={el} title={el.name} />
+              </motion.span>
+            ))}
         </Box>
         <Box>
           <Typography variant="h2" fontFamily="oswald" fontWeight="Bold">
