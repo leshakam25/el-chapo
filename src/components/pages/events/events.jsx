@@ -66,20 +66,25 @@ const Events = () => {
             ))}
         </Box>
         <Box>
-          <Typography variant="h2" fontFamily="oswald" fontWeight="Bold">
-            Event
-          </Typography>
-          <Typography
-            sx={{ maxWidth: "600px" }}
-            variant="body1"
-            fontFamily="oswald"
-            fontWeight="light"
-          >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-            accusamus ipsa officia eaque, maiores id facere, eius, laborum
-            aliquid magni quasi aut alias odit sint quidem iste reiciendis
-            recusandae ab.
-          </Typography>
+          {upcomingEvents &&
+            upcomingEvents.map((el, i) => (
+              <div>
+                <Typography variant="h2" fontFamily="oswald" fontWeight="Bold">
+                  {el.name}
+                </Typography>
+                <Typography variant="h4" fontFamily="oswald" fontWeight="Bold">
+                  {el.date}
+                </Typography>
+                <Typography
+                  sx={{ maxWidth: "600px" }}
+                  variant="body1"
+                  fontFamily="oswald"
+                  fontWeight="light"
+                >
+                  {el.desc}
+                </Typography>
+              </div>
+            ))}
         </Box>
         <Box>
           <CardMedia

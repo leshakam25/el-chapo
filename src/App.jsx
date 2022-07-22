@@ -8,6 +8,7 @@ import Gallery from "./components/pages/gallery/gallery";
 import Header from "./components/pages/header/header";
 import BarMenu from "./components/pages/menu/barMenu";
 import Welcome from "./components/pages/welcome/welcome";
+import Privacy from "./components/parts/privacy";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Gallery />
       <Contacts />
       <Footer />
+      <Privacy />
     </>
   );
 };
