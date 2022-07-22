@@ -1,6 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import { LinkButton } from "../../parts/buttons";
+import LinkButton from "../../parts/buttons/linkButton";
 
 const Contacts = () => {
   const privacy = () => {

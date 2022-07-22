@@ -1,7 +1,7 @@
 import { Box, Typography, TextField, Button } from "@mui/material";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { LinkButton } from "./buttons";
+import LinkButton from "./buttons/linkButton";
 import s from "./parts.module.css";
 
 const ModalForm = () => {
@@ -19,7 +19,7 @@ const ModalForm = () => {
     reset();
   };
 
-  const [peopleCount, setPeopleCount] = useState("");
+  const [peopleCount, setPeopleCount] = useState(0);
 
   const countDown = () => {
     setPeopleCount(peopleCount - 1);
@@ -129,18 +129,26 @@ const ModalForm = () => {
               Сколько человек
             </Typography>
             <Box>
-              <Button onClick={countDown}>-</Button>
+              <Button
+                sx={{ fontFamily: "Oswald", fontWeight: "Bold" }}
+                onClick={countDown}
+              >
+                -
+              </Button>
               <TextField
+                sx={{ width: "60px" }}
                 color="warning"
-                fullWidth
                 size="small"
-                label="Количество"
                 {...register("number", {
                   required: true,
                 })}
                 value={peopleCount}
               />
-              <Button onClick={countUp} n>
+              <Button
+                sx={{ fontFamily: "Oswald", fontWeight: "Bold" }}
+                onClick={countUp}
+                n
+              >
                 +
               </Button>
             </Box>
