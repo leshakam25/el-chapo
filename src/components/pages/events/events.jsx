@@ -1,9 +1,11 @@
 import { Box, CardMedia, Container, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { EventButton } from "../../parts/buttons";
 
 const Events = () => {
+  const [currentParty, setCurrentParty] = useState();
+
   const listVariants = {
     visible: (i) => ({
       opacity: 1,
@@ -34,6 +36,7 @@ const Events = () => {
       desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
     },
   ];
+
   return (
     <Container maxWidth="xl" sx={{ marginY: "120px" }}>
       <Box
@@ -66,8 +69,8 @@ const Events = () => {
             ))}
         </Box>
         <Box>
-          {upcomingEvents &&
-            upcomingEvents.map((el, i) => (
+          {currentParty &&
+            currentParty.map((el) => (
               <div>
                 <Typography variant="h2" fontFamily="oswald" fontWeight="Bold">
                   {el.name}
