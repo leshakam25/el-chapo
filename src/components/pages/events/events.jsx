@@ -1,5 +1,5 @@
 import { Box, CardMedia, Container, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import EventButton from "../../parts/buttons/eventButton";
 
@@ -12,9 +12,10 @@ const Events = () => {
     console.log("upcomingEvents", upcomingEvents);
   };
 
-  const setParty = () => {
+  useEffect(() => {
     setUpcomingEvents(eventData);
-  };
+    setCurrentParty(upcomingEvents);
+  }, []);
 
   const listVariants = {
     visible: (i) => ({
@@ -50,7 +51,6 @@ const Events = () => {
   return (
     <Container maxWidth="xl" sx={{ marginY: "120px" }}>
       <button onClick={logs}>log</button>
-      <button onClick={setParty}>set</button>
 
       <Box
         sx={{
@@ -76,37 +76,48 @@ const Events = () => {
                 initial="hidden"
                 animate="visible"
               >
-                <EventButton click={setParty} key={el} title={el.name} />
+                <EventButton click=" " key={el} title={el.name} />
               </motion.span>
             ))}
         </Box>
         <Box>
           {currentParty &&
             currentParty.map((el) => (
-              <div>
-                <Typography variant="h2" fontFamily="oswald" fontWeight="Bold">
-                  {el.name}
-                </Typography>
-                <Typography variant="h4" fontFamily="oswald" fontWeight="Bold">
-                  {el.date}
-                </Typography>
-                <Typography
-                  sx={{ maxWidth: "600px" }}
-                  variant="body1"
-                  fontFamily="oswald"
-                  fontWeight="light"
-                >
-                  {el.desc}
-                </Typography>
-              </div>
+              <Box sx={{ display: "flex", flexDirection: "row" }}>
+                <Box>
+                  <Typography
+                    variant="h2"
+                    fontFamily="oswald"
+                    fontWeight="Bold"
+                  >
+                    {el.name}
+                  </Typography>
+                  <Typography
+                    variant="h4"
+                    fontFamily="oswald"
+                    fontWeight="Bold"
+                  >
+                    {el.date}
+                  </Typography>
+                  <Typography
+                    sx={{ maxWidth: "600px" }}
+                    variant="body1"
+                    fontFamily="oswald"
+                    fontWeight="light"
+                  >
+                    {el.desc}
+                  </Typography>
+                </Box>
+                <CardMedia
+                  sx={{
+                    maxWidth: "800px",
+                    height: "auto",
+                  }}
+                  component="img"
+                  src={el.img}
+                />
+              </Box>
             ))}
-        </Box>
-        <Box>
-          <CardMedia
-            component="img"
-            src="http://www.johnerskinephotography.co.uk/wp-content/uploads/2014/10/Black-Tie-Event-London_005.jpg"
-            sx={{ maxWidth: "800px" }}
-          />
         </Box>
       </Box>
     </Container>
