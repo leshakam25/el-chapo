@@ -12,11 +12,6 @@ const Events = () => {
     console.log("upcomingEvents", upcomingEvents);
   };
 
-  useEffect(() => {
-    setUpcomingEvents(eventData);
-    setCurrentParty(upcomingEvents);
-  }, []);
-
   const listVariants = {
     visible: (i) => ({
       opacity: 1,
@@ -47,6 +42,11 @@ const Events = () => {
       desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
     },
   ];
+
+  useEffect(() => {
+    setUpcomingEvents(eventData);
+    setCurrentParty();
+  }, []);
 
   return (
     <Container maxWidth="xl" sx={{ marginY: "120px" }}>
