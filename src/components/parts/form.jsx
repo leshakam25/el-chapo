@@ -1,6 +1,7 @@
 import { Box, Typography, TextField, Button } from "@mui/material";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import FormButton from "./buttons/formButton";
 import LinkButton from "./buttons/linkButton";
 import s from "./parts.module.css";
 
@@ -11,7 +12,7 @@ const ModalForm = () => {
     handleSubmit,
     reset,
   } = useForm({
-    mode: "onBlur",
+    mode: "onChange",
   });
 
   const onSubmit = (data) => {
@@ -100,8 +101,8 @@ const ModalForm = () => {
               {...register("phoneNumber", {
                 required: true,
                 minLength: {
-                  value: 7,
-                  message: "Минимум 7 символов",
+                  value: 6,
+                  message: "Минимум 6 символов",
                 },
               })}
             />
@@ -114,7 +115,7 @@ const ModalForm = () => {
                 sx={{ pb: 1 }}
                 variant="body2"
               >
-                Введите номер
+                Минимум 6 символов
               </Typography>
             )}
           </Box>
@@ -128,6 +129,8 @@ const ModalForm = () => {
             >
               Сколько человек
             </Typography>
+
+            {/* people count */}
             <Box>
               <Button
                 sx={{ fontFamily: "Oswald", fontWeight: "Bold" }}
@@ -165,9 +168,7 @@ const ModalForm = () => {
               </Typography>
             )}
           </Box>
-
-          <input type="submit" disabled={!isValid} />
-
+          <FormButton title="Забронировать" />
           <Typography
             textAlign="center"
             fontFamily="Oswald"

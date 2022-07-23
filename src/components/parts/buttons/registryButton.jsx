@@ -3,7 +3,6 @@ import s from "../parts.module.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import ModalForm from "../form";
-import { Typography } from "@mui/material";
 import { motion } from "framer-motion";
 
 const style = {
@@ -25,9 +24,13 @@ export const RegistryButton = (props) => {
   const handleClose = () => setOpen(false);
   return (
     <Box sx={{ margin: "12px 0" }}>
-      <button onClick={handleOpen} className={s.yellowButton}>
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        onClick={handleOpen}
+        className={s.yellowButton}
+      >
         {props.title}
-      </button>
+      </motion.button>
       <Modal
         open={open}
         onClose={handleClose}

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import "./App.css";
 import About from "./components/pages/about/about";
@@ -12,7 +13,15 @@ import Privacy from "./components/parts/privacy";
 
 const App = () => {
   return (
-    <>
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      transition={{ duration: 3 }}
+    >
       <Header />
       <Welcome />
       <Events />
@@ -22,7 +31,7 @@ const App = () => {
       <Contacts />
       <Footer />
       <Privacy />
-    </>
+    </motion.div>
   );
 };
 

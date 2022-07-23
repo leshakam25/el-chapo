@@ -9,17 +9,12 @@
    max-width: 240px;
    border-radius: 4px;
    padding: 0 32px;
-   opacity: 0.8;
    text-transform: uppercase;
    transition: .1s ease-in;
    transition-delay: 0.1s;
 }
-.yellowButton:hover {
-   opacity: 1;
-}
-.yellowButton:focus {
-   background-color: #b8ac48;
-}
+
+
 
 /*Кнопка меню*/
 .menuButton button {
@@ -63,24 +58,13 @@
 }
 
 /*Кнопка отправки формы */
- .outlinedButton {
-   height: 52px;
-   font-family: "Oswald";
+.formButton{
    border: none;
-   color: #000;
-   background-color: inherit;
-   border: 2px solid #f2ee6f; 
-   transition: .1s ease-in;
-   transition-delay: 0.1s;
-}
-
-.outlinedButton button{
-   background-color: red;
-}
-
-.outlinedButton:hover {
-   background-color: #f2ee6f;
-
+   background: inherit;
+   outline: 2px solid #f2ee6f;
+   font-family: Oswald;
+   height: 40px;
+   font-weight: 500;
 }
 
 /* form */

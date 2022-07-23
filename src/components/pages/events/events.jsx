@@ -1,10 +1,20 @@
 import { Box, CardMedia, Container, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { EventButton } from "../../parts/buttons";
+import EventButton from "../../parts/buttons/eventButton";
 
 const Events = () => {
   const [currentParty, setCurrentParty] = useState();
+  const [upcomingEvents, setUpcomingEvents] = useState();
+
+  const logs = () => {
+    console.log("currentParty", currentParty);
+    console.log("upcomingEvents", upcomingEvents);
+  };
+
+  const setParty = () => {
+    setUpcomingEvents(eventData);
+  };
 
   const listVariants = {
     visible: (i) => ({
@@ -16,7 +26,7 @@ const Events = () => {
     hidden: { opacity: 0 },
   };
 
-  const upcomingEvents = [
+  const eventData = [
     {
       name: "Summer party",
       date: "05.06.22",
@@ -39,6 +49,9 @@ const Events = () => {
 
   return (
     <Container maxWidth="xl" sx={{ marginY: "120px" }}>
+      <button onClick={logs}>log</button>
+      <button onClick={setParty}>set</button>
+
       <Box
         sx={{
           color: "white",
@@ -57,14 +70,13 @@ const Events = () => {
           }}
         >
           {upcomingEvents &&
-            upcomingEvents.map((el, i) => (
+            upcomingEvents.map((el) => (
               <motion.span
                 variants={listVariants}
                 initial="hidden"
                 animate="visible"
-                custom={i}
               >
-                <EventButton key={el} title={el.name} />
+                <EventButton click={setParty} key={el} title={el.name} />
               </motion.span>
             ))}
         </Box>
