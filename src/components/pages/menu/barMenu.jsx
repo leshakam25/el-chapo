@@ -9,7 +9,8 @@ const BarMenu = () => {
     visible: { x: 0, opacity: 1 },
   };
   return (
-    <Container maxWidth="xl" sx={{ marginY: "120px " }}>
+    <Container id="menu" maxWidth="xl" sx={{ marginY: "120px " }}>
+      <br />
       <Box
         sx={{
           color: "white",

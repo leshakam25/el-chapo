@@ -8,7 +8,7 @@ const Contacts = () => {
   };
 
   return (
-    <Container maxWidth="xl" sx={{ marginY: "120px " }}>
+    <Container id="contacts" maxWidth="xl" sx={{ marginY: "120px " }}>
       <Box sx={{ color: "white", position: "relative" }}>
         <iframe
           src="https://yandex.ru/map-widget/v1/-/CCUNnCDnoD"

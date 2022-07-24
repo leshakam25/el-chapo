@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <Container sx={{ marginY: "120px " }} maxWidth="xl">
+    <Container id="about" sx={{ marginY: "120px " }} maxWidth="xl">
       <Box sx={{ color: "white" }}>
         {" "}
         <Typography

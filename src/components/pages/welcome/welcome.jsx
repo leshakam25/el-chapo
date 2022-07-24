@@ -8,7 +8,12 @@ import { motion } from "framer-motion";
 
 const Welcome = () => {
   return (
-    <Container className={s.content} maxWidth="xl" sx={{ marginTop: "-12px" }}>
+    <Container
+      id="welcome"
+      className={s.content}
+      maxWidth="xl"
+      sx={{ marginTop: "-12px" }}
+    >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

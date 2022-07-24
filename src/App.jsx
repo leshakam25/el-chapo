@@ -23,11 +23,10 @@ const App = () => {
       }}
       transition={{ duration: 3 }}
     >
-      <Routes>
-        <Route path="/" element={<CitySelect />} />
-      </Routes>
       <Header />
       <Welcome />
+      <CitySelect />
+
       <Events />
       <About />
       <BarMenu />

@@ -52,7 +52,7 @@ const Events = () => {
   }, [upcomingEvents]);
 
   return (
-    <Container maxWidth="xl" sx={{ marginY: "120px" }}>
+    <Container id="events" maxWidth="xl" sx={{ marginY: "120px" }}>
       {/* log button
       <button onClick={logs}>log</button> */}
       <Box

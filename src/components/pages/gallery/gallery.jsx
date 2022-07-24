@@ -4,7 +4,7 @@ import BtrCarousel from "./btrCarousel";
 
 const Gallery = () => {
   return (
-    <Container maxWidth="xl" sx={{ marginY: "120px " }}>
+    <Container id="photo" maxWidth="xl" sx={{ marginY: "120px " }}>
       <Box sx={{ color: "white" }}>
         <Typography
           gutterBottom
