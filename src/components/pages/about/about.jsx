@@ -14,7 +14,7 @@ const About = () => {
         >
           El chapo
         </Typography>
-        <Box sx={{ height: "3px", bgcolor: "#f2ee6f", width: "30vw" }}></Box>
+        <Box sx={{ height: "3px", bgcolor: "#f2ee6f", width: "300px" }}></Box>
         <Typography
           sx={{ margin: "12px 0" }}
           fontFamily="Oswald"

@@ -15,11 +15,7 @@ const Footer = () => {
           alignItems: "center",
         }}
       >
-        <CardMedia
-          component="img"
-          src="https://static.tildacdn.info/tild3831-6537-4230-b761-643566333431/Group_387.png"
-          sx={{ maxWidth: "800px" }}
-        />
+        <CardMedia component="img" src={logo} />
       </Box>
     </Container>
   );

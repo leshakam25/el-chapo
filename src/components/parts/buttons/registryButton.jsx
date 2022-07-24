@@ -25,7 +25,7 @@ export const RegistryButton = (props) => {
   return (
     <Box sx={{ margin: "12px 0" }}>
       <motion.button
-        whileHover={{ scale: 1.1 }}
+        whileHover={{ background: "white" }}
         onClick={handleOpen}
         className={s.registryButton}
       >

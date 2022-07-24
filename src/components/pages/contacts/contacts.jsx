@@ -9,6 +9,10 @@ const Contacts = () => {
 
   return (
     <Container id="contacts" maxWidth="xl" sx={{ marginY: "120px " }}>
+      <br />
+      <br />
+      <br />
+      <br />
       <Box sx={{ color: "white", position: "relative" }}>
         <iframe
           src="https://yandex.ru/map-widget/v1/-/CCUNnCDnoD"
@@ -41,6 +45,12 @@ const Contacts = () => {
           </Typography>
           <Typography fontFamily="Oswald" fontWeight="light" gutterBottom>
             Литейный проспект, 57 <br /> Тел: +7 (812) 425 3090
+          </Typography>
+          <Typography fontFamily="Oswald" fontWeight="normsl">
+            время работы:
+          </Typography>
+          <Typography fontFamily="Oswald" fontWeight="light" gutterBottom>
+            пн-вс 12.00–6.00
           </Typography>
           <br />
           <Typography fontFamily="Oswald" gutterBottom>

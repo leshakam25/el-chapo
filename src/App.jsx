@@ -26,7 +26,6 @@ const App = () => {
       <Header />
       <Welcome />
       <CitySelect />
-
       <Events />
       <About />
       <BarMenu />
