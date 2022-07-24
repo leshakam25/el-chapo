@@ -2,19 +2,18 @@ import React from "react";
 import s from "../parts.module.css";
 import { motion } from "framer-motion";
 
-const MenuButton = (props) => {
+const CityButton = (props) => {
   return (
-    <motion.a
+    <motion.button
       whileHover={{
-        scale: 1.3,
+        scale: 1.1,
         color: "#f2ee6f",
       }}
-      className={s.menuButton}
-      href={props.href}
+      className={s.cityButton}
     >
       {props.title}
-    </motion.a>
+    </motion.button>
   );
 };
 
-export default MenuButton;
+export default CityButton;

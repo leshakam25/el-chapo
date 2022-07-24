@@ -1,6 +1,5 @@
-/*Желтая кнопка*/
-
-.yellowButton {
+/*Кнопка регистрации*/
+.registryButton {
    font-family: 'Oswald';
    font-weight: 700;
    border: none;
@@ -14,22 +13,10 @@
    transition-delay: 0.1s;
 }
 
-
-
 /*Кнопка меню*/
-.menuButton button {
-   font-family: inherit;
-   background-color: inherit;
-   text-decoration: inherit;
-   border: inherit;
-   color: inherit;
-   font-size: inherit;
-   text-transform: inherit;
-   opacity: inherit;
-}
 .menuButton {
+   text-decoration: none;
    font-family: 'Oswald';
-
    font-size: 20px;
    border: none;
    color: white;
@@ -38,15 +25,11 @@
    padding: 0 16px;
   
 }
-.menuButton:hover {
-  
-}
 
 /*Кнопка ссылки*/
-
-.linkButton:active,
-.linkButton:hover,
 .linkButton {
+   background-color: inherit;
+   border: none;
    font-family: 'Oswald';
    font-size: 12px;
    font-weight: 100;
@@ -67,16 +50,22 @@
    font-weight: 500;
 }
 
-/* form */
-.form input{
-   font-family: 'Empresso';
 
-}
-   /* event */
-   .eventButton{
+/* event */
+.eventButton{
       background: inherit;
       color: white;
       border: inherit;
       font-family: 'Oswald';
       font-size: 36px;
+   }
+
+   /* city select button */
+   .cityButton{
+      background: inherit;
+      color: white;
+      border: inherit;
+      font-family: 'Oswald';
+      font-size: 46px;
+
    }

@@ -45,13 +45,16 @@ const Events = () => {
 
   useEffect(() => {
     setUpcomingEvents(eventData);
-    setCurrentParty();
   }, []);
+
+  useEffect(() => {
+    setCurrentParty(upcomingEvents);
+  }, [upcomingEvents]);
 
   return (
     <Container maxWidth="xl" sx={{ marginY: "120px" }}>
-      <button onClick={logs}>log</button>
-
+      {/* log button
+      <button onClick={logs}>log</button> */}
       <Box
         sx={{
           color: "white",
@@ -76,7 +79,7 @@ const Events = () => {
                 initial="hidden"
                 animate="visible"
               >
-                <EventButton click=" " key={el} title={el.name} />
+                <EventButton click={logs} key={el} title={el.name} />
               </motion.span>
             ))}
         </Box>

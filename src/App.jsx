@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
+import { Routes, Route } from "react-router-dom";
 import React from "react";
 import "./App.css";
 import About from "./components/pages/about/about";
+import CitySelect from "./components/pages/citySelect/citySelect";
 import Contacts from "./components/pages/contacts/contacts";
 import Events from "./components/pages/events/events";
 import Footer from "./components/pages/footer/footer";
@@ -9,7 +11,6 @@ import Gallery from "./components/pages/gallery/gallery";
 import Header from "./components/pages/header/header";
 import BarMenu from "./components/pages/menu/barMenu";
 import Welcome from "./components/pages/welcome/welcome";
-import Privacy from "./components/parts/privacy";
 
 const App = () => {
   return (
@@ -22,6 +23,9 @@ const App = () => {
       }}
       transition={{ duration: 3 }}
     >
+      <Routes>
+        <Route path="/" element={<CitySelect />} />
+      </Routes>
       <Header />
       <Welcome />
       <Events />
@@ -30,7 +34,6 @@ const App = () => {
       <Gallery />
       <Contacts />
       <Footer />
-      <Privacy />
     </motion.div>
   );
 };

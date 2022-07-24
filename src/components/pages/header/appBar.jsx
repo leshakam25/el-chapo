@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import RegistryButton from "../../parts/buttons/registryButton";
 import MenuButton from "../../parts/buttons/menuButton";
 
-export default function ButtonAppBar() {
+export default function ButtonAppBar(props) {
   return (
     <Box sx={{ flexGrow: 1, opacity: "0.9" }}>
       <AppBar position="fixed">
@@ -232,10 +232,10 @@ export default function ButtonAppBar() {
             </svg>
           </Box>
           <Box sx={{ display: "flex" }}>
-            <MenuButton title="О нас" href="#abot" />
+            <MenuButton title="Мероприятия" href="https://www.youtube.com/" />
+            <MenuButton title="О нас" href="#about" />
             <MenuButton title="Меню" href="#menu" />
             <MenuButton title="Фото" href="#photo" />
-            <MenuButton title="Мероприятия" href="#events" />
             <MenuButton title="Контакты" href="#contacts" />
           </Box>
           <RegistryButton title="Забронировать" />

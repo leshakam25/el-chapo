@@ -27,7 +27,7 @@ export const RegistryButton = (props) => {
       <motion.button
         whileHover={{ scale: 1.1 }}
         onClick={handleOpen}
-        className={s.yellowButton}
+        className={s.registryButton}
       >
         {props.title}
       </motion.button>

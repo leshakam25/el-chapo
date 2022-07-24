@@ -4,10 +4,13 @@ import "./index.css";
 import App from "./App";
 import "./fonts/oswald/stylesheet.css";
 import "./fonts/empresso/stylesheet.css";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </BrowserRouter>
 );
