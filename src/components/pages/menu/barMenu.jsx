@@ -42,22 +42,22 @@ const BarMenu = () => {
             <Box
               sx={{ height: "3px", bgcolor: "#f2ee6f", width: "220px" }}
             ></Box>
-            <Typography
-              sx={{ margin: "12px 0" }}
-              fontFamily="Oswald"
-              fontWeight="light"
-              variant="body1"
-              fontSize="18px"
-              textAlign="justify"
-            >
-              <Box>
+
+            <Box sx={{ margin: "12px 0" }}>
+              <Typography
+                fontFamily="Oswald"
+                fontWeight="light"
+                variant="body1"
+                fontSize="18px"
+                textAlign="justify"
+              >
                 Подача эксклюзивных блюд от нашего шеф-повара, перенесёт вас в
                 изысканный мир мексиканской кухни
                 <br />
                 <br />
-                Ждите новое меню в ближайшее время!
-              </Box>
-            </Typography>
+                Ждите новое меню в ближайшее время!{" "}
+              </Typography>
+            </Box>
           </Box>
         </motion.div>
         {/* right */}

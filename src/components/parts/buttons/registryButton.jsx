@@ -18,7 +18,7 @@ const style = {
   borderRadius: 1,
 };
 
-export const RegistryButton = (props) => {
+const RegistryButton = (props) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);

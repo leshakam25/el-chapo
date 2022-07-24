@@ -8,7 +8,6 @@ import { CardMedia, Box } from "@mui/material";
 import LogoButton from "../../parts/buttons/logoButton";
 
 export default function ButtonAppBar(props) {
-  const logoRedirect = () => {};
   return (
     <Box sx={{ flexGrow: 1, opacity: "0.9" }}>
       <AppBar position="fixed">

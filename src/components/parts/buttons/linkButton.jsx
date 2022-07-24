@@ -21,7 +21,7 @@ const LinkButton = (props) => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <div>
+    <>
       <motion.button
         whileHover={{ opacity: "0.6" }}
         onClick={handleOpen}
@@ -33,7 +33,7 @@ const LinkButton = (props) => {
         {props.title}
       </motion.button>
       <Modal
-        disableScrollLock="false"
+        disableScrollLock={false}
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
@@ -43,7 +43,7 @@ const LinkButton = (props) => {
           <Privacy />
         </Box>
       </Modal>
-    </div>
+    </>
   );
 };
 

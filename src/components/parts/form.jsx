@@ -16,6 +16,7 @@ const ModalForm = () => {
   });
 
   const onSubmit = (data) => {
+    console.log(data);
     alert(JSON.stringify(data));
     reset();
   };
@@ -23,12 +24,14 @@ const ModalForm = () => {
   const [peopleCount, setPeopleCount] = useState(0);
 
   const countDown = () => {
-    setPeopleCount(peopleCount - 1);
+    setPeopleCount((prevState) => prevState - 1);
   };
 
   const countUp = () => {
-    setPeopleCount(peopleCount + 1);
+    setPeopleCount((prevState) => prevState + 1);
   };
+
+  console.log(peopleCount);
 
   return (
     <div>
@@ -133,6 +136,7 @@ const ModalForm = () => {
             {/* people count */}
             <Box>
               <Button
+                size="large"
                 sx={{ fontFamily: "Oswald", fontWeight: "Bold" }}
                 onClick={countDown}
               >
@@ -142,15 +146,15 @@ const ModalForm = () => {
                 sx={{ width: "60px" }}
                 color="warning"
                 size="small"
+                value={peopleCount}
                 {...register("number", {
                   required: true,
                 })}
-                value={peopleCount}
               />
               <Button
+                size="large"
                 sx={{ fontFamily: "Oswald", fontWeight: "Bold" }}
                 onClick={countUp}
-                n
               >
                 +
               </Button>

@@ -25,7 +25,7 @@ const App = () => {
     >
       <Header />
       <Welcome />
-      <CitySelect />
+      {/* <CitySelect /> */}
       <Events />
       <About />
       <BarMenu />

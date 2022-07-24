@@ -21,7 +21,7 @@ const Welcome = () => {
       >
         <Box
           sx={{
-            minHeight: "100vh",
+            minHeight: "1024px",
             color: "white",
             display: "flex",
             flexDirection: "row",
@@ -29,90 +29,88 @@ const Welcome = () => {
             justifyContent: "center",
           }}
         >
-          <Box sx={{}}>
-            {/* content */}
+          {/* content */}
+          <Box
+            sx={{
+              width: "70vw",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-around",
+            }}
+          >
+            {/* left */}
             <Box
               sx={{
-                width: "70vw",
+                paddingTop: "320px",
+                paddingRight: "190px",
+                maxWidth: "400px",
                 display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-around",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
               }}
             >
-              {/* left */}
+              {/* logo */}
+              <CardMedia
+                component="img"
+                src={logo}
+                sx={{ maxWidth: "300px" }}
+              ></CardMedia>
+              {/* timer */}
+              <Box>
+                <Timer />
+              </Box>
+            </Box>
+            {/* right */}
+            <Box
+              sx={{
+                maxWidth: "560px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "left",
+              }}
+            >
+              <Typography
+                variant="h2"
+                gutterBottom
+                fontFamily="Oswald"
+                fontWeight="450"
+                sx={{ margin: "12px 0" }}
+              >
+                ДОБРО ПОЖАЛОВАТЬ В МЕКСИКУ!
+              </Typography>
+              <Typography
+                variant="body1"
+                fontFamily="Oswald"
+                gutterBottom
+                sx={{ margin: "12px 0" }}
+              >
+                EL Chapo Grande – это иммерсивный бар, где каждый может
+                погрузиться в мир мексиканской культуры и её незабываемого
+                колорита <br />
+                <br /> Огненная текила, ароматы специй, ритмы латино с
+                вкраплениями фанка и диско захлестнут улицу любого города, где
+                есть бар EL Chapo
+              </Typography>
+              {/* Yellow line */}
               <Box
                 sx={{
-                  paddingTop: "320px",
-                  paddingRight: "190px",
-                  maxWidth: "400px",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
+                  height: "3px",
+                  bgcolor: "#f2ee6f",
+                  width: "320px",
+                  margin: "12px 0",
                 }}
+              ></Box>
+              <Typography
+                sx={{ margin: "12px 0" }}
+                fontFamily="Oswald"
+                variant="body1"
+                fontWeight="normal"
               >
-                {/* logo */}
-                <CardMedia
-                  component="img"
-                  src={logo}
-                  sx={{ maxWidth: "300px" }}
-                ></CardMedia>
-                {/* timer */}
-                <Box>
-                  <Timer />
-                </Box>
-              </Box>
-              {/* right */}
-              <Box
-                sx={{
-                  maxWidth: "560px",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "left",
-                }}
-              >
-                <Typography
-                  variant="h2"
-                  gutterBottom
-                  fontFamily="Oswald"
-                  fontWeight="450"
-                  sx={{ margin: "12px 0" }}
-                >
-                  ДОБРО ПОЖАЛОВАТЬ В МЕКСИКУ!
-                </Typography>
-                <Typography
-                  variant="body1"
-                  fontFamily="Oswald"
-                  gutterBottom
-                  sx={{ margin: "12px 0" }}
-                >
-                  EL Chapo Grande – это иммерсивный бар, где каждый может
-                  погрузиться в мир мексиканской культуры и её незабываемого
-                  колорита <br />
-                  <br /> Огненная текила, ароматы специй, ритмы латино с
-                  вкраплениями фанка и диско захлестнут улицу любого города, где
-                  есть бар EL Chapo
-                </Typography>
-                {/* Yellow line */}
-                <Box
-                  sx={{
-                    height: "3px",
-                    bgcolor: "#f2ee6f",
-                    width: "320px",
-                    margin: "12px 0",
-                  }}
-                ></Box>
-                <Typography
-                  sx={{ margin: "12px 0" }}
-                  fontFamily="Oswald"
-                  variant="body1"
-                  fontWeight="normal"
-                >
-                  Мы находимся: <br /> Литейный проспект, 57
-                </Typography>
-                <RegistryButton title="Забронировать столик" />
-              </Box>
+                Мы находимся: <br /> Литейный проспект, 57
+              </Typography>
+              <RegistryButton title="Забронировать столик" />
             </Box>
           </Box>
         </Box>

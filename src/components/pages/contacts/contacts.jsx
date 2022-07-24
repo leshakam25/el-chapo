@@ -18,8 +18,8 @@ const Contacts = () => {
           src="https://yandex.ru/map-widget/v1/-/CCUNnCDnoD"
           width="100%"
           height="600"
-          frameborder="0"
-          allowfullscreen="true"
+          frameBorder="0"
+          allowFullScreen
         ></iframe>
         <Box
           sx={{
@@ -53,20 +53,18 @@ const Contacts = () => {
             пн-вс 12.00–6.00
           </Typography>
           <br />
-          <Typography fontFamily="Oswald" gutterBottom>
-            <ul>
-              <li> TG</li>
-              <li> INSTA</li>
-              <li> VK</li>
-            </ul>
-          </Typography>
+          <Box>
+            <Typography fontFamily="Oswald">TG</Typography>
+            <Typography fontFamily="Oswald">INSTA</Typography>
+            <Typography fontFamily="Oswald">VK</Typography>
+          </Box>
           <br />
-          <Typography>
+          <Box>
             <LinkButton
               link="http://elchapogrande.store/grande-rf/privacy"
               title=" Политика конфиденциальности"
             />
-          </Typography>
+          </Box>
         </Box>
       </Box>
     </Container>
