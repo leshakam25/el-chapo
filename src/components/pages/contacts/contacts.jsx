@@ -1,12 +1,10 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import LinkButton from "../../parts/buttons/linkButton";
+import PrivacyButton from "../../parts/buttons/privacyButton";
+import LinkButton from "../../parts/buttons/privacyButton";
+import LinkButtonDialog from "../../parts/buttons/privacyButton";
 
 const Contacts = () => {
-  const privacy = () => {
-    window.location.href = "http://elchapogrande.store/grande-rf/privacy";
-  };
-
   return (
     <Container id="contacts" maxWidth="xl" sx={{ paddingTop: "80px" }}>
       <Box sx={{ color: "white", position: "relative" }}>
@@ -56,9 +54,10 @@ const Contacts = () => {
           </Box>
           <br />
           <Box>
-            <LinkButton
-              link="http://elchapogrande.store/grande-rf/privacy"
-              title=" Политика конфиденциальности"
+            <PrivacyButton
+              title={"Политика конфеденциальности"}
+              color="white"
+              fz="14px"
             />
           </Box>
         </Box>

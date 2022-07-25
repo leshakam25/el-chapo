@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import FormButton from "./buttons/formButton";
 import LinkButton from "./buttons/linkButton";
+import PrivacyButton from "./buttons/privacyButton";
 import s from "./parts.module.css";
 
 const ModalForm = () => {
@@ -182,9 +183,10 @@ const ModalForm = () => {
             fontSize="12px"
           >
             Нажимая кнопку отправить заявку вы соглашаетесь с нашей
-            <LinkButton
-              link="http://elchapogrande.store/grande-rf/privacy"
-              title=" политикой конфиденциальности"
+            <PrivacyButton
+              title="политикой конфеденциальности"
+              color="black"
+              fz="11px"
             />
           </Typography>
         </Box>

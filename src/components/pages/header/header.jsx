@@ -9,7 +9,7 @@ import LogoButton from "../../parts/buttons/logoButton";
 
 export default function Header(props) {
   return (
-    <Box sx={{ flexGrow: 1, opacity: "0.9", zIndex: "100" }}>
+    <Box sx={{ flexGrow: 1, opacity: "0.9" }}>
       <AppBar position="fixed">
         <Toolbar
           sx={{
