@@ -5,6 +5,7 @@ import FormButton from "./buttons/formButton";
 import LinkButton from "./buttons/linkButton";
 import PrivacyButton from "./buttons/privacyButton";
 import s from "./parts.module.css";
+import { motion } from "framer-motion";
 
 const ModalForm = () => {
   const {
@@ -35,7 +36,11 @@ const ModalForm = () => {
   console.log(peopleCount);
 
   return (
-    <div>
+    <motion.div
+      initial={{ y: 10, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <Typography fontFamily="Oswald" variant="h4" textAlign="center">
         Заявка на бронь столика
       </Typography>
@@ -191,7 +196,7 @@ const ModalForm = () => {
           </Typography>
         </Box>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

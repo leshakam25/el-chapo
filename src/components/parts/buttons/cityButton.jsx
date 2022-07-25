@@ -1,18 +1,22 @@
 import React from "react";
 import s from "../parts.module.css";
 import { motion } from "framer-motion";
+import { Typography } from "@mui/material";
 
 const CityButton = (props) => {
   return (
-    <motion.button
+    <motion.a
+      href={props.link}
       whileHover={{
         scale: 1.1,
         color: "#f2ee6f",
       }}
       className={s.cityButton}
     >
-      {props.title}
-    </motion.button>
+      <Typography variant="h4" fontWeight="bold" fontFamily="Oswald">
+        {props.title}
+      </Typography>
+    </motion.a>
   );
 };
 

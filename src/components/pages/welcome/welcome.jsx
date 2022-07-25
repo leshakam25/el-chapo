@@ -5,6 +5,7 @@ import Timer from "./timer";
 import logo from "../../../image/logo2.svg";
 import RegistryButton from "../../parts/buttons/registryButton";
 import { motion } from "framer-motion";
+import girlColor from "../../../image/girl-color.svg";
 
 const Welcome = () => {
   return (
@@ -59,6 +60,7 @@ const Welcome = () => {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "left",
+              position: "releative",
             }}
           >
             <motion.div

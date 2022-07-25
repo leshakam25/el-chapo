@@ -1,5 +1,6 @@
 /*Кнопка регистрации*/
 .registryButton {
+   cursor: pointer;
    font-family: 'Oswald';
    font-weight: 700;
    border: none;
@@ -62,6 +63,7 @@
 
    /* city select button */
    .cityButton{
+      text-decoration: none;
       background: inherit;
       color: white;
       border: inherit;
