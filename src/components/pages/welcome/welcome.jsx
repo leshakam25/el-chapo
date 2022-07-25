@@ -9,62 +9,62 @@ import { motion } from "framer-motion";
 const Welcome = () => {
   return (
     <Container id="welcome" className={s.content} maxWidth="xl" sx={{}}>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 2 }}
+      <Box
+        sx={{
+          minHeight: "1024px",
+          color: "white",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
       >
+        {/* content */}
         <Box
           sx={{
-            minHeight: "1024px",
-            color: "white",
+            width: "70vw",
             display: "flex",
             flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
+            justifyContent: "space-around",
           }}
         >
-          {/* content */}
+          {/* left */}
           <Box
             sx={{
-              width: "70vw",
+              paddingTop: "320px",
+              paddingRight: "190px",
+              maxWidth: "400px",
               display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-around",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            {/* left */}
-            <Box
-              sx={{
-                paddingTop: "320px",
-                paddingRight: "190px",
-                maxWidth: "400px",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              {/* logo */}
-              <CardMedia
-                component="img"
-                src={logo}
-                sx={{ maxWidth: "300px" }}
-              ></CardMedia>
-              {/* timer */}
-              <Box>
-                <Timer />
-              </Box>
+            {/* logo */}
+            <CardMedia
+              component="img"
+              src={logo}
+              sx={{ maxWidth: "300px" }}
+            ></CardMedia>
+            {/* timer */}
+            <Box>
+              <Timer />
             </Box>
-            {/* right */}
-            <Box
-              sx={{
-                maxWidth: "560px",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "left",
-              }}
+          </Box>
+          {/* right */}
+          <Box
+            sx={{
+              maxWidth: "560px",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "left",
+            }}
+          >
+            <motion.div
+              initial={{ x: 10, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
             >
               <Typography
                 variant="h2"
@@ -75,6 +75,12 @@ const Welcome = () => {
               >
                 ДОБРО ПОЖАЛОВАТЬ В МЕКСИКУ!
               </Typography>
+            </motion.div>
+            <motion.div
+              initial={{ x: -10, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
+            >
               <Typography
                 variant="body1"
                 fontFamily="Oswald"
@@ -88,15 +94,22 @@ const Welcome = () => {
                 вкраплениями фанка и диско захлестнут улицу любого города, где
                 есть бар EL Chapo
               </Typography>
-              {/* Yellow line */}
-              <Box
-                sx={{
-                  height: "3px",
-                  bgcolor: "#f2ee6f",
-                  width: "320px",
-                  margin: "12px 0",
-                }}
-              ></Box>
+            </motion.div>
+
+            {/* Yellow line */}
+            <Box
+              sx={{
+                height: "3px",
+                bgcolor: "#f2ee6f",
+                width: "320px",
+                margin: "12px 0",
+              }}
+            ></Box>
+            <motion.div
+              initial={{ y: 10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
+            >
               <Typography
                 sx={{ margin: "12px 0" }}
                 fontFamily="Oswald"
@@ -106,10 +119,10 @@ const Welcome = () => {
                 Мы находимся: <br /> Литейный проспект, 57
               </Typography>
               <RegistryButton title="Забронировать столик" />
-            </Box>
+            </motion.div>
           </Box>
         </Box>
-      </motion.div>
+      </Box>
     </Container>
   );
 };

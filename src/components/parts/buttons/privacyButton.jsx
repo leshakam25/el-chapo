@@ -53,11 +53,11 @@ export default function PrivacyButton(props) {
         >
           <motion.div
             initial={{
-              x: -1000,
+              y: -100,
               opacity: 0,
             }}
             animate={{
-              x: 0,
+              y: 0,
               opacity: 1,
             }}
             transition={{
@@ -82,11 +82,11 @@ export default function PrivacyButton(props) {
         <Box sx={{ paddingTop: 2, bgcolor: "black" }}>
           <motion.div
             initial={{
-              x: 1000,
+              y: -100,
               opacity: 0,
             }}
             animate={{
-              x: 0,
+              y: 0,
               opacity: 1,
             }}
             transition={{
