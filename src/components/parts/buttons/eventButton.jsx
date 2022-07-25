@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import s from "../parts.module.css";
+import { Typography } from "@mui/material";
 
 const EventButton = (props) => {
   const handleChange = (e) => {
@@ -17,7 +18,9 @@ const EventButton = (props) => {
       }}
       className={s.eventButton}
     >
-      {props.title}
+      <Typography fontFamily="Oswald" fontSize="24px">
+        {props.title}
+      </Typography>
     </motion.button>
   );
 };

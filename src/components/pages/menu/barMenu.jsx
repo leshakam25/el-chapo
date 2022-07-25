@@ -15,7 +15,7 @@ const BarMenu = () => {
           color: "white",
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-around",
+          justifyContent: "space-between",
         }}
       >
         {/* left */}

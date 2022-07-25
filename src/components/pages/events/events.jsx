@@ -1,38 +1,8 @@
 import { Box, CardMedia, Container, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import EventButton from "../../parts/buttons/eventButton";
-
-const eventData = [
-  {
-    id: 0,
-    name: "Summer party",
-    date: "05.06.22",
-    img: "https://www.tzkolan-mandre.com/images/galerijafotografija/Plaza_Katarelec/1.jpg",
-    desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-  },
-  {
-    id: 1,
-    name: "Night party",
-    date: "11.06.22",
-    img: "https://cdn-asset.jawapos.com/wp-content/uploads/2019/08/63085489_ML-640x480.jpg",
-    desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-  },
-  {
-    id: 2,
-    name: "Yellow party",
-    date: "21.06.22",
-    img: "https://showprokat.pro/wp-content/uploads/2017/01/lasershow.jpg",
-    desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-  },
-  {
-    id: 4,
-    name: "green party",
-    date: "21.07.22",
-    img: "https://showprokat.pro/wp-content/uploads/2017/01/lasershow.jpg",
-    desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
-  },
-];
+import { eventData } from "./eventsData";
 
 const Events = () => {
   const [upcomingEvents, setUpcomingEvents] = useState(eventData);
@@ -72,7 +42,8 @@ const Events = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "left",
-            minWidth: "200px",
+            alignItems: "left",
+            width: "300px",
           }}
         >
           {upcomingEvents &&
@@ -87,30 +58,37 @@ const Events = () => {
               </motion.span>
             ))}
         </Box>
-        <Box>
+        <Box sx={{ maxWidth: "60vw" }}>
           {currentParty &&
             currentParty.map((el, i) => (
               <Box
                 key={"currentParty" + el.id + i}
-                sx={{ display: "flex", flexDirection: "row" }}
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
               >
-                <Box>
+                <Box
+                  sx={{
+                    maxWidth: "30vw",
+                  }}
+                >
                   <Typography
-                    variant="h2"
+                    variant="h4"
                     fontFamily="oswald"
                     fontWeight="Bold"
                   >
                     {el.name}
                   </Typography>
                   <Typography
-                    variant="h4"
+                    variant="h5"
                     fontFamily="oswald"
                     fontWeight="Bold"
                   >
                     {el.date}
                   </Typography>
                   <Typography
-                    sx={{ maxWidth: "600px" }}
                     variant="body1"
                     fontFamily="oswald"
                     fontWeight="light"
@@ -120,7 +98,7 @@ const Events = () => {
                 </Box>
                 <CardMedia
                   sx={{
-                    maxWidth: "800px",
+                    maxWidth: "600px",
                     height: "auto",
                   }}
                   component="img"

@@ -5,7 +5,6 @@ import Timer from "./timer";
 import logo from "../../../image/logo2.svg";
 import RegistryButton from "../../parts/buttons/registryButton";
 import { motion } from "framer-motion";
-import girlColor from "../../../image/girl-color.svg";
 
 const Welcome = () => {
   return (
@@ -32,8 +31,6 @@ const Welcome = () => {
           {/* left */}
           <Box
             sx={{
-              paddingTop: "320px",
-              paddingRight: "190px",
               maxWidth: "400px",
               display: "flex",
               flexDirection: "column",
