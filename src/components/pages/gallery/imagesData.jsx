@@ -32,143 +32,108 @@ import image31 from "../../../image/photo/2022-07-05 00-57-01 (31).png";
 import image32 from "../../../image/photo/2022-07-05 00-57-01 (32).png";
 import image33 from "../../../image/photo/2022-07-05 00-57-01 (33).png";
 import image34 from "../../../image/photo/2022-07-05 00-57-01 (34).png";
-import image35 from "../../../image/photo/2022-07-05 00-57-01 (34).png";
 
 export const imagesData = [
   {
     img: `${image1}`,
-    title: "no img",
   },
   {
     img: `${image2}`,
-    title: "no img",
   },
   {
     img: `${image3}`,
-    title: "no img",
   },
   {
     img: `${image4}`,
-    title: "no img",
   },
   {
     img: `${image5}`,
-    title: "no img",
   },
   {
     img: `${image6}`,
-    title: "no img",
   },
   {
     img: `${image7}`,
-    title: "no img",
   },
   {
     img: `${image8}`,
-    title: "no img",
   },
   {
     img: `${image9}`,
-    title: "no img",
   },
   {
     img: `${image10}`,
-    title: "no img",
   },
   {
     img: `${image11}`,
-    title: "no img",
   },
   {
     img: `${image12}`,
-    title: "no img",
   },
   {
     img: `${image13}`,
-    title: "no img",
   },
   {
     img: `${image14}`,
-    title: "no img",
   },
   {
     img: `${image15}`,
-    title: "no img",
   },
   {
     img: `${image16}`,
-    title: "no img",
   },
   {
     img: `${image17}`,
-    title: "no img",
   },
   {
     img: `${image18}`,
-    title: "no img",
   },
   {
     img: `${image19}`,
-    title: "no img",
   },
   {
     img: `${image20}`,
-    title: "no img",
   },
   {
     img: `${image21}`,
-    title: "no img",
   },
   {
     img: `${image22}`,
-    title: "no img",
   },
   {
     img: `${image23}`,
-    title: "no img",
   },
   {
     img: `${image24}`,
-    title: "no img",
   },
   {
     img: `${image25}`,
-    title: "no img",
   },
   {
     img: `${image26}`,
-    title: "no img",
   },
   {
     img: `${image27}`,
-    title: "no img",
   },
   {
     img: `${image28}`,
-    title: "no img",
   },
   {
     img: `${image29}`,
-    title: "no img",
   },
   {
     img: `${image30}`,
-    title: "no img",
   },
   {
     img: `${image31}`,
-    title: "no img",
   },
   {
     img: `${image32}`,
-    title: "no img",
   },
   {
     img: `${image33}`,
-    title: "no img",
   },
   {
     img: `${image34}`,
-    title: "no img",
   },
 ];

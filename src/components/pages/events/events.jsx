@@ -25,6 +25,13 @@ const eventData = [
     img: "https://showprokat.pro/wp-content/uploads/2017/01/lasershow.jpg",
     desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
   },
+  {
+    id: 4,
+    name: "green party",
+    date: "21.07.22",
+    img: "https://showprokat.pro/wp-content/uploads/2017/01/lasershow.jpg",
+    desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
+  },
 ];
 
 const Events = () => {
@@ -45,14 +52,12 @@ const Events = () => {
     hidden: { opacity: 0 },
   };
 
-  // useEffect(() => {
-  //   setCurrentParty(upcomingEvents);
-  // }, [upcomingEvents]);
-
   return (
-    <Container id="events" maxWidth="xl" sx={{ marginY: "120px" }}>
-      {/* log button
-      <button onClick={logs}>log</button> */}
+    <Container
+      id="events"
+      maxWidth="xl"
+      sx={{ paddingTop: "80px", height: "600px" }}
+    >
       <Box
         sx={{
           color: "white",

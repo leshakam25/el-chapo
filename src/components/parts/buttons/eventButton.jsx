@@ -9,10 +9,10 @@ const EventButton = (props) => {
 
   return (
     <motion.button
-      onClick={handleChange}
+      onHoverStart={handleChange}
       id={props.id}
       whileHover={{
-        scale: 1.3,
+        scale: 1.1,
         color: "#f2ee6f",
       }}
       className={s.eventButton}

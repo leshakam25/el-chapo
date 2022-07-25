@@ -5,7 +5,7 @@ import logo from "../../../image/logo.svg";
 
 const Footer = () => {
   return (
-    <Container maxWidth="xl" sx={{ marginY: "120px" }}>
+    <Container maxWidth="xl" sx={{ paddingTop: "80px" }}>
       <Box
         sx={{
           color: "white",
