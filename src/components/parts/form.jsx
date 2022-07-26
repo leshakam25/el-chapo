@@ -2,7 +2,6 @@ import { Box, Typography, TextField, Button } from "@mui/material";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import FormButton from "./buttons/formButton";
-import LinkButton from "./buttons/linkButton";
 import PrivacyButton from "./buttons/privacyButton";
 import s from "./parts.module.css";
 import { motion } from "framer-motion";
@@ -22,6 +21,8 @@ const ModalForm = () => {
     alert(JSON.stringify(data));
     reset();
   };
+
+  const onChangedPeopleCount = () => {};
 
   const [peopleCount, setPeopleCount] = useState(0);
 

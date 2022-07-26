@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import s from "../parts.module.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
@@ -18,13 +18,14 @@ const style = {
   borderRadius: 1,
 };
 
-const RegistryButton = (props) => {
+export const RegistryButton = forwardRef((props, ref) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
     <Box sx={{ margin: "12px 0" }}>
       <motion.button
+        ref={ref}
         whileHover={{ background: "white" }}
         onClick={handleOpen}
         className={s.registryButton}
@@ -43,5 +44,5 @@ const RegistryButton = (props) => {
       </Modal>
     </Box>
   );
-};
-export default RegistryButton;
+});
+export const MRegistryButton = motion(RegistryButton);

@@ -1,7 +1,7 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import RegistryButton from "../../parts/buttons/registryButton";
+import { MRegistryButton } from "../../parts/buttons/registryButton";
 import MenuButton from "../../parts/buttons/menuButton";
 import logo from "../../../image/logo.svg";
 import { Box } from "@mui/material";
@@ -30,7 +30,7 @@ export default function Header(props) {
             <MenuButton title="Фото" href="#photo" />
             <MenuButton title="Контакты" href="#contacts" />
           </Box>
-          <RegistryButton title="Забронировать" />
+          <MRegistryButton title="Забронировать" />
         </Toolbar>
       </AppBar>
     </Box>
