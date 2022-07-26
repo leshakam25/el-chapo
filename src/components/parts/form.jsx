@@ -143,7 +143,10 @@ const ModalForm = () => {
             <Box>
               <Button
                 size="large"
-                sx={{ fontFamily: "Oswald", fontWeight: "Bold" }}
+                sx={{
+                  fontWeight: "Bold",
+                  color: "black",
+                }}
                 onClick={countDown}
               >
                 -
@@ -159,7 +162,7 @@ const ModalForm = () => {
               />
               <Button
                 size="large"
-                sx={{ fontFamily: "Oswald", fontWeight: "Bold" }}
+                sx={{ color: "black", fontWeight: "Bold" }}
                 onClick={countUp}
               >
                 +

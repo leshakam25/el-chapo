@@ -93,17 +93,18 @@ const Welcome = () => {
                 вкраплениями фанка и диско захлестнут улицу любого города, где
                 есть бар EL Chapo
               </Typography>
+              {/* Yellow line */}
+
+              <Box
+                sx={{
+                  height: "3px",
+                  bgcolor: "#f2ee6f",
+                  width: "320px",
+                  margin: "12px 0",
+                }}
+              ></Box>
             </motion.div>
 
-            {/* Yellow line */}
-            <Box
-              sx={{
-                height: "3px",
-                bgcolor: "#f2ee6f",
-                width: "320px",
-                margin: "12px 0",
-              }}
-            ></Box>
             <motion.div
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
