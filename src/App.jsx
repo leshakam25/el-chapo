@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
 import { Routes, Route } from "react-router-dom";
+import { motion } from "framer-motion";
 import React from "react";
 import "./App.css";
 import CitySelect from "./components/pages/citySelect/citySelect";

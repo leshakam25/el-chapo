@@ -65,7 +65,16 @@
    .cityButton{
       text-decoration: none;
       background: inherit;
-      color: white;
+      color: gray;
+      border: inherit;
+      font-family: 'Oswald';
+      font-size: 46px;
+
+   }
+   .cityButtonOuter{
+      text-decoration: none;
+      background: inherit;
+      color: gray;
       border: inherit;
       font-family: 'Oswald';
       font-size: 46px;

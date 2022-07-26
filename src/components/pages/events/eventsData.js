@@ -2,7 +2,7 @@ export const eventData = [
   {
     id: 0,
     name: "Открытие Эль Чапо Гранде",
-    date: "28.07.22",
+    date: "27.07.22",
     img: "https://www.tzkolan-mandre.com/images/galerijafotografija/Plaza_Katarelec/1.jpg",
     desc: "Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.",
   },

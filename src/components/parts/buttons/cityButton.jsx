@@ -6,25 +6,18 @@ import { Link } from "react-router-dom";
 
 const CityButton = (props) => {
   return (
-    <motion.a
-      href={props.link}
+    <motion.div
       whileHover={{
         scale: 1.1,
         color: "#f2ee6f",
       }}
-      className={s.cityButton}
     >
-      <Link to={props.adress}>
-        <Typography
-          variant="h4"
-          fontWeight="bold"
-          fontFamily="Oswald"
-          sx={{ textDecoration: "none" }}
-        >
+      <Link className={s.cityButton} to={props.link}>
+        <Typography variant="h4" fontWeight="bold" fontFamily="Oswald">
           {props.title}
         </Typography>
       </Link>
-    </motion.a>
+    </motion.div>
   );
 };
 
