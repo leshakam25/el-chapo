@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import CityButton from "../../parts/buttons/cityButton";
+import CityButtonOuter from "../../parts/buttons/cityButtonOuter";
 
 const CitySelect = () => {
   return (
@@ -22,9 +23,13 @@ const CitySelect = () => {
       >
         Выберите бар:
       </Typography>
-      <CityButton title="Санкт-Петербург Grande" link="/" />
-      <CityButton title="Санкт-Петербург" link="" />
-      <CityButton title="Краснодар" link="" />
+      <CityButton title="Санкт-Петербург Grande" link="/" adress="spb" />
+      <CityButtonOuter
+        title="Санкт-Петербург"
+        link=""
+        adress="https://www.google.com/"
+      />
+      <CityButtonOuter title="Краснодар" link="" adress="spb" />
     </Box>
   );
 };

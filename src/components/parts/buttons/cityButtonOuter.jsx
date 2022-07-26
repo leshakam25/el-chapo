@@ -14,16 +14,9 @@ const CityButton = (props) => {
       }}
       className={s.cityButton}
     >
-      <Link to={props.adress}>
-        <Typography
-          variant="h4"
-          fontWeight="bold"
-          fontFamily="Oswald"
-          sx={{ textDecoration: "none" }}
-        >
-          {props.title}
-        </Typography>
-      </Link>
+      <Typography variant="h4" fontWeight="bold" fontFamily="Oswald">
+        {props.title}
+      </Typography>
     </motion.a>
   );
 };
