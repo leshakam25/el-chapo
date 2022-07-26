@@ -39,15 +39,28 @@ const Welcome = () => {
             }}
           >
             {/* logo */}
-            <CardMedia
-              component="img"
-              src={logo}
-              sx={{ maxWidth: "300px" }}
-            ></CardMedia>
+            <motion.div
+              initial={{ x: -20, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
+            >
+              <CardMedia
+                component="img"
+                src={logo}
+                sx={{ maxWidth: "300px" }}
+              ></CardMedia>
+            </motion.div>
+
             {/* timer */}
-            <Box>
-              <Timer />
-            </Box>
+            <motion.div
+              initial={{ x: -20, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
+            >
+              <Box>
+                <Timer />
+              </Box>
+            </motion.div>
           </Box>
           {/* right */}
           <Box
