@@ -30,7 +30,7 @@ const CitySelect = (props) => {
         >
           Выберите бар:
         </Typography>
-        <CityButton title="Санкт-Петербург Grande" link="spb" />
+        <CityButton title="Санкт-Петербург Grande" link="spb-grande" />
         <CityButtonOuter
           title="Санкт-Петербург Грибоедова"
           link="https://yandex.ru/"
