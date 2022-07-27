@@ -3,8 +3,8 @@ import { CardMedia, Box, Container, Typography } from "@mui/material";
 import React from "react";
 import Timer from "./timer";
 import logo from "../../../image/logo2.svg";
-import girlMono from "../../../image/girl-mono.svg";
-import girlColor from "../../../image/girl-color.svg";
+import girlMono from "../../../image/girl-mono.png";
+import girlColor from "../../../image/girl-color.png";
 import RegistryButton from "../../parts/buttons/registryButton";
 
 const textAnimation = {
@@ -33,7 +33,7 @@ const Welcome = () => {
           <Box
             sx={{
               position: "absolute",
-              left: "17%",
+              left: "20%",
             }}
           >
             <Box
@@ -45,8 +45,13 @@ const Welcome = () => {
                 alignItems: "center",
               }}
             >
-              <CardMedia component="img" src={girlMono} />
-              <CardMedia component="img" src={girlColor} sx={{ ml: "-1px" }} />
+              <CardMedia height="800px" component="img" src={girlMono} />
+              <CardMedia
+                height="800px"
+                component="img"
+                src={girlColor}
+                sx={{ ml: "-1px" }}
+              />
             </Box>
           </Box>
         </motion.div>
