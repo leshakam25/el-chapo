@@ -10,7 +10,7 @@ import Welcome from "../welcome/welcome";
 
 const Spb = () => {
   return (
-    <div>
+    <>
       <Header />
       <Welcome />
       <Events />
@@ -19,7 +19,7 @@ const Spb = () => {
       <Gallery />
       <Contacts />
       <Footer />
-    </div>
+    </>
   );
 };
 
