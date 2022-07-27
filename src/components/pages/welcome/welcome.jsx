@@ -27,7 +27,7 @@ const Welcome = () => {
         {/* background */}
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 0.8 }}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 6 }}
         >
           <Box

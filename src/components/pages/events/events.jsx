@@ -72,7 +72,7 @@ const Events = () => {
                 ))}
             </Box>
           </motion.div>
-          <motion.div custom={4} variants={textAnimation}>
+          <motion.div custom={2} variants={textAnimation}>
             <Box sx={{ maxWidth: "60vw" }}>
               {currentParty &&
                 currentParty.map((el, i) => (
@@ -107,20 +107,16 @@ const Events = () => {
                         {el.desc}
                       </Typography>
                     </Box>
-                    <motion.div
-                      whileHover={{ scale: 1.5, x: "-20vw" }}
-                      transition={{ duration: 0.5 }}
-                    >
-                      <CardMedia
-                        sx={{
-                          maxWidth: "600px",
-                          height: "auto",
-                          border: "4px solid white",
-                        }}
-                        component="img"
-                        src={el.img}
-                      />
-                    </motion.div>
+                    <CardMedia
+                      sx={{
+                        maxWidth: "600px",
+                        height: "auto",
+                        border: "4px solid white",
+                        ml: 10,
+                      }}
+                      component="img"
+                      src={el.img}
+                    />
                   </Box>
                 ))}
             </Box>
