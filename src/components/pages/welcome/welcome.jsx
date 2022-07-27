@@ -62,7 +62,11 @@ const Welcome = () => {
                 }}
               >
                 <CardMedia component="img" src={girlMono} />
-                <CardMedia component="img" src={girlColor} />
+                <CardMedia
+                  component="img"
+                  src={girlColor}
+                  sx={{ ml: "-1px" }}
+                />
               </Box>
               {/* logo */}
               <motion.div initial={{}}>
