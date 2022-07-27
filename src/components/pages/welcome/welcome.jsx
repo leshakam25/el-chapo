@@ -8,11 +8,11 @@ import girlColor from "../../../image/girl-color.svg";
 import RegistryButton from "../../parts/buttons/registryButton";
 
 const textAnimation = {
-  hidden: { x: -100, opacity: 0 },
+  hidden: { x: -10, opacity: 0 },
   visible: (custom) => ({
     x: 0,
     opacity: 1,
-    transition: { duration: custom * 0.3, delay: custom * 0.2 },
+    transition: { duration: custom * 0.5, delay: custom * 0.2 },
   }),
 };
 

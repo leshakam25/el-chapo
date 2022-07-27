@@ -7,12 +7,10 @@ import Gallery from "../gallery/gallery";
 import Header from "../header/header";
 import BarMenu from "../menu/barMenu";
 import Welcome from "../welcome/welcome";
-import { motion, useScroll } from "framer-motion";
-import s from "./cities.module.css";
 
 const Spb = () => {
   return (
-    <motion.div>
+    <div>
       <Header />
       <Welcome />
       <Events />
@@ -21,7 +19,7 @@ const Spb = () => {
       <Gallery />
       <Contacts />
       <Footer />
-    </motion.div>
+    </div>
   );
 };
 

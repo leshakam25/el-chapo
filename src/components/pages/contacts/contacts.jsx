@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import PrivacyButton from "../../parts/buttons/privacyButton";
+import SocialButton from "../../parts/buttons/socialButton";
 
 const textAnimation = {
   hidden: { x: 100, opacity: 0 },
@@ -59,10 +60,13 @@ const Contacts = () => {
                 пн-вс 12.00–6.00
               </Typography>
               <br />
-              <Box>
-                <Typography fontFamily="Oswald">TG</Typography>
-                <Typography fontFamily="Oswald">INSTA</Typography>
-                <Typography fontFamily="Oswald">VK</Typography>
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <SocialButton title="TG" link="https://t.me/elchapo_grande" />
+                <SocialButton
+                  title="INSTA"
+                  link="https://www.instagram.com/elchapo_grande/"
+                />
+                <SocialButton title="VK" link="https://vk.com/elchapo_spb" />
               </Box>
               <br />
               <Box>
