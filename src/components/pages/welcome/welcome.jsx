@@ -12,7 +12,7 @@ const textAnimation = {
   visible: (custom) => ({
     x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.2 },
+    transition: { duration: custom * 0.3, delay: custom * 0.2 },
   }),
 };
 
@@ -89,7 +89,7 @@ const Welcome = () => {
                 ></CardMedia>
               </motion.div>
               {/* timer */}
-              <motion.div custom={2} variants={textAnimation}>
+              <motion.div custom={5} variants={textAnimation}>
                 <Box>
                   <Timer />
                 </Box>
