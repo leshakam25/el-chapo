@@ -3,6 +3,9 @@ import { CardMedia, Box, Container, Typography } from "@mui/material";
 import React from "react";
 import Timer from "./timer";
 import logo from "../../../image/logo2.svg";
+import girlMono from "../../../image/girl-mono.svg";
+import girlColor from "../../../image/girl-color.svg";
+
 import { MRegistryButton } from "../../parts/buttons/registryButton";
 import { motion } from "framer-motion";
 
@@ -27,6 +30,7 @@ const Welcome = () => {
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "center",
+            position: "relative",
           }}
         >
           {/* content */}
@@ -48,6 +52,18 @@ const Welcome = () => {
                 alignItems: "center",
               }}
             >
+              <Box
+                sx={{
+                  position: "absolute",
+                  maxWidth: "380px",
+                  display: "flex",
+                  zIndex: -1,
+                  left: "20%",
+                }}
+              >
+                <CardMedia component="img" src={girlMono} />
+                <CardMedia component="img" src={girlColor} />
+              </Box>
               {/* logo */}
               <motion.div initial={{}}>
                 <CardMedia
@@ -74,6 +90,7 @@ const Welcome = () => {
                 position: "releative",
               }}
             >
+              <Box></Box>
               <motion.div custom={1} variants={textAnimation}>
                 <Typography
                   variant="h2"
