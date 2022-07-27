@@ -6,8 +6,12 @@ const MenuButton = (props) => {
   return (
     <motion.a
       whileHover={{
-        scale: 1.3,
+        scale: 1.1,
         color: "#f2ee6f",
+        textDecoration: "underline",
+      }}
+      transition={{
+        duration: 0.3,
       }}
       className={s.menuButton}
       href={props.href}
