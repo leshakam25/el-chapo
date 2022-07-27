@@ -25,7 +25,11 @@ const RegistryButton = (props, ref) => {
   return (
     <Box sx={{ margin: "12px 0" }}>
       <motion.button
-        whileHover={{ background: "white" }}
+        whileHover={{
+          background: "inherit",
+          color: "white",
+          outline: "2px solid white",
+        }}
         onClick={handleOpen}
         className={s.registryButton}
       >
