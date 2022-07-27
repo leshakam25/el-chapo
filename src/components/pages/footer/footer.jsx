@@ -25,7 +25,7 @@ const Footer = () => {
             alignItems: "center",
           }}
         >
-          <motion.div custom={5} variants={textAnimation}>
+          <motion.div custom={2} variants={textAnimation}>
             <CardMedia sx={{ width: "80vw" }} component="img" src={logo} />
           </motion.div>
         </Box>

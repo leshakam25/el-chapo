@@ -33,13 +33,21 @@ const Welcome = () => {
           <Box
             sx={{
               position: "absolute",
-              maxWidth: "420px",
-              display: "flex",
-              left: "20%",
+              left: "17%",
             }}
           >
-            <CardMedia component="img" src={girlMono} />
-            <CardMedia component="img" src={girlColor} sx={{ ml: "-1px" }} />
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                flexWrap: "nowrap",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <CardMedia component="img" src={girlMono} />
+              <CardMedia component="img" src={girlColor} sx={{ ml: "-1px" }} />
+            </Box>
           </Box>
         </motion.div>
         <Box
