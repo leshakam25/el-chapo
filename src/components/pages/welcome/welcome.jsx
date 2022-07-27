@@ -28,7 +28,7 @@ const Welcome = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 6 }}
+          transition={{ duration: 4 }}
         >
           <Box
             sx={{

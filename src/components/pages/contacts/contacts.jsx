@@ -17,10 +17,10 @@ const Contacts = () => {
   return (
     <Container id="contacts" maxWidth="xl" sx={{ paddingTop: "80px" }}>
       <motion.div initial="hidden" whileInView="visible">
-        <Box sx={{ color: "white", position: "relative" }}>
+        <Box sx={{ color: "white", position: "relative", overflow: "hidden" }}>
           <motion.div custom={2} variants={textAnimation}>
             <iframe
-              src="https://yandex.ru/map-widget/v1/-/CCUNnCDnoD"
+              src="https://yandex.ru/map-widget/v1/-/CCURQLvQWB"
               width="100%"
               height="600"
               frameBorder="0"

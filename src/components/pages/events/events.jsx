@@ -66,7 +66,7 @@ const Events = () => {
                     <EventButton
                       id={el.id}
                       click={handleClick}
-                      title={el.name}
+                      title={el.date + " " + el.name}
                     />
                   </motion.span>
                 ))}

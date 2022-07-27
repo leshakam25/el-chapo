@@ -5,11 +5,11 @@ import logo from "../../../image/logo.svg";
 import { motion } from "framer-motion";
 
 const textAnimation = {
-  hidden: { y: 100, opacity: 0 },
+  hidden: { y: 115, opacity: 0 },
   visible: (custom) => ({
     y: 0,
     opacity: 1,
-    transition: { duration: custom * 0.3, delay: custom * 0.2 },
+    transition: { duration: custom * 0.5, delay: custom * 0.1 },
   }),
 };
 const Footer = () => {
@@ -25,7 +25,7 @@ const Footer = () => {
             alignItems: "center",
           }}
         >
-          <motion.div custom={2} variants={textAnimation}>
+          <motion.div custom={3} variants={textAnimation}>
             <CardMedia sx={{ width: "80vw" }} component="img" src={logo} />
           </motion.div>
         </Box>
