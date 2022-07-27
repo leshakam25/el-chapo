@@ -34,8 +34,6 @@ const ModalForm = () => {
     setPeopleCount((prevState) => prevState + 1);
   };
 
-  console.log(peopleCount);
-
   return (
     <motion.div
       initial={{ y: 10, opacity: 0 }}
@@ -135,7 +133,6 @@ const ModalForm = () => {
               fontWeight="light"
               sx={{ pb: 1 }}
               variant="body2"
-              value={peopleCount}
             >
               Сколько человек
             </Typography>

@@ -28,86 +28,89 @@ const Events = () => {
       maxWidth="xl"
       sx={{ paddingTop: "80px", height: "600px" }}
     >
-      <Box
-        sx={{
-          color: "white",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-        }}
-      >
+      <div>
         <Box
           sx={{
             color: "white",
             display: "flex",
-            flexDirection: "column",
-            justifyContent: "left",
-            alignItems: "left",
-            width: "300px",
+            flexDirection: "row",
+            justifyContent: "space-between",
           }}
         >
-          {upcomingEvents &&
-            upcomingEvents.map((el, i) => (
-              <motion.span
-                variants={listVariants}
-                initial="hidden"
-                animate="visible"
-                key={"upcomingEvents" + el.id + i}
-              >
-                <EventButton id={el.id} click={handleClick} title={el.name} />
-              </motion.span>
-            ))}
-        </Box>
-        <Box sx={{ maxWidth: "60vw" }}>
-          {currentParty &&
-            currentParty.map((el, i) => (
-              <Box
-                key={"currentParty" + el.id + i}
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                }}
-              >
+          {/* eventlist */}
+          <Box
+            sx={{
+              color: "white",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            {upcomingEvents &&
+              upcomingEvents.map((el, i) => (
+                <motion.span
+                  variants={listVariants}
+                  initial="hidden"
+                  animate="visible"
+                  key={"upcomingEvents" + el.id + i}
+                >
+                  <EventButton id={el.id} click={handleClick} title={el.name} />
+                </motion.span>
+              ))}
+          </Box>
+          <Box sx={{ maxWidth: "60vw" }}>
+            {currentParty &&
+              currentParty.map((el, i) => (
                 <Box
+                  key={"currentParty" + el.id + i}
                   sx={{
-                    maxWidth: "30vw",
+                    display: "flex",
+
+                    flexWrap: "wrap",
                   }}
                 >
-                  <Typography
-                    variant="h4"
-                    fontFamily="oswald"
-                    fontWeight="Bold"
+                  <Box>
+                    <Typography
+                      variant="h4"
+                      fontFamily="oswald"
+                      fontWeight="Bold"
+                    >
+                      {el.name}
+                    </Typography>
+                    <Typography
+                      variant="h5"
+                      fontFamily="oswald"
+                      fontWeight="Bold"
+                    >
+                      {el.date}
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      fontFamily="oswald"
+                      fontWeight="light"
+                      sx={{ maxWidth: "400px" }}
+                    >
+                      {el.desc}
+                    </Typography>
+                  </Box>
+                  <motion.div
+                    whileHover={{ scale: 1.5, x: "-20vw" }}
+                    transition={{ duration: 0.5 }}
                   >
-                    {el.name}
-                  </Typography>
-                  <Typography
-                    variant="h5"
-                    fontFamily="oswald"
-                    fontWeight="Bold"
-                  >
-                    {el.date}
-                  </Typography>
-                  <Typography
-                    variant="body1"
-                    fontFamily="oswald"
-                    fontWeight="light"
-                  >
-                    {el.desc}
-                  </Typography>
+                    <CardMedia
+                      sx={{
+                        maxWidth: "600px",
+                        height: "auto",
+                        border: "4px solid white",
+                      }}
+                      component="img"
+                      src={el.img}
+                    />
+                  </motion.div>
                 </Box>
-                <CardMedia
-                  sx={{
-                    maxWidth: "600px",
-                    height: "auto",
-                  }}
-                  component="img"
-                  src={el.img}
-                />
-              </Box>
-            ))}
+              ))}
+          </Box>
         </Box>
-      </Box>
+      </div>
     </Container>
   );
 };

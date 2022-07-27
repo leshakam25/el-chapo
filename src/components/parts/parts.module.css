@@ -49,8 +49,8 @@
    font-family: Oswald;
    height: 40px;
    font-weight: 500;
+   cursor: pointer;
 }
-
 
 /* event */
 .eventButton{
@@ -64,19 +64,14 @@
    /* city select button */
    .cityButton{
       text-decoration: none;
-      background: inherit;
       color: gray;
-      border: inherit;
       font-family: 'Oswald';
-      font-size: 46px;
-
+      font-size: 40px;
    }
    .cityButtonOuter{
       text-decoration: none;
-      background: inherit;
       color: gray;
-      border: inherit;
       font-family: 'Oswald';
-      font-size: 46px;
-
+      font-size: 40px;
    }
+ 
