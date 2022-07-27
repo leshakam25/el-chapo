@@ -18,7 +18,7 @@ const style = {
   borderRadius: 1,
 };
 
-export const RegistryButton = forwardRef((props, ref) => {
+const RegistryButton = forwardRef((props, ref) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -45,4 +45,5 @@ export const RegistryButton = forwardRef((props, ref) => {
     </Box>
   );
 });
-export const MRegistryButton = motion(RegistryButton);
+
+export default RegistryButton;

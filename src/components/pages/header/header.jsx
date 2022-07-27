@@ -1,7 +1,7 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import { MRegistryButton } from "../../parts/buttons/registryButton";
+import RegistryButton from "../../parts/buttons/registryButton";
 import MenuButton from "../../parts/buttons/menuButton";
 import logo from "../../../image/logo.svg";
 import { Box } from "@mui/material";
@@ -9,7 +9,7 @@ import LogoButton from "../../parts/buttons/logoButton";
 
 export default function Header(props) {
   return (
-    <Box sx={{ flexGrow: 1, opacity: "0.9", zIndex: 9999999 }}>
+    <Box sx={{ flexGrow: 1, opacity: "0.9" }}>
       <AppBar position="fixed">
         <Toolbar
           sx={{
@@ -30,7 +30,7 @@ export default function Header(props) {
             <MenuButton title="Фото" href="#photo" />
             <MenuButton title="Контакты" href="#contacts" />
           </Box>
-          <MRegistryButton title="Забронировать" />
+          <RegistryButton title="Забронировать" />
         </Toolbar>
       </AppBar>
     </Box>
