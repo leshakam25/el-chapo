@@ -8,7 +8,7 @@ import Header from "../header/header";
 import BarMenu from "../menu/barMenu";
 import Welcome from "../welcome/welcome";
 
-const Spb = () => {
+const SpbGrande = () => {
   return (
     <>
       <Header />
@@ -23,4 +23,4 @@ const Spb = () => {
   );
 };
 
-export default Spb;
+export default SpbGrande;
