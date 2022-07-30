@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const ModalForm = () => {
   const {
     register,
-    formState: { errors, isValid },
+    formState: { errors },
     handleSubmit,
     reset,
   } = useForm({
@@ -41,7 +41,6 @@ const ModalForm = () => {
     })
       .then((result) => (result.ok === true ? result.text() : false))
       .then((data) => {
-        console.log("Success", data);
         reset();
         alert("Бронь создана!");
       })
