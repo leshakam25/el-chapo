@@ -6,6 +6,7 @@ import Footer from "../footer/footer";
 import Gallery from "../gallery/gallery";
 import Header from "../header/header";
 import BarMenu from "../menu/barMenu";
+import Poster from "../poster/poster";
 import Welcome from "../welcome/welcome";
 
 const SpbGrande = () => {
@@ -14,6 +15,7 @@ const SpbGrande = () => {
       <Header />
       <Welcome />
       <Events />
+      <Poster />
       <About />
       <BarMenu />
       <Gallery />
