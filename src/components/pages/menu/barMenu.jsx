@@ -1,9 +1,6 @@
 import { Box, Container, Typography, CardMedia } from "@mui/material";
 import React from "react";
-import chief from "../../../image/chief.webp";
 import { motion } from "framer-motion";
-import imagesData from "./imagesData";
-import Carousel from "better-react-carousel";
 import BarMenuButton from "../../parts/buttons/barMenuButton";
 
 const BarMenu = () => {
@@ -64,7 +61,7 @@ const BarMenu = () => {
               </Typography>
               <CardMedia
                 component="img"
-                src={chief}
+                src="https://i.ibb.co/9hgPtVh/chief.webp"
                 sx={{ maxWidth: "600px", my: 3 }}
               ></CardMedia>
 

@@ -1,139 +1,127 @@
-import image1 from "../../../image/photo/2022-07-05 00-57-01 (1).png";
-import image2 from "../../../image/photo/2022-07-05 00-57-01 (2).png";
-import image3 from "../../../image/photo/2022-07-05 00-57-01 (3).png";
-import image4 from "../../../image/photo/2022-07-05 00-57-01 (4).png";
-import image5 from "../../../image/photo/2022-07-05 00-57-01 (5).png";
-import image6 from "../../../image/photo/2022-07-05 00-57-01 (6).png";
-import image7 from "../../../image/photo/2022-07-05 00-57-01 (7).png";
-import image8 from "../../../image/photo/2022-07-05 00-57-01 (8).png";
-import image9 from "../../../image/photo/2022-07-05 00-57-01 (9).png";
-import image10 from "../../../image/photo/2022-07-05 00-57-01 (10).png";
-import image11 from "../../../image/photo/2022-07-05 00-57-01 (11).png";
-import image12 from "../../../image/photo/2022-07-05 00-57-01 (12).png";
-import image13 from "../../../image/photo/2022-07-05 00-57-01 (13).png";
-import image14 from "../../../image/photo/2022-07-05 00-57-01 (14).png";
-import image15 from "../../../image/photo/2022-07-05 00-57-01 (15).png";
-import image16 from "../../../image/photo/2022-07-05 00-57-01 (16).png";
-import image17 from "../../../image/photo/2022-07-05 00-57-01 (17).png";
-import image18 from "../../../image/photo/2022-07-05 00-57-01 (18).png";
-import image19 from "../../../image/photo/2022-07-05 00-57-01 (19).png";
-import image20 from "../../../image/photo/2022-07-05 00-57-01 (20).png";
-import image21 from "../../../image/photo/2022-07-05 00-57-01 (21).png";
-import image22 from "../../../image/photo/2022-07-05 00-57-01 (22).png";
-import image23 from "../../../image/photo/2022-07-05 00-57-01 (23).png";
-import image24 from "../../../image/photo/2022-07-05 00-57-01 (24).png";
-import image25 from "../../../image/photo/2022-07-05 00-57-01 (25).png";
-import image26 from "../../../image/photo/2022-07-05 00-57-01 (26).png";
-import image27 from "../../../image/photo/2022-07-05 00-57-01 (27).png";
-import image28 from "../../../image/photo/2022-07-05 00-57-01 (28).png";
-import image29 from "../../../image/photo/2022-07-05 00-57-01 (29).png";
-import image30 from "../../../image/photo/2022-07-05 00-57-01 (30).png";
-import image31 from "../../../image/photo/2022-07-05 00-57-01 (31).png";
-import image32 from "../../../image/photo/2022-07-05 00-57-01 (32).png";
-import image33 from "../../../image/photo/2022-07-05 00-57-01 (33).png";
-import image34 from "../../../image/photo/2022-07-05 00-57-01 (34).png";
-
 export const imagesData = [
   {
-    img: `${image1}`,
+    img: "https://i.ibb.co/n6wL0hH/2022-07-05-00-57-01-40.png",
   },
   {
-    img: `${image2}`,
+    img: "https://i.ibb.co/7vqrrZZ/2022-07-05-00-57-01-39.png",
   },
   {
-    img: `${image3}`,
+    img: "https://i.ibb.co/m4zwMhr/2022-07-05-00-57-01-38.png",
   },
   {
-    img: `${image4}`,
+    img: "https://i.ibb.co/LNc6YF7/2022-07-05-00-57-01-37.png",
   },
   {
-    img: `${image5}`,
+    img: "https://i.ibb.co/4dsfV7Z/2022-07-05-00-57-01-36.png",
   },
   {
-    img: `${image6}`,
+    img: "https://i.ibb.co/1LC2RM8/2022-07-05-00-57-01-35.png",
   },
   {
-    img: `${image7}`,
+    img: "https://i.ibb.co/kqc6v3w/2022-07-05-00-57-01-34.png",
   },
   {
-    img: `${image8}`,
+    img: "https://i.ibb.co/JHJbvgv/2022-07-05-00-57-01-33.png",
   },
   {
-    img: `${image9}`,
+    img: "https://i.ibb.co/JpPY9DC/2022-07-05-00-57-01-32.png",
   },
   {
-    img: `${image10}`,
+    img: "https://i.ibb.co/VLcJc79/2022-07-05-00-57-01-31.png",
   },
   {
-    img: `${image11}`,
+    img: "https://i.ibb.co/p0R01qV/2022-07-05-00-57-01-30.png",
   },
   {
-    img: `${image12}`,
+    img: "https://i.ibb.co/jfBQcLT/2022-07-05-00-57-01-29.png",
   },
   {
-    img: `${image13}`,
+    img: "https://i.ibb.co/F6rMwWn/2022-07-05-00-57-01-28.png",
   },
   {
-    img: `${image14}`,
+    img: "https://i.ibb.co/bXw2gKj/2022-07-05-00-57-01-27.png",
   },
   {
-    img: `${image15}`,
+    img: "https://i.ibb.co/wYyb1gG/2022-07-05-00-57-01-26.png",
   },
   {
-    img: `${image16}`,
+    img: "https://i.ibb.co/LCRRqcf/2022-07-05-00-57-01-25.png",
   },
   {
-    img: `${image17}`,
+    img: "https://i.ibb.co/yQpTV6C/2022-07-05-00-57-01-24.png",
   },
   {
-    img: `${image18}`,
+    img: "https://i.ibb.co/tJcSvfq/2022-07-05-00-57-01-23.png",
   },
   {
-    img: `${image19}`,
+    img: "https://i.ibb.co/mDzRq60/2022-07-05-00-57-01-22.png",
   },
   {
-    img: `${image20}`,
+    img: "https://i.ibb.co/WskNXK9/2022-07-05-00-57-01-21.png",
   },
   {
-    img: `${image21}`,
+    img: "https://i.ibb.co/Z8YgM3k/2022-07-05-00-57-01-20.png",
   },
   {
-    img: `${image22}`,
+    img: "https://i.ibb.co/LYgJjB5/2022-07-05-00-57-01-19.png",
   },
   {
-    img: `${image23}`,
+    img: "https://i.ibb.co/vsJrHRz/2022-07-05-00-57-01-18.png",
   },
   {
-    img: `${image24}`,
+    img: "https://i.ibb.co/wwLMNZ5/2022-07-05-00-57-01-17.png",
   },
   {
-    img: `${image25}`,
+    img: "https://i.ibb.co/nbRT5bj/2022-07-05-00-57-01-16.png",
   },
   {
-    img: `${image26}`,
+    img: "https://i.ibb.co/xh82Xp6/2022-07-05-00-57-01-15.png",
   },
   {
-    img: `${image27}`,
+    img: "https://i.ibb.co/HC9MkCV/2022-07-05-00-57-01-14.png",
   },
   {
-    img: `${image28}`,
+    img: "https://i.ibb.co/xFDZk6b/2022-07-05-00-57-01-13.png",
   },
   {
-    img: `${image29}`,
+    img: "https://i.ibb.co/8XHJXsj/2022-07-05-00-57-01-12.png",
   },
   {
-    img: `${image30}`,
+    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-11.png",
   },
   {
-    img: `${image31}`,
+    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-10.png",
   },
   {
-    img: `${image32}`,
+    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-9.png",
   },
   {
-    img: `${image33}`,
+    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-8.png",
   },
   {
-    img: `${image34}`,
+    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-7.png",
+  },
+  {
+    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-6.png",
+  },
+  {
+    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-5.png",
+  },
+  {
+    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-4.png",
+  },
+  {
+    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-3.png",
+  },
+  {
+    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-2.png",
+  },
+  {
+    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-1.png",
+  },
+  {
+    img: "https://i.ibb.co/4m40v6R/2022-07-05-00-57-01.png",
   },
 ];
+
+export default imagesData;

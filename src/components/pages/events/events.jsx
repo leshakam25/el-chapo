@@ -35,7 +35,7 @@ const Events = () => {
     <Container
       id="events"
       maxWidth="xl"
-      sx={{ height: "600px", marginBottom: "120px" }}
+      sx={{ height: "600px", width: "100vw", marginBottom: "120px" }}
     >
       <motion.div initial="hidden" whileInView="visible">
         <motion.div custom={1} variants={textAnimation}>

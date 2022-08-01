@@ -16,7 +16,7 @@ const SpbGrande = () => {
       <Welcome />
       <Events />
       <Poster />
-      <About />
+      {/* <About /> */}
       <BarMenu />
       <Gallery />
       <Contacts />

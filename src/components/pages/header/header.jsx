@@ -1,6 +1,5 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import RegistryButton from "../../parts/buttons/registryButton";
@@ -42,7 +41,7 @@ export default function Header(props) {
             <motion.div custom={2} variants={textAnimation}>
               <Box sx={{ display: "flex" }}>
                 <MenuButton title="Мероприятия" href="#events" />
-                <MenuButton title="О нас" href="#about" />
+                {/* <MenuButton title="О нас" href="#about" /> */}
                 <MenuButton title="Меню" href="#menu" />
                 <MenuButton title="Фото" href="#photo" />
                 <MenuButton title="Контакты" href="#contacts" />
