@@ -18,8 +18,13 @@ const EventButton = (props) => {
       }}
       className={s.eventButton}
     >
-      <Typography fontFamily="Oswald" fontSize="24px">
-        {props.title}
+      <Typography
+        fontFamily="Oswald"
+        fontSize="24px"
+        textAlign="left"
+        sx={{ borderBottom: "2px solid white" }}
+      >
+        {props.title} <br /> {props.date}
       </Typography>
     </motion.button>
   );
