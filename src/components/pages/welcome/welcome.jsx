@@ -8,9 +8,9 @@ import girlColor from "../../../image/girl-color.png";
 import RegistryButton from "../../parts/buttons/registryButton";
 
 const textAnimation = {
-  hidden: { x: -10, opacity: 0 },
+  hidden: { y: -10, opacity: 0 },
   visible: (custom) => ({
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: { duration: custom * 0.5, delay: custom * 0.2 },
   }),
@@ -45,9 +45,9 @@ const Welcome = () => {
                 alignItems: "center",
               }}
             >
-              <CardMedia height="800px" component="img" src={girlMono} />
+              <CardMedia height="900px" component="img" src={girlMono} />
               <CardMedia
-                height="800px"
+                height="900px"
                 component="img"
                 src={girlColor}
                 sx={{ ml: "-1px" }}
@@ -146,7 +146,7 @@ const Welcome = () => {
                     sx={{
                       height: "3px",
                       bgcolor: "#f2ee6f",
-                      width: "320px",
+                      maxWidth: "510px",
                       margin: "12px 0",
                     }}
                   ></Box>

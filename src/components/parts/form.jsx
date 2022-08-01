@@ -5,6 +5,8 @@ import FormButton from "./buttons/formButton";
 import PrivacyButton from "./buttons/privacyButton";
 import s from "./parts.module.css";
 import { motion } from "framer-motion";
+import RemoveCircleOutlineOutlinedIcon from "@mui/icons-material/RemoveCircleOutlineOutlined";
+import AddCircleOutlineOutlinedIcon from "@mui/icons-material/AddCircleOutlineOutlined";
 
 const ModalForm = () => {
   const {
@@ -49,9 +51,9 @@ const ModalForm = () => {
 
   return (
     <motion.div
-      initial={{ y: 10, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     >
       <Typography fontFamily="Oswald" variant="h4" textAlign="center">
         Заявка на бронь столика
@@ -155,12 +157,11 @@ const ModalForm = () => {
               <Button
                 size="large"
                 sx={{
-                  fontWeight: "Bold",
                   color: "black",
                 }}
                 onClick={countDown}
               >
-                -
+                <RemoveCircleOutlineOutlinedIcon />
               </Button>
               <TextField
                 sx={{ width: "60px" }}
@@ -171,12 +172,8 @@ const ModalForm = () => {
                   required: true,
                 })}
               />
-              <Button
-                size="large"
-                sx={{ color: "black", fontWeight: "Bold" }}
-                onClick={countUp}
-              >
-                +
+              <Button size="large" sx={{ color: "black" }} onClick={countUp}>
+                <AddCircleOutlineOutlinedIcon />
               </Button>
             </Box>
           </Box>
@@ -203,7 +200,7 @@ const ModalForm = () => {
           >
             Нажимая кнопку отправить заявку вы соглашаетесь с нашей
             <PrivacyButton
-              title="политикой конфеденциальности"
+              title="политикой конфиденциальности"
               color="black"
               fz="11px"
             />

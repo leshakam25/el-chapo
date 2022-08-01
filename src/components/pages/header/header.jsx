@@ -20,7 +20,9 @@ const textAnimation = {
 
 export default function Header(props) {
   return (
-    <Box sx={{ flexGrow: 1, opacity: "0.9" }}>
+    <Box
+      sx={{ flexGrow: 1, opacity: "0.9", zIndex: 100, position: "relative" }}
+    >
       <motion.div initial="hidden" animate="visible">
         <AppBar position="fixed">
           <Toolbar

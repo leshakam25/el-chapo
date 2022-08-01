@@ -5,7 +5,7 @@ import EventButton from "../../parts/buttons/eventButton";
 import { eventData } from "./eventsData";
 
 const textAnimation = {
-  hidden: { x: 100, opacity: 0 },
+  hidden: { x: -100, opacity: 0 },
   visible: (custom) => ({
     x: 0,
     opacity: 1,
@@ -35,9 +35,28 @@ const Events = () => {
     <Container
       id="events"
       maxWidth="xl"
-      sx={{ paddingTop: "80px", height: "600px" }}
+      sx={{ height: "600px", marginBottom: "120px" }}
     >
       <motion.div initial="hidden" whileInView="visible">
+        <motion.div custom={1} variants={textAnimation}>
+          <Typography
+            gutterBottom
+            variant="h2"
+            color="white"
+            fontFamily="Oswald"
+            fontWeight="bold"
+          >
+            МЕРОПРИЯТИЯ
+          </Typography>
+          <Box
+            sx={{
+              height: "3px",
+              bgcolor: "#f2ee6f",
+              maxWidth: "380px",
+              mb: 4,
+            }}
+          ></Box>
+        </motion.div>
         <Box
           sx={{
             color: "white",

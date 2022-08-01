@@ -26,8 +26,16 @@ const Gallery = () => {
             >
               ФОТО
             </Typography>
+            <Box
+              sx={{
+                height: "3px",
+                bgcolor: "#f2ee6f",
+                maxWidth: "144px",
+                mb: 6,
+              }}
+            ></Box>
+            <BtrCarousel />
           </motion.div>
-          <BtrCarousel />
         </Box>
       </motion.div>
     </Container>

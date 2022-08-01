@@ -71,7 +71,7 @@ const Contacts = () => {
               <br />
               <Box>
                 <PrivacyButton
-                  title={"Политика конфеденциальности"}
+                  title="Политика конфиденциальности"
                   color="white"
                   fz="14px"
                 />

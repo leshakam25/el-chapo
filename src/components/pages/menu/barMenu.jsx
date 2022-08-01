@@ -4,6 +4,7 @@ import chief from "../../../image/chief.webp";
 import { motion } from "framer-motion";
 import imagesData from "./imagesData";
 import Carousel from "better-react-carousel";
+import BarMenuButton from "../../parts/buttons/barMenuButton";
 
 const BarMenu = () => {
   const textAnimation = {
@@ -22,12 +23,12 @@ const BarMenu = () => {
             color: "white",
             display: "flex",
             flexDirection: "row",
-            justifyContent: "space-between",
+            justifyContent: "left",
           }}
         >
           {/* left */}
           <motion.div custom={1} variants={textAnimation}>
-            <Box sx={{ maxWidth: "320px" }}>
+            <Box sx={{ maxWidth: "720px" }}>
               <Box>
                 <Typography
                   sx={{ margin: "12px 0", fontFamily: "Oswald" }}
@@ -38,7 +39,7 @@ const BarMenu = () => {
                 </Typography>
               </Box>
               <Box
-                sx={{ height: "3px", bgcolor: "#f2ee6f", width: "220px" }}
+                sx={{ height: "3px", bgcolor: "#f2ee6f", width: "315px" }}
               ></Box>
               <Box sx={{ margin: "12px 0" }}>
                 <Typography
@@ -51,19 +52,22 @@ const BarMenu = () => {
                   Подача эксклюзивных блюд от нашего шеф-повара, перенесёт вас в
                   изысканный мир мексиканской кухни
                 </Typography>
+                <BarMenuButton title="Смотреть меню Эль-Чапо" />
               </Box>
             </Box>
           </motion.div>
+
           <motion.div custom={2} variants={textAnimation}>
-            <Box sx={{ maxWidth: "400px" }}>
+            <Box sx={{ maxWidth: "500px", m: 12 }}>
+              <Typography variant="h4" fontFamily="Oswald" gutterBottom>
+                Дэвид Алехандро
+              </Typography>
               <CardMedia
                 component="img"
                 src={chief}
-                sx={{ width: "400px" }}
+                sx={{ maxWidth: "600px", my: 3 }}
               ></CardMedia>
-              <Typography variant="h5" fontFamily="Oswald">
-                Дэвид Алехандро
-              </Typography>
+
               <Typography
                 textAlign="justify"
                 variant="body1"
@@ -75,24 +79,6 @@ const BarMenu = () => {
                 рецепторы в путешествие по Латинской Америке. Далеко ходить не
                 потребуется"
               </Typography>
-            </Box>
-          </motion.div>
-
-          {/* right */}
-          <motion.div custom={3} variants={textAnimation}>
-            <Box sx={{ maxWidth: "600px" }}>
-              <Carousel cols={1} rows={1} gap={0} loop>
-                {imagesData &&
-                  imagesData.map((el, i) => (
-                    <Carousel.Item key={"btrCarousel" + i}>
-                      <CardMedia
-                        component="img"
-                        image={el.img}
-                        alt="no photo"
-                      />
-                    </Carousel.Item>
-                  ))}
-              </Carousel>
             </Box>
           </motion.div>
         </Box>
