@@ -20,7 +20,7 @@ const BarMenu = () => {
             color: "white",
             display: "flex",
             flexDirection: "row",
-            justifyContent: "left",
+            justifyContent: "space-between",
           }}
         >
           {/* left */}
@@ -41,13 +41,30 @@ const BarMenu = () => {
               <Box sx={{ margin: "12px 0" }}>
                 <Typography
                   fontFamily="Oswald"
-                  fontWeight="light"
+                  variant="h4"
+                  textAlign="justify"
+                  color="#f2ee6f"
+                  fontWeight="bold"
+                >
+                  -30% на всё меню!
+                </Typography>
+                <br />
+                <Typography
+                  fontFamily="Oswald"
                   variant="body1"
-                  fontSize="18px"
+                  textAlign="justify"
+                  gutterBottom
+                >
+                  Каждый будний день с 12:00 до 17:00 <br /> Поработали над
+                  отдачей, чтобы исключить задержки. <br /> <br />
+                  Топовые блюда от нашего шефа по лучшей цене???
+                </Typography>
+                <Typography
+                  fontFamily="Oswald"
+                  variant="h5"
                   textAlign="justify"
                 >
-                  Подача эксклюзивных блюд от нашего шеф-повара, перенесёт вас в
-                  изысканный мир мексиканской кухни
+                  С-ПБ / Литейный, 57
                 </Typography>
                 <BarMenuButton title="Смотреть меню Эль-Чапо" />
               </Box>

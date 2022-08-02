@@ -93,7 +93,7 @@ const Events = () => {
             </Box>
           </motion.div>
           <motion.div custom={2} variants={textAnimation}>
-            <Box sx={{ maxWidth: "60vw" }}>
+            <Box sx={{ maxWidth: "80vw" }}>
               {currentParty &&
                 currentParty.map((el, i) => (
                   <Box
@@ -101,6 +101,8 @@ const Events = () => {
                     sx={{
                       display: "flex",
                       flexWrap: "wrap",
+                      flexDirection: "row",
+                      justifyContent: "center",
                     }}
                   >
                     <Box>
@@ -129,7 +131,7 @@ const Events = () => {
                     </Box>
                     <CardMedia
                       sx={{
-                        maxWidth: "600px",
+                        maxWidth: "400px",
                         height: "auto",
                         border: "4px solid white",
                         ml: 10,

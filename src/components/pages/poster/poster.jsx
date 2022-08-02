@@ -15,7 +15,7 @@ const textAnimation = {
 
 const Poster = () => {
   return (
-    <Container id="events" maxWidth="xl">
+    <Container maxWidth="xl">
       <motion.div initial="hidden" whileInView="visible">
         <motion.div custom={1} variants={textAnimation}>
           <Typography
