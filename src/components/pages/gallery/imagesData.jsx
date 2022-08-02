@@ -87,36 +87,6 @@ export const imagesData = [
     img: "https://i.ibb.co/8XHJXsj/2022-07-05-00-57-01-12.png",
   },
   {
-    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-11.png",
-  },
-  {
-    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-10.png",
-  },
-  {
-    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-9.png",
-  },
-  {
-    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-8.png",
-  },
-  {
-    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-7.png",
-  },
-  {
-    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-6.png",
-  },
-  {
-    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-5.png",
-  },
-  {
-    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-4.png",
-  },
-  {
-    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-3.png",
-  },
-  {
-    img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-2.png",
-  },
-  {
     img: "https://i.ibb.co/PmfhX2k/2022-07-05-00-57-01-1.png",
   },
   {

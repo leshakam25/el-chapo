@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useEffect } from "react";
 import CityButton from "../../parts/buttons/cityButton";
 import CityButtonOuter from "../../parts/buttons/cityButtonOuter";
 
@@ -14,6 +14,12 @@ const textAnimation = {
 };
 
 const CitySelect = (props) => {
+  useEffect(() => {
+    if (window.screen.width < 700) {
+      window.location = "http://xn--80avkd2b3af.xn--p1ai/";
+    }
+  }, []);
+
   return (
     <Box
       sx={{
