@@ -15,7 +15,7 @@ const textAnimation = {
 
 const Poster = () => {
   return (
-    <Container maxWidth="xl">
+    <Container id="events" maxWidth="xl">
       <motion.div initial="hidden" whileInView="visible">
         <motion.div custom={1} variants={textAnimation}>
           <Typography
@@ -45,14 +45,7 @@ const Poster = () => {
               <ReactPlayer
                 height="560px"
                 width="320px"
-                url="https://youtube.com/shorts/s-lzbjj5Gzg?feature=share"
-              />
-            </Box>
-            <Box sx={{ mx: 6 }}>
-              <ReactPlayer
-                height="560px"
-                width="320px"
-                url="https://youtube.com/shorts/fEfdbYfCG3Q?feature=share"
+                url="https://youtube.com/shorts/WfkWg9HWbUg?feature=share"
               />
             </Box>
           </Box>

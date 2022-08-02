@@ -15,7 +15,7 @@ const SpbGrande = () => {
     <>
       <Header logo={logo} />
       <Welcome />
-      <Events />
+      {/* <Events />*/}
       <Poster />
       {/* <About /> */}
       <BarMenu />
