@@ -48,6 +48,13 @@ const Poster = () => {
                 url="https://youtube.com/shorts/WfkWg9HWbUg?feature=share"
               />
             </Box>
+            <Box sx={{ mx: 6 }}>
+              <ReactPlayer
+                height="560px"
+                width="320px"
+                url="https://youtube.com/shorts/Hog_6PQq-E4?feature=share"
+              />
+            </Box>
           </Box>
         </motion.div>
       </motion.div>

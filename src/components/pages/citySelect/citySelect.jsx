@@ -15,7 +15,7 @@ const textAnimation = {
 
 const CitySelect = (props) => {
   useEffect(() => {
-    if (window.screen.width < 700) {
+    if (window.screen.width < 426) {
       window.location = "http://xn--80avkd2b3af.xn--p1ai/";
     }
   }, []);
@@ -47,10 +47,7 @@ const CitySelect = (props) => {
           <CityButton title="Санкт-Петербург Grande" link="spb-grande" />
         </motion.div>
         <motion.div custom={3} variants={textAnimation}>
-          <CityButtonOuter
-            title="Санкт-Петербург Lomonosova"
-            link="http://xn--80avkd2b3af.xn--p1ai/"
-          />
+          <CityButton title="Санкт-Петербург Lomonosova" link="spb-lomo" />
         </motion.div>
         <motion.div custom={4} variants={textAnimation}>
           <CityButtonOuter
