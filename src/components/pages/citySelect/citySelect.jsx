@@ -15,7 +15,7 @@ const textAnimation = {
 
 const CitySelect = (props) => {
   useEffect(() => {
-    if (window.screen.width < 426) {
+    if (window.screen.width <= 425) {
       window.location = "http://xn--80avkd2b3af.xn--p1ai/";
     }
   }, []);
