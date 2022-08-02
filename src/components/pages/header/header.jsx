@@ -4,7 +4,6 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import RegistryButton from "../../parts/buttons/registryButton";
 import MenuButton from "../../parts/buttons/menuButton";
-import logo from "../../../image/logo.svg";
 import { Box } from "@mui/material";
 import LogoButton from "../../parts/buttons/logoButton";
 
@@ -35,7 +34,7 @@ export default function Header(props) {
           >
             <motion.div custom={1} variants={textAnimation}>
               <Box>
-                <LogoButton href="#welcome" logo={logo} />
+                <LogoButton href="#welcome" logo={props.logo} />
               </Box>
             </motion.div>
             <motion.div custom={2} variants={textAnimation}>

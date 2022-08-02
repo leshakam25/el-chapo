@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import s from "../parts.module.css";
 
 const LogoButton = (props) => {
   return (
-    <a href={props.href}>
+    <a className={s.LogoButton} href={props.href}>
       <motion.img
         whileHover={{
           scale: 1.2,

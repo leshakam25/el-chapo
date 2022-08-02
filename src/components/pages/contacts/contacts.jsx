@@ -19,34 +19,49 @@ const Contacts = () => {
       <motion.div initial="hidden" whileInView="visible">
         <Box sx={{ color: "white", position: "relative", overflow: "hidden" }}>
           <motion.div custom={2} variants={textAnimation}>
-            <iframe
-              src="https://yandex.ru/map-widget/v1/-/CCURQLvQWB"
-              width="100%"
-              height="600"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              <iframe
+                src="https://yandex.ru/map-widget/v1/-/CCURQLvQWB"
+                width="97%"
+                height="600"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </Box>
           </motion.div>
           <motion.div custom={2} variants={textAnimation}>
             <Box
               sx={{
                 position: "absolute",
-                top: "10%",
+                top: "8%",
                 left: "5%",
                 bgcolor: "black",
-                padding: "60px 80px",
+                padding: "40px 60px",
                 paddingRight: "180px",
               }}
             >
               <Typography
-                variant="h5"
+                variant="h2"
                 fontFamily="Oswald"
                 fontWeight="normal"
                 gutterBottom
               >
                 КОНТАКТЫ
               </Typography>
-              <br />{" "}
+              <Box
+                sx={{
+                  height: "3px",
+                  bgcolor: "#f2ee6f",
+                  maxWidth: "100%",
+                  mb: 6,
+                }}
+              ></Box>
               <Typography fontWeight="normal" fontFamily="Oswald">
                 Мы находимся:
               </Typography>

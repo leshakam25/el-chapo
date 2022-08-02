@@ -1,8 +1,15 @@
-import { Container } from "@mui/material";
 import React from "react";
+import Header from "../header/header";
+import WelcomeLomo from "../welcome/welcomeLomo";
+import logo from "../../../image/logo.svg";
 
 const SpbLomo = () => {
-  return <Container>SpbLomo</Container>;
+  return (
+    <>
+      <Header logo={logo} />
+      <WelcomeLomo />
+    </>
+  );
 };
 
 export default SpbLomo;

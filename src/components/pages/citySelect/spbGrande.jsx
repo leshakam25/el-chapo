@@ -8,11 +8,12 @@ import Header from "../header/header";
 import BarMenu from "../menu/barMenu";
 import Poster from "../poster/poster";
 import Welcome from "../welcome/welcome";
+import logo from "../../../image/logo.svg";
 
 const SpbGrande = () => {
   return (
     <>
-      <Header />
+      <Header logo={logo} />
       <Welcome />
       <Events />
       <Poster />

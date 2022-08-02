@@ -3,7 +3,7 @@ import React from "react";
 import "./App.css";
 import CitySelect from "./components/pages/citySelect/citySelect";
 import SpbGrande from "./components/pages/citySelect/spbGrande";
-import SpbLomo from "./components/pages/citySelect/spbGrande";
+import SpbLomo from "./components/pages/citySelect/spbLomo";
 
 const App = () => {
   return (

@@ -34,8 +34,6 @@ const ModalForm = () => {
       number: peopleCount,
     };
 
-    console.log(body);
-
     fetch("/ajax.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
