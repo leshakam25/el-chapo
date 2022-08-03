@@ -33,16 +33,16 @@ export default function BarMenuButton(props) {
           color: "white",
           border: "none",
           textDecoration: "none",
-          p: 4,
-          my: 4,
-          width: "100%",
+          p: 1,
+          my: 2,
+          width: "280px",
           border: "2px solid white",
         }}
         onClick={handleClickOpen}
       >
         <Typography
           color="white"
-          variant="h4"
+          variant="h6"
           fontFamily="Oswald"
           textAlign="left"
         >

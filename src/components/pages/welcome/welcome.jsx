@@ -4,6 +4,8 @@ import React from "react";
 import Timer from "./timer";
 import logo from "../../../image/logo2.svg";
 import RegistryButton from "../../parts/buttons/registryButton";
+import monoBg from "../../../image/bgSpbMono.png";
+import colorBg from "../../../image/bgSpbColor.png";
 
 const textAnimation = {
   hidden: { y: -10, opacity: 0 },
@@ -31,7 +33,7 @@ const Welcome = () => {
           <Box
             sx={{
               position: "absolute",
-              left: "20%",
+              left: "17%",
             }}
           >
             <Box
@@ -43,15 +45,11 @@ const Welcome = () => {
                 alignItems: "center",
               }}
             >
+              <CardMedia height="900px" component="img" src={monoBg} />
               <CardMedia
                 height="900px"
                 component="img"
-                src="https://i.ibb.co/phvBpmB/girl-mono.png"
-              />
-              <CardMedia
-                height="900px"
-                component="img"
-                src="https://i.ibb.co/djJZS5L/girl-color.png"
+                src={colorBg}
                 sx={{ ml: "-1px" }}
               />
             </Box>
@@ -112,7 +110,6 @@ const Welcome = () => {
                   justifyContent: "center",
                   alignItems: "left",
                   position: "releative",
-                  bgcolor: "black",
                   p: "20px 40px",
                 }}
               >
@@ -122,7 +119,7 @@ const Welcome = () => {
                     gutterBottom
                     fontFamily="Oswald"
                     fontWeight="450"
-                    sx={{ margin: "12px 0" }}
+                    sx={{ margin: "12px 0", textShadow: "3px 3px 3px #000" }}
                   >
                     ДОБРО ПОЖАЛОВАТЬ В МЕКСИКУ!
                   </Typography>
@@ -132,7 +129,7 @@ const Welcome = () => {
                     variant="body1"
                     fontFamily="Oswald"
                     gutterBottom
-                    sx={{ margin: "12px 0" }}
+                    sx={{ margin: "12px 0", textShadow: "2px 2px 1px #000" }}
                   >
                     EL Chapo Grande – это иммерсивный бар, где каждый может
                     погрузиться в мир мексиканской культуры и её незабываемого
@@ -153,7 +150,7 @@ const Welcome = () => {
                     }}
                   ></Box>
                   <Typography
-                    sx={{ margin: "12px 0" }}
+                    sx={{ margin: "12px 0", textShadow: "2px 2px 1px #000" }}
                     fontFamily="Oswald"
                     variant="body1"
                     fontWeight="normal"
