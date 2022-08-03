@@ -4,8 +4,6 @@ import React from "react";
 import Timer from "./timer";
 import logo from "../../../image/logo2.svg";
 import RegistryButton from "../../parts/buttons/registryButton";
-import monoBg from "../../../image/bgSpbMono.png";
-import colorBg from "../../../image/bgSpbColor.png";
 
 const textAnimation = {
   hidden: { y: -10, opacity: 0 },
@@ -33,7 +31,7 @@ const Welcome = () => {
           <Box
             sx={{
               position: "absolute",
-              left: "17%",
+              left: "15%",
             }}
           >
             <Box
@@ -45,13 +43,17 @@ const Welcome = () => {
                 alignItems: "center",
               }}
             >
-              <CardMedia height="900px" component="img" src={monoBg} />
               <CardMedia
                 height="900px"
                 component="img"
-                src={colorBg}
-                sx={{ ml: "-1px" }}
+                src="https://i.postimg.cc/4N1yfCSJ/image-223-1.png"
               />
+              {/* <CardMedia
+                height="900px"
+                component="img"
+                src="https://i.postimg.cc/KYCvqmR5/image-223.png"
+                sx={{ ml: "-1px" }}
+              /> */}
             </Box>
           </Box>
         </motion.div>
@@ -119,7 +121,7 @@ const Welcome = () => {
                     gutterBottom
                     fontFamily="Oswald"
                     fontWeight="450"
-                    sx={{ margin: "12px 0", textShadow: "3px 3px 3px #000" }}
+                    sx={{ margin: "12px 0" }}
                   >
                     ДОБРО ПОЖАЛОВАТЬ В МЕКСИКУ!
                   </Typography>
@@ -129,7 +131,7 @@ const Welcome = () => {
                     variant="body1"
                     fontFamily="Oswald"
                     gutterBottom
-                    sx={{ margin: "12px 0", textShadow: "2px 2px 1px #000" }}
+                    sx={{ margin: "12px 0" }}
                   >
                     EL Chapo Grande – это иммерсивный бар, где каждый может
                     погрузиться в мир мексиканской культуры и её незабываемого
@@ -150,7 +152,7 @@ const Welcome = () => {
                     }}
                   ></Box>
                   <Typography
-                    sx={{ margin: "12px 0", textShadow: "2px 2px 1px #000" }}
+                    sx={{ margin: "12px 0" }}
                     fontFamily="Oswald"
                     variant="body1"
                     fontWeight="normal"

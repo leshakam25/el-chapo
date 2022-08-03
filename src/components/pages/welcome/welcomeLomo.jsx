@@ -43,7 +43,7 @@ const WelcomeLomo = () => {
               sx={{ zIndex: -1 }}
               height="900px"
               component="img"
-              src="https://i.ibb.co/7R1R0XL/colorBg.jpg"
+              src="https://i.postimg.cc/YCpLtMN3/colorBg.jpg"
             />
           </Box>
         </motion.div>

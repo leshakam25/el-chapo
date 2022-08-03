@@ -98,6 +98,7 @@ const Events = () => {
                   flexWrap: "wrap",
                   flexDirection: "row",
                   justifyContent: "center",
+                  alignItems: "center",
                 }}
               >
                 <Box>
@@ -126,9 +127,8 @@ const Events = () => {
                 </Box>
                 <CardMedia
                   sx={{
-                    maxWidth: "400px",
+                    maxWidth: "600px",
                     height: "auto",
-                    border: "4px solid white",
                     ml: 10,
                   }}
                   component="img"

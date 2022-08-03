@@ -29,7 +29,8 @@ const CitySelect = (props) => {
         alignItems: "center",
         height: "100vh",
         width: "100vw",
-        bgcolor: "black",
+        background:
+          "https://thumb.tildacdn.com/tild3065-3230-4131-b131-353762643166/-/cover/528x770/center/center/-/format/webp/_.png",
       }}
     >
       <motion.div initial="hidden" whileInView="visible">
