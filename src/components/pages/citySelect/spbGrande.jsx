@@ -1,5 +1,5 @@
 import React from "react";
-import About from "../about/about";
+// import About from "../about/about";
 import Contacts from "../contacts/contacts";
 import Events from "../events/events";
 import Footer from "../footer/footer";

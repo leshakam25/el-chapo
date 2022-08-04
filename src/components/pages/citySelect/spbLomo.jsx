@@ -1,7 +1,8 @@
 import React from "react";
-import Header from "../header/header";
-import logo from "../../../image/logo.svg";
+// import Header from "../header/header";
+// import logo from "../../../image/logo.svg";
 import { CardMedia } from "@mui/material";
+import bg from "../../../image/welcomeLomoBg.png";
 
 const SpbLomo = () => {
   return (
@@ -10,7 +11,7 @@ const SpbLomo = () => {
       <WelcomeLomo /> */}
       <CardMedia
         component="img"
-        src="https://i.postimg.cc/tC7GzV71/welcome-Lomo-Bg.png"
+        src={bg}
         sx={{ height: "100vh", width: "100vw" }}
       />
     </>

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import PrivacyButton from "../../parts/buttons/privacyButton";
