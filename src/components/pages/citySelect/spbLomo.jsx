@@ -10,7 +10,7 @@ const SpbLomo = () => {
       <WelcomeLomo /> */}
       <CardMedia
         component="img"
-        src="https://i.postimg.cc/YCpLtMN3/colorBg.jpg"
+        src="https://i.postimg.cc/tC7GzV71/welcome-Lomo-Bg.png"
         sx={{ height: "100vh", width: "100vw" }}
       />
     </>

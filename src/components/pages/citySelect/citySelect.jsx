@@ -49,7 +49,7 @@ const CitySelect = (props) => {
           <CityButton title="Санкт-Петербург Grande" link="spb-grande" />
         </motion.div>
         <motion.div custom={3} variants={textAnimation}>
-          <CityButton title="Санкт-Петербург Lomonosova" link="spb-lomo" />
+          <CityButtonOuter title="Санкт-Петербург Lomonosova" link="spb-lomo" />
         </motion.div>
         <motion.div custom={4} variants={textAnimation}>
           <CityButtonOuter
