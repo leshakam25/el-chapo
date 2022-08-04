@@ -27,6 +27,7 @@ const Contacts = () => {
           }}
         >
           <iframe
+            title="map"
             src="https://yandex.ru/map-widget/v1/-/CCURQLvQWB"
             width="97%"
             height="600"

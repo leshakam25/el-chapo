@@ -27,6 +27,7 @@ export default function Header(props) {
             sx={{
               display: "flex",
               flexDirection: "row",
+              flexWrap: "wrap",
               justifyContent: "space-between",
               alignItems: "center",
               backgroundColor: "#111",
@@ -38,7 +39,9 @@ export default function Header(props) {
               </Box>
             </motion.div>
             <motion.div custom={2} variants={textAnimation}>
-              <Box sx={{ display: "flex" }}>
+              <Box
+                sx={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
+              >
                 <MenuButton title="Мероприятия" href="#events" />
                 {/* <MenuButton title="О нас" href="#about" /> */}
                 <MenuButton title="Меню" href="#menu" />

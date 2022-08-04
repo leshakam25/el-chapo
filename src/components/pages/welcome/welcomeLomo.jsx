@@ -32,15 +32,9 @@ const WelcomeLomo = () => {
             sx={{
               position: "absolute",
               left: "22%",
-              display: "flex",
-              flexDirection: "row",
-              flexWrap: "nowrap",
-              justifyContent: "center",
-              alignItems: "center",
             }}
           >
             <CardMedia
-              sx={{ zIndex: -1 }}
               height="900px"
               component="img"
               src="https://i.postimg.cc/YCpLtMN3/colorBg.jpg"

@@ -19,7 +19,6 @@ const ModalForm = () => {
   });
 
   const [peopleCount, setPeopleCount] = useState(1);
-
   const countDown = () => {
     setPeopleCount((prevState) => prevState - 1);
   };

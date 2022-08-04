@@ -75,6 +75,7 @@ const Welcome = () => {
               display: "flex",
               flexDirection: "row",
               justifyContent: "space-around",
+              flexWrap: "wrap",
             }}
           >
             {/* left */}
@@ -110,9 +111,11 @@ const Welcome = () => {
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "center",
+                  flexWrap: "wrap",
                   alignItems: "left",
                   position: "releative",
                   p: "20px 40px",
+                  bgcolor: "black",
                 }}
               >
                 <motion.div custom={1} variants={textAnimation}>

@@ -31,7 +31,6 @@ export default function BarMenuButton(props) {
       <Button
         sx={{
           color: "white",
-          border: "none",
           textDecoration: "none",
           p: 1,
           my: 2,

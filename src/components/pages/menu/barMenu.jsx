@@ -1,6 +1,6 @@
 import { Box, Container, Typography, CardMedia } from "@mui/material";
 import React from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import BarMenuButton from "../../parts/buttons/barMenuButton";
 
 const BarMenu = () => {
@@ -21,6 +21,7 @@ const BarMenu = () => {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
+          flexWrap: "wrap",
         }}
       >
         {/* left */}

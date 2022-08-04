@@ -1,8 +1,9 @@
 import { Box, CardMedia, Container, Typography } from "@mui/material";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import EventButton from "../../parts/buttons/eventButton";
 import { eventData } from "./eventsData";
+import CityButtonOuter from "../../parts/buttons/cityButtonOuter";
 
 // const textAnimation = {
 //   hidden: { x: -100, opacity: 0 },
@@ -12,30 +13,33 @@ import { eventData } from "./eventsData";
 //     transition: { duration: custom * 0.3, delay: custom * 0.2 },
 //   }),
 // };
-
+// const listVariants = {
+//   visible: (i) => ({
+//     opacity: 1,
+//     transition: {
+//       delay: i * 1,
+//     },
+//   }),
+//   hidden: { opacity: 0 },
+// };
 const Events = () => {
-  const [upcomingEvents, setUpcomingEvents] = useState(eventData);
+  const [upcomingEvents] = useState(eventData);
   const [currentParty, setCurrentParty] = useState([eventData[0]]);
 
   const handleClick = (id) => {
-    setCurrentParty([upcomingEvents.find((e) => e.id == id)]);
-  };
-
-  const listVariants = {
-    visible: (i) => ({
-      opacity: 1,
-      transition: {
-        delay: i * 1,
-      },
-    }),
-    hidden: { opacity: 0 },
+    setCurrentParty([upcomingEvents.find((e) => e.id === id)]);
   };
 
   return (
     <Container
       id="events"
       maxWidth="xl"
-      sx={{ height: "600px", width: "100vw", marginBottom: "120px" }}
+      sx={{
+        height: "600px",
+        width: "100vw",
+        marginBottom: "120px",
+        paddingTop: "80px",
+      }}
     >
       {/* <motion.div initial="hidden" whileInView="visible">
         <motion.div custom={1} variants={textAnimation}> */}
@@ -63,6 +67,7 @@ const Events = () => {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
+          flexWrap: "wrap",
         }}
       >
         {/* eventlist */}
@@ -124,6 +129,10 @@ const Events = () => {
                   >
                     {el.desc}
                   </Typography>
+                  <CityButtonOuter
+                    title="INSTA"
+                    link="https://www.instagram.com/patricksander95/"
+                  />
                 </Box>
                 <CardMedia
                   sx={{

@@ -3,6 +3,7 @@ import React from "react";
 // import logo from "../../../image/logo.svg";
 import { CardMedia } from "@mui/material";
 import bg from "../../../image/welcomeLomoBg.png";
+// import WelcomeLomo from "../welcome/welcomeLomo";
 
 const SpbLomo = () => {
   return (

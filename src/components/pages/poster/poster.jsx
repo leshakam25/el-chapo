@@ -1,5 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 import React from "react";
 import ReactPlayer from "react-player";
@@ -30,6 +30,7 @@ const Poster = () => {
       <Box sx={{ height: "3px", bgcolor: "#f2ee6f", maxWidth: "274px" }}></Box>
       {/* </motion.div> */}
       {/* <motion.div custom={2} variants={textAnimation}> */}
+      {/* videos */}
       <Box
         sx={{
           display: "flex",

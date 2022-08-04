@@ -2,7 +2,7 @@ import { CardMedia, Box } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
 import logo from "../../../image/logo.svg";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 // const textAnimation = {
 //   hidden: { y: 115, opacity: 0 },

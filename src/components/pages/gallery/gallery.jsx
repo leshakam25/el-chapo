@@ -1,7 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import BtrCarousel from "./btrCarousel";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 // const textAnimation = {
 //   hidden: { x: -100, opacity: 0 },
