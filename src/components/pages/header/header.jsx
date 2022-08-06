@@ -34,9 +34,7 @@ export default function Header(props) {
             }}
           >
             <motion.div custom={1} variants={textAnimation}>
-              <Box>
-                <LogoButton href="#welcome" logo={props.logo} />
-              </Box>
+              <LogoButton href="#welcome" logo={props.logo} />
             </motion.div>
             <motion.div custom={2} variants={textAnimation}>
               <Box

@@ -1,30 +1,12 @@
 import { Box, CardMedia, Container, Typography } from "@mui/material";
 import React, { useState } from "react";
-// import { motion } from "framer-motion";
 import EventButton from "../../parts/buttons/eventButton";
-import { eventData } from "./eventsData";
 import CityButtonOuter from "../../parts/buttons/cityButtonOuter";
+import ReactPlayer from "react-player";
 
-// const textAnimation = {
-//   hidden: { x: -100, opacity: 0 },
-//   visible: (custom) => ({
-//     x: 0,
-//     opacity: 1,
-//     transition: { duration: custom * 0.3, delay: custom * 0.2 },
-//   }),
-// };
-// const listVariants = {
-//   visible: (i) => ({
-//     opacity: 1,
-//     transition: {
-//       delay: i * 1,
-//     },
-//   }),
-//   hidden: { opacity: 0 },
-// };
-const Events = () => {
-  const [upcomingEvents] = useState(eventData);
-  const [currentParty, setCurrentParty] = useState([eventData[0]]);
+const Events = (props) => {
+  const [upcomingEvents] = useState(props.eventData);
+  const [currentParty, setCurrentParty] = useState([props.eventData[0]]);
 
   const handleClick = (id) => {
     setCurrentParty([upcomingEvents.find((e) => e.id === id)]);
@@ -35,14 +17,11 @@ const Events = () => {
       id="events"
       maxWidth="xl"
       sx={{
-        height: "600px",
         width: "100vw",
         marginBottom: "120px",
         paddingTop: "80px",
       }}
     >
-      {/* <motion.div initial="hidden" whileInView="visible">
-        <motion.div custom={1} variants={textAnimation}> */}
       <Typography
         gutterBottom
         variant="h2"
@@ -60,7 +39,6 @@ const Events = () => {
           mb: 4,
         }}
       ></Box>
-      {/* </motion.div> */}
       <Box
         sx={{
           color: "white",
@@ -71,7 +49,6 @@ const Events = () => {
         }}
       >
         {/* eventlist */}
-        {/* <motion.div custom={1} variants={textAnimation}> */}
         <Box
           sx={{
             color: "white",
@@ -91,8 +68,7 @@ const Events = () => {
               </span>
             ))}
         </Box>
-        {/* </motion.div> */}
-        {/* <motion.div custom={2} variants={textAnimation}> */}
+        {/* current select party */}
         <Box sx={{ maxWidth: "80vw" }}>
           {currentParty &&
             currentParty.map((el, i) => (
@@ -129,10 +105,7 @@ const Events = () => {
                   >
                     {el.desc}
                   </Typography>
-                  <CityButtonOuter
-                    title="INSTA"
-                    link="https://www.instagram.com/patricksander95/"
-                  />
+                  <CityButtonOuter title="INSTA" link={el.insta} />
                 </Box>
                 <CardMedia
                   sx={{
@@ -146,9 +119,35 @@ const Events = () => {
               </Box>
             ))}
         </Box>
-        {/* </motion.div> */}
       </Box>
-      {/* </motion.div> */}
+      <Typography
+        variant="h2"
+        fontWeight="bold"
+        fontFamily="Oswald"
+        color="white"
+        gutterBottom
+      >
+        ВЕЧЕРИНКИ
+      </Typography>
+      <Box sx={{ height: "3px", bgcolor: "#f2ee6f", maxWidth: "274px" }}></Box>
+
+      {/* videos */}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          mt: 4,
+        }}
+      >
+        <Box sx={{ mx: 6, display: "flex" }}>
+          {upcomingEvents &&
+            upcomingEvents.map((el, i) => (
+              <ReactPlayer height="560px" width="320px" url={el.video} />
+            ))}
+        </Box>
+      </Box>
     </Container>
   );
 };

@@ -1,20 +1,10 @@
 import { Box, Container, Typography, CardMedia } from "@mui/material";
 import React from "react";
-// import { motion } from "framer-motion";
 import BarMenuButton from "../../parts/buttons/barMenuButton";
 
-const BarMenu = () => {
-  // const textAnimation = {
-  //   hidden: { x: 100, opacity: 0 },
-  //   visible: (custom) => ({
-  //     x: 0,
-  //     opacity: 1,
-  //     transition: { duration: custom * 0.3, delay: custom * 0.2 },
-  //   }),
-  // };
+const BarMenuSpbGrande = (props) => {
   return (
     <Container id="menu" maxWidth="xl" sx={{ paddingTop: "80px" }}>
-      {/* <motion.div initial="hidden" whileInView="visible"> */}
       <Box
         sx={{
           color: "white",
@@ -25,7 +15,6 @@ const BarMenu = () => {
         }}
       >
         {/* left */}
-        {/* <motion.div custom={1} variants={textAnimation}> */}
         <Box sx={{ maxWidth: "720px" }}>
           <Box>
             <Typography
@@ -63,12 +52,13 @@ const BarMenu = () => {
             <Typography fontFamily="Oswald" variant="h5" textAlign="justify">
               С-ПБ / Литейный, 57
             </Typography>
-            <BarMenuButton title="Смотреть меню Эль-Чапо" />
+            <BarMenuButton
+              title="Смотреть меню Эль-Чапо"
+              menu={props.menu}
+              menuTitle="Меню иммерсивного ресторана Эль-Чапо"
+            />
           </Box>
         </Box>
-        {/* </motion.div> */}
-
-        {/* <motion.div custom={2} variants={textAnimation}> */}
         <Box sx={{ maxWidth: "500px", m: 12 }}>
           <Typography variant="h4" fontFamily="Oswald" gutterBottom>
             Дэвид Алехандро
@@ -91,11 +81,9 @@ const BarMenu = () => {
             потребуется"
           </Typography>
         </Box>
-        {/* </motion.div> */}
       </Box>
-      {/* </motion.div> */}
     </Container>
   );
 };
 
-export default BarMenu;
+export default BarMenuSpbGrande;

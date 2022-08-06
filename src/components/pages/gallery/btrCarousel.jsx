@@ -1,13 +1,12 @@
 import React from "react";
 import Carousel from "better-react-carousel";
-import { imagesData } from "./imagesData";
 import { CardMedia } from "@mui/material";
 
-const BtrCarousel = () => {
+const BtrCarousel = (props) => {
   return (
     <Carousel cols={2} rows={2} gap={8} loop>
-      {imagesData &&
-        imagesData.map((el, i) => (
+      {props.gallery &&
+        props.gallery.map((el, i) => (
           <Carousel.Item key={"btrCarousel" + i}>
             <CardMedia
               sx={{ height: "420px" }}

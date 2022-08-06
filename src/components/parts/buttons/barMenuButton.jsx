@@ -8,7 +8,6 @@ import CloseIcon from "@mui/icons-material/Close";
 import Slide from "@mui/material/Slide";
 import { Box, Typography, CardMedia } from "@mui/material";
 import { motion } from "framer-motion";
-import imagesData from "../../pages/menu/imagesData";
 import Carousel from "better-react-carousel";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -87,7 +86,7 @@ export default function BarMenuButton(props) {
                 <CloseIcon />
               </IconButton>
               <Typography variant="h3" fontFamily="Oswald" fontWeight="600">
-                Меню иммерсивного ресторана Эль-Чапо
+                {props.menuTitle}
               </Typography>
             </Toolbar>
           </motion.div>
@@ -108,8 +107,8 @@ export default function BarMenuButton(props) {
           >
             <Box>
               <Carousel cols={2} rows={1} gap={12} loop>
-                {imagesData &&
-                  imagesData.map((el, i) => (
+                {props.menu &&
+                  props.menu.map((el, i) => (
                     <Carousel.Item key={"btrCarousel" + i}>
                       <CardMedia
                         component="img"

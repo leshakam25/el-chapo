@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Typography, Box, CardMedia } from "@mui/material";
 import { motion } from "framer-motion";
-import RegistryButton from "../../parts/buttons/registryButton";
+// import RegistryButton from "../../parts/buttons/registryButton";
 import logo from "../../../image/logoYellow.svg";
 
 const textAnimation = {
@@ -20,28 +20,28 @@ const WelcomeLomo = () => {
       maxWidth="xl"
       sx={{ position: "relative", marginTop: "80px", height: "90vh" }}
     >
-      <motion.div initial="hidden" whileInView="visible">
-        {/* backGround */}
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 4 }}
+      {/* backGround */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 4 }}
+      >
+        <Box
+          sx={{
+            position: "absolute",
+            left: "15%",
+            zIndex: "10",
+          }}
         >
-          <Box
-            sx={{
-              position: "absolute",
-              left: "22%",
-            }}
-          >
-            <CardMedia
-              height="900px"
-              component="img"
-              src="https://i.postimg.cc/YCpLtMN3/colorBg.jpg"
-            />
-          </Box>
-        </motion.div>
-        {/* content */}
+          <CardMedia
+            height="900px"
+            component="img"
+            src="https://i.postimg.cc/cL0JVnCG/bg-spb-lomo-png.png"
+          />
+        </Box>
+      </motion.div>
+      {/* content */}
+      <motion.div initial="hidden" whileInView="visible">
         <motion.div custom={1} variants={textAnimation}>
           <Box
             sx={{
@@ -51,6 +51,7 @@ const WelcomeLomo = () => {
               flexDirection: "row",
               justifyContent: "space-around",
               alignItems: "center",
+              zIndex: "100",
             }}
           >
             {/* left */}
@@ -61,20 +62,29 @@ const WelcomeLomo = () => {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
+                zIndex: "100",
               }}
             >
-              <CardMedia sx={{ height: "50%" }} component="img" src={logo} />
+              <motion.div custom={1} variants={textAnimation}>
+                <CardMedia
+                  component="img"
+                  src={logo}
+                  sx={{ maxWidth: "300px" }}
+                ></CardMedia>
+              </motion.div>{" "}
             </Box>
             {/* right */}
             <Box
               sx={{
-                maxWidth: "400px",
+                maxWidth: "620px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                alignItems: "center",
+                flexWrap: "wrap",
+                alignItems: "left",
+                position: "releative",
+                p: "20px 40px",
                 bgcolor: "black",
-                p: "32px 40px",
               }}
             >
               <Typography
@@ -87,6 +97,21 @@ const WelcomeLomo = () => {
                 <br />
                 МЕКСИКА
                 <br /> МЕКСИКА
+              </Typography>
+              <br />
+              <Typography
+                variant="body1"
+                color="white"
+                fontFamily="oswald"
+                fontWeight="light"
+                fontSize="22px"
+              >
+                Бар на Ломоносова про аутентичную Мексику <br /> В меню
+                классические блюда в авторской вариации (тако, буррито,
+                кесадилья) и шумные вечеринки под латино до утра. Для любителей
+                попикантнее - в баре также подают самую острую чимичангу в
+                городе, правда съесть ее можно только подписав специальный
+                контракт.
               </Typography>
             </Box>
           </Box>

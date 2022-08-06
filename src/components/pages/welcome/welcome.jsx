@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { CardMedia, Box, Container, Typography } from "@mui/material";
 import React from "react";
 import Timer from "./timer";
-import logo from "../../../image/logo2.svg";
+import logo from "../../../image/logoGrande2.svg";
 import RegistryButton from "../../parts/buttons/registryButton";
 
 const textAnimation = {

@@ -6,6 +6,9 @@ const LogoButton = (props) => {
   return (
     <a className={s.LogoButton} href={props.href}>
       <motion.img
+        initial={{
+          height: "75px",
+        }}
         whileHover={{
           scale: 1.2,
           rotate: -3,
