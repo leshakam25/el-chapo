@@ -23,7 +23,7 @@ const RegistryButton = (props, ref) => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <Box sx={{ margin: "12px 0" }}>
+    <div>
       <motion.button
         whileHover={{
           background: "inherit",
@@ -45,7 +45,7 @@ const RegistryButton = (props, ref) => {
           <ModalForm />
         </Box>
       </Modal>
-    </Box>
+    </div>
   );
 };
 

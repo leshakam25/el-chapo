@@ -121,6 +121,7 @@ const Events = (props) => {
         </Box>
       </Box>
       <Typography
+        sx={{ mt: "120px" }}
         variant="h2"
         fontWeight="bold"
         fontFamily="Oswald"

@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { CardMedia, Box, Container, Typography } from "@mui/material";
 import React from "react";
 import Timer from "./timer";
-import logo from "../../../image/logoGrande2.svg";
 import RegistryButton from "../../parts/buttons/registryButton";
 
 const textAnimation = {
@@ -14,7 +13,7 @@ const textAnimation = {
   }),
 };
 
-const Welcome = () => {
+const Welcome = (props) => {
   return (
     <Container
       id="welcome"
@@ -43,17 +42,7 @@ const Welcome = () => {
                 alignItems: "center",
               }}
             >
-              <CardMedia
-                height="900px"
-                component="img"
-                src="https://i.postimg.cc/4N1yfCSJ/image-223-1.png"
-              />
-              {/* <CardMedia
-                height="900px"
-                component="img"
-                src="https://i.postimg.cc/KYCvqmR5/image-223.png"
-                sx={{ ml: "-1px" }}
-              /> */}
+              <CardMedia height="900px" component="img" src={props.bg} />
             </Box>
           </Box>
         </motion.div>
@@ -92,7 +81,7 @@ const Welcome = () => {
               <motion.div custom={1} variants={textAnimation}>
                 <CardMedia
                   component="img"
-                  src={logo}
+                  src={props.logo}
                   sx={{ maxWidth: "300px" }}
                 ></CardMedia>
               </motion.div>
@@ -126,7 +115,7 @@ const Welcome = () => {
                     fontWeight="450"
                     sx={{ margin: "12px 0" }}
                   >
-                    ДОБРО ПОЖАЛОВАТЬ В МЕКСИКУ!
+                    {props.title}
                   </Typography>
                 </motion.div>
                 <motion.div custom={2} variants={textAnimation}>
@@ -136,12 +125,7 @@ const Welcome = () => {
                     gutterBottom
                     sx={{ margin: "12px 0" }}
                   >
-                    EL Chapo Grande – это иммерсивный бар, где каждый может
-                    погрузиться в мир мексиканской культуры и её незабываемого
-                    колорита <br />
-                    <br /> Огненная текила, ароматы специй, ритмы латино с
-                    вкраплениями фанка и диско захлестнут улицу любого города,
-                    где есть бар EL Chapo
+                    {props.subtitle} <br /> {props.subtitle2}
                   </Typography>
                 </motion.div>
                 <motion.div custom={3} variants={textAnimation}>
@@ -160,7 +144,7 @@ const Welcome = () => {
                     variant="body1"
                     fontWeight="normal"
                   >
-                    Мы находимся: <br /> Литейный проспект, 57
+                    Мы находимся: <br /> {props.adress}
                   </Typography>
                   <RegistryButton title="Забронировать столик" />
                 </motion.div>

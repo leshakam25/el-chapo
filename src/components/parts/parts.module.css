@@ -1,12 +1,13 @@
 /*Кнопка регистрации*/
 .registryButton {
    cursor: pointer;
+   margin: 8px 4px;
    font-family: 'Oswald';
    font-weight: 700;
    border: none;
    background-color: #f2ee6f;
    height: 40px;
-   max-width: 240px;
+   width: 100%;
    border-radius: 4px;
    padding: 0 32px;
    text-transform: uppercase;
@@ -50,7 +51,22 @@
    font-weight: 500;
    cursor: pointer;
 }
-
+.barMenuButton{
+   background: inherit;
+   outline: 2px solid white;
+   cursor: pointer;
+   font-family: 'Oswald';
+   font-weight: 700;
+   border: none;
+   height: 40px;
+   width: 100%;
+   border-radius: 4px;
+   padding: 0 32px;
+   text-transform: uppercase;
+   transition: .1s ease-in;
+   transition-delay: 0.1s;
+   margin: 8px 4px;
+}
 /* event */
 .eventButton{
       background: inherit;

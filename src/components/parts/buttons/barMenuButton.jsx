@@ -1,5 +1,5 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
+import s from "../parts.module.css";
 import Dialog from "@mui/material/Dialog";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -27,26 +27,23 @@ export default function BarMenuButton(props) {
 
   return (
     <div>
-      <Button
-        sx={{
-          color: "white",
-          textDecoration: "none",
-          p: 1,
-          my: 2,
-          width: "280px",
-          border: "2px solid white",
+      <motion.button
+        whileHover={{
+          background: "inherit",
+          outline: "none",
         }}
+        className={s.barMenuButton}
         onClick={handleClickOpen}
       >
         <Typography
           color="white"
           variant="h6"
           fontFamily="Oswald"
-          textAlign="left"
+          textAlign="center"
         >
           {props.title}
         </Typography>
-      </Button>
+      </motion.button>
       <Dialog
         fullScreen
         open={open}

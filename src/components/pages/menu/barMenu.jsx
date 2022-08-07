@@ -1,8 +1,9 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import BarMenuButton from "../../parts/buttons/barMenuButton";
+import RegistryButton from "../../parts/buttons/registryButton";
 
-const BarMenuSpbLomo = (props) => {
+const BarMenuSpbGrande = (props) => {
   return (
     <Container id="menu" maxWidth="xl" sx={{ paddingTop: "80px" }}>
       <Box
@@ -34,7 +35,7 @@ const BarMenuSpbLomo = (props) => {
               color="#f2ee6f"
               fontWeight="bold"
             >
-              -30% на всё меню!
+              {props.title}
             </Typography>
             <br />
             <Typography
@@ -44,29 +45,28 @@ const BarMenuSpbLomo = (props) => {
               gutterBottom
               fontSize="24px"
             >
-              Каждый будний день с 12:00 до 17:00. <br />
-              <br /> Поработали над отдачей, чтобы исключить задержки. <br />{" "}
-              <br />
-              Топовые блюда от нашего шефа по лучшей цене???
+              {props.subtitle1} <br />
+              {props.subtitle2} <br />
+              {props.subtitle3}
             </Typography>
             <Typography fontFamily="Oswald" variant="h5" textAlign="justify">
-              С-ПБ / Ломоносова, 1
+              {props.adress}
             </Typography>
-            <BarMenuButton
-              title="Смотреть меню Эль-Чапо"
-              menu={props.menu}
-              menuTitle="Меню мексиканского ресторана Эль-Чапо"
-            />
+            <br />
+            <Box>
+              <BarMenuButton
+                title="Смотреть меню Эль-Чапо"
+                menu={props.menu}
+                menuTitle="Меню иммерсивного ресторана Эль-Чапо"
+              />
+              <RegistryButton title="Бронируй стол, Амиго" />
+            </Box>
           </Box>
         </Box>
-        <Box sx={{ maxWidth: "500px", m: 12 }}>
-          <Typography variant="h4" fontFamily="Oswald" gutterBottom>
-            WELCOME AMIGOS!
-          </Typography>
-        </Box>
+        <Box>{props.rightBlock}</Box>
       </Box>
     </Container>
   );
 };
 
-export default BarMenuSpbLomo;
+export default BarMenuSpbGrande;
