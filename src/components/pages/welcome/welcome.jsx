@@ -31,6 +31,7 @@ const Welcome = (props) => {
             sx={{
               position: "absolute",
               left: "15%",
+              display: { xs: "none", md: "flex" },
             }}
           >
             <Box

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import React, { useEffect } from "react";
 import CityButton from "../../parts/buttons/cityButton";
 import CityButtonOuter from "../../parts/buttons/cityButtonOuter";
+import CookieAlert from "../../parts/cookieNotice";
 
 const textAnimation = {
   hidden: { x: -20, opacity: 0 },
@@ -58,6 +59,7 @@ const CitySelect = (props) => {
           />
         </motion.div>
       </motion.div>
+      <CookieAlert />
     </Box>
   );
 };

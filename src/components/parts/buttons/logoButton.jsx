@@ -4,13 +4,11 @@ import s from "../parts.module.css";
 
 const LogoButton = (props) => {
   return (
-    <a className={s.LogoButton} href={props.href}>
+    <a href={props.href}>
       <motion.img
-        initial={{
-          height: "75px",
-        }}
+        className={s.logoButton}
         whileHover={{
-          scale: 1.2,
+          scale: 1.1,
           rotate: -3,
         }}
         src={props.logo}

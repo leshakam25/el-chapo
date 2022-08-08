@@ -23,8 +23,8 @@ const Events = (props) => {
     >
       <Typography
         gutterBottom
-        variant="h2"
         color="white"
+        fontSize="44px"
         fontFamily="Oswald"
         fontWeight="bold"
       >
@@ -34,7 +34,7 @@ const Events = (props) => {
         sx={{
           height: "3px",
           bgcolor: "#f2ee6f",
-          maxWidth: "380px",
+          maxWidth: "285px",
           mb: 4,
         }}
       ></Box>

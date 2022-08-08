@@ -14,7 +14,10 @@
    transition: .1s ease-in;
    transition-delay: 0.1s;
 }
-
+.logoButton{
+   max-width: 25vw;
+   max-height: 75px;
+}
 /*Кнопка меню*/
 .menuButton {
    text-decoration: none;
@@ -25,6 +28,16 @@
    background-color: inherit;
    text-transform: uppercase;
    padding: 0 16px;
+}
+.menuButtonMobile{   
+   text-decoration: none;
+   font-family: 'Oswald';
+   font-size: 20px;
+   border: none;
+   color: black;
+   background-color: inherit;
+   text-transform: uppercase;
+   padding: 32px 8px;
 }
 
 /*Кнопка ссылки*/

@@ -27,16 +27,16 @@ const Contacts = (props) => {
 
         <Box
           sx={{
-            position: "absolute",
+            position: { xs: "relative", md: "absolute" },
             top: "8%",
             left: "5%",
             bgcolor: "black",
-            padding: "40px 60px",
+            padding: { xs: "0", md: "40px 60px" },
             paddingRight: "180px",
           }}
         >
           <Typography
-            variant="h2"
+            fontSize="44px"
             fontFamily="Oswald"
             fontWeight="normal"
             gutterBottom
@@ -47,7 +47,7 @@ const Contacts = (props) => {
             sx={{
               height: "3px",
               bgcolor: "#f2ee6f",
-              maxWidth: "100%",
+              maxWidth: "190px",
               mb: 6,
             }}
           ></Box>

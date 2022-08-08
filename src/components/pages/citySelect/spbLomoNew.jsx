@@ -2,7 +2,7 @@ import React from "react";
 import { eventData } from "../../data/eventsDataSpbLomo";
 import gallery from "../../data/gallerySpbLomo";
 import menu from "../../data/menuSpbLomo";
-import Header from "../header/header";
+import Header from "../header/headerNew";
 import logo from "../../../image/logoLomo.svg";
 import Welcome from "../welcome/welcome";
 import Gallery from "../gallery/gallery";

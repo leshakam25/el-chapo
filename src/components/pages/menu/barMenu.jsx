@@ -20,13 +20,13 @@ const BarMenuSpbGrande = (props) => {
           <Box>
             <Typography
               sx={{ margin: "12px 0", fontFamily: "Oswald" }}
-              variant="h2"
+              fontSize="44px"
               fontWeight="bold"
             >
               НАШЕ МЕНЮ
             </Typography>
           </Box>
-          <Box sx={{ height: "3px", bgcolor: "#f2ee6f", width: "315px" }}></Box>
+          <Box sx={{ height: "3px", bgcolor: "#f2ee6f", width: "238px" }}></Box>
           <Box sx={{ margin: "12px 0" }}>
             <Typography
               fontFamily="Oswald"
@@ -57,7 +57,18 @@ const BarMenuSpbGrande = (props) => {
               <BarMenuButton
                 title="Смотреть меню Эль-Чапо"
                 menu={props.menu}
-                menuTitle="Меню иммерсивного ресторана Эль-Чапо"
+                menuTitle={
+                  <Typography
+                    fontFamily="Oswald"
+                    fontWeight="bold"
+                    sx={{
+                      fontSize: { xs: "22px", md: "42px" },
+                      lineHeight: "1",
+                    }}
+                  >
+                    Меню иммерсивного ресторана Эль-Чапо
+                  </Typography>
+                }
               />
               <RegistryButton title="Бронируй стол, Амиго" />
             </Box>
