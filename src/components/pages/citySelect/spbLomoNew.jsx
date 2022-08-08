@@ -3,7 +3,7 @@ import { eventData } from "../../data/eventsDataSpbLomo";
 import gallery from "../../data/gallerySpbLomo";
 import menu from "../../data/menuSpbLomo";
 import Header from "../header/header";
-import logo from "../../../image/logoYellow.svg";
+import logo from "../../../image/logoLomo.svg";
 import Welcome from "../welcome/welcome";
 import Gallery from "../gallery/gallery";
 import Footer from "../footer/footer";
@@ -14,7 +14,7 @@ import Contacts from "../contacts/contacts";
 const SpbLomo = () => {
   return (
     <>
-      <Header logo="https://i.postimg.cc/Xq0D73tm/yellow-Logo.png" />
+      <Header logo={logo} />
       <Welcome
         title="МЕКСИКА, МЕКСИКА"
         logo={logo}

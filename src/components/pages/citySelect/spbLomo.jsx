@@ -1,13 +1,12 @@
 import React from "react";
 import { CardMedia } from "@mui/material";
-import bg from "../../../image/welcomeLomoBg.png";
 
 const SpbLomo = () => {
   return (
     <>
       <CardMedia
         component="img"
-        src={bg}
+        src="https://i.postimg.cc/tC7GzV71/welcome-Lomo-Bg.png"
         sx={{ height: "100vh", width: "100vw" }}
       />
     </>

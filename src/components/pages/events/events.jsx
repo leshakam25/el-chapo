@@ -17,7 +17,6 @@ const Events = (props) => {
       id="events"
       maxWidth="xl"
       sx={{
-        width: "100vw",
         marginBottom: "120px",
         paddingTop: "80px",
       }}
@@ -44,7 +43,7 @@ const Events = (props) => {
           color: "white",
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-between",
+          justifyContent: "space-around",
           flexWrap: "wrap",
         }}
       >
@@ -54,6 +53,7 @@ const Events = (props) => {
             color: "white",
             display: "flex",
             flexDirection: "column",
+            maxWidth: "300px",
           }}
         >
           {upcomingEvents &&
@@ -101,6 +101,7 @@ const Events = (props) => {
                     variant="body1"
                     fontFamily="oswald"
                     fontWeight="light"
+                    textAlign="justify"
                     sx={{ maxWidth: "400px" }}
                   >
                     {el.desc}
@@ -109,8 +110,8 @@ const Events = (props) => {
                 </Box>
                 <CardMedia
                   sx={{
-                    maxWidth: "600px",
-                    height: "auto",
+                    maxWidth: "320px",
+                    maxHeight: "480px",
                     ml: 10,
                   }}
                   component="img"
@@ -120,7 +121,7 @@ const Events = (props) => {
             ))}
         </Box>
       </Box>
-      <Typography
+      {/* <Typography
         sx={{ mt: "120px" }}
         variant="h2"
         fontWeight="bold"
@@ -130,10 +131,10 @@ const Events = (props) => {
       >
         ВЕЧЕРИНКИ
       </Typography>
-      <Box sx={{ height: "3px", bgcolor: "#f2ee6f", maxWidth: "274px" }}></Box>
+      <Box sx={{ height: "3px", bgcolor: "#f2ee6f", maxWidth: "274px" }}></Box> */}
 
       {/* videos */}
-      <Box
+      {/* <Box
         sx={{
           display: "flex",
           flexDirection: "row",
@@ -148,7 +149,7 @@ const Events = (props) => {
               <ReactPlayer height="560px" width="320px" url={el.video} />
             ))}
         </Box>
-      </Box>
+      </Box> */}
     </Container>
   );
 };
