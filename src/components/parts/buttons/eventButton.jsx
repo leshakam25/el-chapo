@@ -11,6 +11,7 @@ const EventButton = (props) => {
   return (
     <motion.button
       onHoverStart={handleChange}
+      onClick={handleChange}
       id={props.id}
       whileHover={{
         scale: 1.1,

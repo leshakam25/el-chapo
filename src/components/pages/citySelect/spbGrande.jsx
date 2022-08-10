@@ -1,5 +1,5 @@
 import React from "react";
-import { eventData } from "../../data/eventsDataSpbGrande";
+import { eventData, eventDataVideo } from "../../data/eventsDataSpbGrande";
 import logo2 from "../../../image/logoGrande2.svg";
 import Contacts from "../contacts/contacts";
 import Events from "../events/events";
@@ -28,7 +28,7 @@ const SpbGrande = () => {
         adress="Литейный проспект, 57"
         bg="https://i.postimg.cc/4N1yfCSJ/image-223-1.png"
       />
-      <Events eventData={eventData} />
+      <Events eventData={eventData} eventVideo={eventDataVideo} />
       <BarMenu
         menu={menu}
         title="-30% на всё меню!"
