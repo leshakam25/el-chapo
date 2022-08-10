@@ -11,28 +11,11 @@ const Contacts = (props) => {
       <Box sx={{ color: "white", position: "relative", overflow: "hidden" }}>
         <Box
           sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-          }}
-        >
-          <iframe
-            title="map"
-            src={props.mapLink}
-            width="97%"
-            height="440px"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
-        </Box>
-
-        <Box
-          sx={{
             position: { xs: "relative", md: "absolute" },
             top: "7%",
             left: "5%",
             bgcolor: "black",
-            padding: { xs: "0", md: "20px 60px" },
+            padding: { xs: "0", md: "40px 60px" },
           }}
         >
           <BlockTitle title="КОНТАКТЫ" />
@@ -62,6 +45,14 @@ const Contacts = (props) => {
           </Box>
         </Box>
         {/* </motion.div> */}
+        <iframe
+          title="map"
+          src={props.mapLink}
+          width="97%"
+          height="440px"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
       </Box>
       {/* </motion.div> */}
     </Container>

@@ -29,17 +29,16 @@ export default function BarMenuButton(props) {
     <div>
       <motion.button
         whileHover={{
-          background: "inherit",
-          outline: "none",
+          background: "white",
+          color: "black",
         }}
         className={s.barMenuButton}
         onClick={handleClickOpen}
       >
         <Typography
-          color="white"
-          variant="h6"
           fontFamily="Oswald"
-          textAlign="center"
+          fontWeight="700"
+          fontSize={{ xs: "14px", md: "18px" }}
         >
           {props.title}
         </Typography>

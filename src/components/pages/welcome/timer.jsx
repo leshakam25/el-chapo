@@ -7,7 +7,7 @@ export default function Timer() {
 
   const Completionist = () => (
     <Typography
-      variant="h2"
+      fontSize={{ xs: "32px", md: "54px" }}
       fontFamily="Oswald"
       fontWeight="600"
       textAlign="center"

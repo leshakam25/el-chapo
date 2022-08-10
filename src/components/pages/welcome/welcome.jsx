@@ -104,13 +104,13 @@ const Welcome = (props) => {
                   flexWrap: "wrap",
                   alignItems: "left",
                   position: "releative",
-                  p: "20px 40px",
+                  p: { xs: "0", md: "20px 40px" },
                   bgcolor: "black",
                 }}
               >
                 <motion.div custom={1} variants={textAnimation}>
                   <Typography
-                    variant="h2"
+                    fontSize={{ xs: "32px", md: "48px" }}
                     gutterBottom
                     fontFamily="Oswald"
                     fontWeight="450"
@@ -124,6 +124,7 @@ const Welcome = (props) => {
                     variant="body1"
                     fontFamily="Oswald"
                     gutterBottom
+                    textAlign="justify"
                     sx={{ margin: "12px 0" }}
                   >
                     {props.subtitle} <br /> {props.subtitle2}
@@ -135,7 +136,7 @@ const Welcome = (props) => {
                     sx={{
                       height: "3px",
                       bgcolor: "#f2ee6f",
-                      maxWidth: "510px",
+                      maxWidth: "100%",
                       margin: "12px 0",
                     }}
                   ></Box>

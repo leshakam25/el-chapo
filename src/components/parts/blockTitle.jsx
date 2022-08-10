@@ -4,7 +4,7 @@ import React from "react";
 const BlockTitle = (props) => {
   return (
     <Typography
-      fontSize="48px"
+      fontSize={{ xs: "36px", md: "48px" }}
       fontWeight="bold"
       fontFamily="Oswald"
       color="white"

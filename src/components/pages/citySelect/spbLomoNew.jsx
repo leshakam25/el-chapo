@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./cities.module.css";
-import { eventData } from "../../data/eventsDataSpbLomo";
+import { eventData, eventDataVideo } from "../../data/eventsDataSpbGrande";
 import gallery from "../../data/gallerySpbLomo";
 import menu from "../../data/menuSpbLomo";
 import Header from "../header/header";
@@ -29,7 +29,7 @@ const SpbLomo = () => {
         adress="Ломоносова 1 / Грибоедова 28"
         bg="https://i.postimg.cc/cL0JVnCG/bg-spb-lomo-png.png"
       />
-      <Events eventData={eventData} />
+      <Events eventData={eventData} eventVideo={eventDataVideo} />
       <BarMenu
         menu={menu}
         title="МЕКСИКА МЕКСИКА"

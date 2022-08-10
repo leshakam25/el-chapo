@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import ModalForm from "../form";
 import { motion } from "framer-motion";
+import { Typography } from "@mui/material";
 
 const style = {
   position: "absolute",
@@ -33,7 +34,13 @@ const RegistryButton = (props, ref) => {
         onClick={handleOpen}
         className={s.registryButton}
       >
-        {props.title}
+        <Typography
+          fontFamily="Oswald"
+          fontWeight="700"
+          fontSize={{ xs: "14px", md: "18px" }}
+        >
+          {props.title}
+        </Typography>
       </motion.button>
       <Modal
         open={open}

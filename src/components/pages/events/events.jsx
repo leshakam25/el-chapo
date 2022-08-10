@@ -1,113 +1,97 @@
 import { Box, CardMedia, Container, Typography } from "@mui/material";
 import React, { useState } from "react";
-import EventButton from "../../parts/buttons/eventButton";
+import Carousel from "better-react-carousel";
 import ReactPlayer from "react-player";
-import CityButtonOuter from "../../parts/buttons/cityButtonOuter";
 import BlockTitle from "../../parts/blockTitle";
 
 const Events = (props) => {
   const [eventVideos] = useState(props.eventVideo);
   const [upcomingEvents] = useState(props.eventData);
-  const [currentParty, setCurrentParty] = useState([props.eventData[0]]);
 
-  const handleClick = (id) => {
-    setCurrentParty([upcomingEvents.find((e) => e.id === id)]);
-  };
+  const YellowDot = ({ isActive }) => (
+    <span
+      style={{
+        height: isActive ? "18px" : "12px",
+        width: isActive ? "18px" : "12px",
+        background: "#f2ee6f",
+      }}
+    ></span>
+  );
 
   return (
     <Container id="events" maxWidth="xl">
       {/* events */}
-      <Box sx={{ height: { xs: "auto", md: "500px" } }}>
-        <BlockTitle title="МЕРОПРИЯТИЯ" />
-        <Box
-          sx={{
-            color: "white",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            flexWrap: "wrap",
-          }}
-        >
-          {/* eventlist */}
-          <Box
-            sx={{
-              color: "white",
-              display: "flex",
-              flexDirection: "column",
-              maxWidth: "300px",
-            }}
-          >
-            {upcomingEvents &&
-              upcomingEvents.map((el, i) => (
-                <span key={"upcomingEvents" + el.id + i}>
-                  <EventButton
-                    id={el.id}
-                    click={handleClick}
-                    title={el.name}
-                    date={el.date}
-                  />
-                </span>
-              ))}
-          </Box>
-          {/* current select party */}
-          {currentParty &&
-            currentParty.map((el, i) => (
+      <BlockTitle title="МЕРОПРИЯТИЯ" />
+      <br />
+      <Carousel
+        dot={YellowDot}
+        cols={1}
+        rows={1}
+        gap={10}
+        loop
+        autoplay={3800}
+        showDots
+      >
+        {upcomingEvents &&
+          upcomingEvents.map((el, i) => (
+            <Carousel.Item key={"upcomingEvents" + el.id + i}>
               <Box
-                key={"currentParty" + el.id + i}
                 sx={{
+                  m: { xs: 0, md: 3 },
+                  pt: "40px",
+                  color: "white",
+                  minHeight: "600px",
                   display: "flex",
                   flexDirection: "row",
-                  flexWrap: "wrap",
                   justifyContent: "space-between",
+                  flexWrap: "wrap",
                   alignItems: "start",
-                  width: { xs: "auto", md: "1000px" },
                 }}
               >
                 <Box
                   sx={{
-                    maxWidth: "100%",
-                    marginRight: { xs: "0", md: "12px" },
+                    maxWidth: "600px",
+                    marginRight: { xs: "0", md: "20px" },
                   }}
                 >
                   <Typography
-                    variant="h4"
-                    fontFamily="oswald"
+                    fontSize={{ xs: "28px", md: "40px" }}
+                    fontFamily="Oswald"
                     fontWeight="Bold"
                   >
                     {el.name}
                   </Typography>
                   <Typography
-                    variant="h5"
-                    fontFamily="oswald"
+                    fontSize={{ xs: "24px", md: "42px" }}
+                    fontFamily="Oswald"
                     fontWeight="Bold"
+                    color="#f2ee6f"
                   >
                     {el.date}
                   </Typography>
                   <Typography
-                    variant="body1"
-                    fontFamily="oswald"
+                    fontSize="18px"
+                    fontFamily="Oswald"
                     fontWeight="light"
                     textAlign="justify"
-                    sx={{ maxWidth: "500px" }}
                   >
                     {el.desc}
                   </Typography>
-                  {!!el.insta && (
-                    <CityButtonOuter title="INSTA" link={el.insta} />
-                  )}
                 </Box>
                 <CardMedia
                   sx={{
-                    maxWidth: "400px",
+                    mt: { xs: 4, md: 0 },
                     border: "2px solid white",
+                    maxHeight: "700px",
+                    maxWidth: "700px",
                   }}
                   component="img"
                   src={el.img}
                 />
               </Box>
-            ))}
-        </Box>
-      </Box>
+            </Carousel.Item>
+          ))}
+      </Carousel>
       {/* night partys */}
       <Box>
         <BlockTitle title="НОЧНЫЕ ВЕЧЕРИНКИ" />
@@ -121,12 +105,25 @@ const Events = (props) => {
             mt: 4,
           }}
         >
-          {eventVideos &&
-            eventVideos.map((el, i) => (
-              <Box sx={{ border: "2px solid white" }} key={"video" + i}>
-                <ReactPlayer height="560px" width="315px" url={el.video} />
-              </Box>
-            ))}
+          <Carousel
+            cols={2}
+            rows={1}
+            gap={10}
+            loop
+            autoplay={3800}
+            showDots
+            hideArrow
+            dot={YellowDot}
+          >
+            {eventVideos &&
+              eventVideos.map((el, i) => (
+                <Carousel.Item>
+                  <Box key={"video" + i} sx={{ border: "2px solid white" }}>
+                    <ReactPlayer height="540px" width="100%" url={el.video} />
+                  </Box>
+                </Carousel.Item>
+              ))}
+          </Carousel>
         </Box>
       </Box>
     </Container>
