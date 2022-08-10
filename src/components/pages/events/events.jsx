@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import EventButton from "../../parts/buttons/eventButton";
 import ReactPlayer from "react-player";
 import CityButtonOuter from "../../parts/buttons/cityButtonOuter";
+import BlockTitle from "../../parts/blockTitle";
 
 const Events = (props) => {
   const [eventVideos] = useState(props.eventVideo);
@@ -14,39 +15,16 @@ const Events = (props) => {
   };
 
   return (
-    <Container
-      id="events"
-      maxWidth="xl"
-      sx={{
-        marginBottom: "120px",
-        paddingTop: "80px",
-      }}
-    >
+    <Container id="events" maxWidth="xl">
       {/* events */}
       <Box sx={{ height: { xs: "auto", md: "500px" } }}>
-        <Typography
-          gutterBottom
-          color="white"
-          fontSize="44px"
-          fontFamily="Oswald"
-          fontWeight="bold"
-        >
-          МЕРОПРИЯТИЯ
-        </Typography>
-        <Box
-          sx={{
-            height: "3px",
-            bgcolor: "#f2ee6f",
-            maxWidth: "285px",
-            mb: 4,
-          }}
-        ></Box>
+        <BlockTitle title="МЕРОПРИЯТИЯ" />
         <Box
           sx={{
             color: "white",
             display: "flex",
             flexDirection: "row",
-            justifyContent: "left",
+            justifyContent: "space-between",
             flexWrap: "wrap",
           }}
         >
@@ -78,13 +56,19 @@ const Events = (props) => {
                 key={"currentParty" + el.id + i}
                 sx={{
                   display: "flex",
-                  flexWrap: "wrap",
                   flexDirection: "row",
-                  justifyContent: "left",
+                  flexWrap: "wrap",
+                  justifyContent: "space-between",
                   alignItems: "start",
+                  width: { xs: "auto", md: "1000px" },
                 }}
               >
-                <Box sx={{ maxWidth: "300px" }}>
+                <Box
+                  sx={{
+                    maxWidth: "100%",
+                    marginRight: { xs: "0", md: "12px" },
+                  }}
+                >
                   <Typography
                     variant="h4"
                     fontFamily="oswald"
@@ -104,7 +88,7 @@ const Events = (props) => {
                     fontFamily="oswald"
                     fontWeight="light"
                     textAlign="justify"
-                    sx={{ maxWidth: "400px" }}
+                    sx={{ maxWidth: "500px" }}
                   >
                     {el.desc}
                   </Typography>
@@ -115,7 +99,6 @@ const Events = (props) => {
                 <CardMedia
                   sx={{
                     maxWidth: "400px",
-                    ml: 10,
                     border: "2px solid white",
                   }}
                   component="img"
@@ -127,19 +110,7 @@ const Events = (props) => {
       </Box>
       {/* night partys */}
       <Box>
-        <Typography
-          sx={{ mt: "120px" }}
-          variant="h2"
-          fontWeight="bold"
-          fontFamily="Oswald"
-          color="white"
-          gutterBottom
-        >
-          НОЧНЫЕ ВЕЧЕРИНКИ
-        </Typography>
-        <Box
-          sx={{ height: "3px", bgcolor: "#f2ee6f", maxWidth: "274px" }}
-        ></Box>
+        <BlockTitle title="НОЧНЫЕ ВЕЧЕРИНКИ" />
         {/* videos */}
         <Box
           sx={{
@@ -152,9 +123,9 @@ const Events = (props) => {
         >
           {eventVideos &&
             eventVideos.map((el, i) => (
-              <div key={"video" + i}>
-                <ReactPlayer height="560px" width="320px" url={el.video} />
-              </div>
+              <Box sx={{ border: "2px solid white" }} key={"video" + i}>
+                <ReactPlayer height="560px" width="315px" url={el.video} />
+              </Box>
             ))}
         </Box>
       </Box>

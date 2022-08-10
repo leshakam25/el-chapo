@@ -1,8 +1,9 @@
 import React from "react";
+import s from "./cities.module.css";
 import { eventData } from "../../data/eventsDataSpbLomo";
 import gallery from "../../data/gallerySpbLomo";
 import menu from "../../data/menuSpbLomo";
-import Header from "../header/headerNew";
+import Header from "../header/header";
 import logo from "../../../image/logoLomo.svg";
 import Welcome from "../welcome/welcome";
 import Gallery from "../gallery/gallery";
@@ -13,7 +14,7 @@ import Contacts from "../contacts/contacts";
 
 const SpbLomo = () => {
   return (
-    <>
+    <div className={s.cityWrapper}>
       <Header logo={logo} />
       <Welcome
         title="МЕКСИКА, МЕКСИКА"
@@ -49,7 +50,7 @@ const SpbLomo = () => {
         vkLink="https://vk.com/elchapo_spb"
       />
       <Footer footerImg={logo} />
-    </>
+    </div>
   );
 };
 

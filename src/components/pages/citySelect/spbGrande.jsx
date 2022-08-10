@@ -12,10 +12,11 @@ import logo from "../../../image/logoGrande.svg";
 import menu from "../../data/menuSpbGrande";
 import gallery from "../../data/gallerySpbGrande";
 import Chief from "../menu/cheif";
+import s from "./cities.module.css";
 
 const SpbGrande = () => {
   return (
-    <>
+    <div className={s.cityWrapper}>
       <Header logo={logo} />
       <Welcome
         title="ДОБРО ПОЖАЛОВАТЬ В МЕКСИКУ!"
@@ -49,7 +50,7 @@ const SpbGrande = () => {
         vkLink="https://vk.com/elchapo_spb"
       />
       <Footer footerImg={logo} />
-    </>
+    </div>
   );
 };
 

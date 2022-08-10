@@ -1,58 +1,113 @@
 import * as React from "react";
-import { motion } from "framer-motion";
 import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import RegistryButton from "../../parts/buttons/registryButton";
-import MenuButton from "../../parts/buttons/menuButton";
-import { Box } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
 import LogoButton from "../../parts/buttons/logoButton";
+import MenuButton from "../../parts/buttons/menuButton";
+import MenuButtonMobile from "../../parts/buttons/menuButtonMobile";
 
-const textAnimation = {
-  hidden: { y: -10, opacity: 0 },
-  visible: (custom) => ({
-    y: 0,
-    opacity: 1,
-    transition: { duration: custom * 0.5, delay: custom * 0.2 },
-  }),
-};
+import RegistryButton from "../../parts/buttons/registryButton";
 
-export default function Header(props) {
+const pages = [
+  { title: "Мероприятия", href: "#events" },
+  { title: "Меню", href: "#menu" },
+  { title: "Фото", href: "#photo" },
+  { title: "Контакты", href: "#contacts" },
+];
+
+const HeaderNew = (props) => {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
   return (
-    <Box
-      sx={{ flexGrow: 1, opacity: "0.9", zIndex: 100, position: "relative" }}
-    >
-      <motion.div initial="hidden" animate="visible">
-        <AppBar position="fixed">
-          <Toolbar
+    <AppBar position="fixed">
+      <Container
+        sx={{
+          backgroundColor: "#111",
+        }}
+        maxWidth="fluid"
+      >
+        <Toolbar disableGutters>
+          {/* logo */}
+          <Box
             sx={{
+              width: "100%",
               display: "flex",
               flexDirection: "row",
-              flexWrap: "wrap",
               justifyContent: "space-between",
               alignItems: "center",
-              backgroundColor: "#111",
+              flexWrap: "wrap",
             }}
           >
-            <motion.div custom={1} variants={textAnimation}>
-              <LogoButton href="#welcome" logo={props.logo} />
-            </motion.div>
-            <motion.div custom={2} variants={textAnimation}>
-              <Box
-                sx={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}
-              >
-                <MenuButton title="Мероприятия" href="#events" />
-                {/* <MenuButton title="О нас" href="#about" /> */}
-                <MenuButton title="Меню" href="#menu" />
-                <MenuButton title="Фото" href="#photo" />
-                <MenuButton title="Контакты" href="#contacts" />
-              </Box>
-            </motion.div>
-            <motion.div custom={3} variants={textAnimation}>
-              <RegistryButton title="Забронировать" />
-            </motion.div>
-          </Toolbar>
-        </AppBar>
-      </motion.div>
-    </Box>
+            <LogoButton href="#welcome" logo={props.logo} />
+            {/* pc block */}
+            <Box sx={{ display: { xs: "none", md: "flex" } }}>
+              {pages.map((page) => (
+                <span key={page}>
+                  <MenuButton title={page.title} href={page.href} />
+                </span>
+              ))}
+            </Box>
+            {/* registry button */}
+            <RegistryButton title="Забронировать" />
+          </Box>
+
+          {/* mobile block */}
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+            }}
+          >
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "right",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              {pages.map((page) => (
+                <Box key={page} onClick={handleCloseNavMenu}>
+                  <MenuButtonMobile title={page.title} href={page.href} />
+                </Box>
+              ))}
+            </Menu>
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
-}
+};
+export default HeaderNew;

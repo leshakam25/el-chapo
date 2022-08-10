@@ -1,28 +1,14 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import React from "react";
-import BtrCarousel from "./btrCarousel";
+import BlockTitle from "../../parts/blockTitle";
+import BtrCarousel from "./galleryCarousel";
 
 const Gallery = (props) => {
   return (
-    <Container id="photo" maxWidth="xl" sx={{ paddingTop: "80px" }}>
+    <Container id="photo" maxWidth="xl">
       <Box sx={{ color: "white" }}>
         <Box sx={{ maxWidth: "120px" }}>
-          <Typography
-            gutterBottom
-            fontSize="44px"
-            fontFamily="Oswald"
-            fontWeight="bold"
-          >
-            ФОТО
-          </Typography>
-          <Box
-            sx={{
-              height: "3px",
-              bgcolor: "#f2ee6f",
-              maxWidth: "100%",
-              mb: 6,
-            }}
-          ></Box>
+          <BlockTitle title="ФОТО" />
         </Box>
         <BtrCarousel gallery={props.gallery} />
       </Box>

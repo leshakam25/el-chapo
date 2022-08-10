@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = (props) => {
   return (
-    <Container maxWidth="xl" sx={{ paddingTop: "80px", width: "100%" }}>
+    <Container maxWidth="xl" sx={{ width: "100%" }}>
       <Box
         sx={{
           color: "white",

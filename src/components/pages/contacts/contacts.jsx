@@ -1,12 +1,13 @@
 // import { motion } from "framer-motion";
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
+import BlockTitle from "../../parts/blockTitle";
 import PrivacyButton from "../../parts/buttons/privacyButton";
 import SocialButton from "../../parts/buttons/socialButton";
 
 const Contacts = (props) => {
   return (
-    <Container id="contacts" maxWidth="xl" sx={{ paddingTop: "80px" }}>
+    <Container id="contacts" maxWidth="xl">
       <Box sx={{ color: "white", position: "relative", overflow: "hidden" }}>
         <Box
           sx={{
@@ -19,7 +20,7 @@ const Contacts = (props) => {
             title="map"
             src={props.mapLink}
             width="97%"
-            height="600"
+            height="440px"
             frameBorder="0"
             allowFullScreen
           ></iframe>
@@ -28,29 +29,13 @@ const Contacts = (props) => {
         <Box
           sx={{
             position: { xs: "relative", md: "absolute" },
-            top: "8%",
+            top: "7%",
             left: "5%",
             bgcolor: "black",
-            padding: { xs: "0", md: "40px 60px" },
-            paddingRight: "180px",
+            padding: { xs: "0", md: "20px 60px" },
           }}
         >
-          <Typography
-            fontSize="44px"
-            fontFamily="Oswald"
-            fontWeight="normal"
-            gutterBottom
-          >
-            КОНТАКТЫ
-          </Typography>
-          <Box
-            sx={{
-              height: "3px",
-              bgcolor: "#f2ee6f",
-              maxWidth: "190px",
-              mb: 6,
-            }}
-          ></Box>
+          <BlockTitle title="КОНТАКТЫ" />
           <Typography fontWeight="normal" fontFamily="Oswald">
             Мы находимся:
           </Typography>
@@ -63,13 +48,11 @@ const Contacts = (props) => {
           <Typography fontFamily="Oswald" fontWeight="light" gutterBottom>
             {props.time}
           </Typography>
-          <br />
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <SocialButton title="TG" link={props.tgLink} />
             <SocialButton title="INSTA" link={props.instaLink} />
             <SocialButton title="VK" link={props.vkLink} />
           </Box>
-          <br />
           <Box>
             <PrivacyButton
               title="Политика конфиденциальности"

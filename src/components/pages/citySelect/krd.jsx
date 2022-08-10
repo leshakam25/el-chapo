@@ -13,7 +13,7 @@ import menu from "../../data/menuSpbGrande";
 import gallery from "../../data/gallerySpbGrande";
 import Chief from "../menu/cheif";
 
-const SpbGrande = () => {
+const Krd = () => {
   return (
     <>
       <Header logo={logo} />
@@ -53,4 +53,4 @@ const SpbGrande = () => {
   );
 };
 
-export default SpbGrande;
+export default Krd;
