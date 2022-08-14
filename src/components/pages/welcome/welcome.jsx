@@ -148,7 +148,15 @@ const Welcome = (props) => {
                   >
                     Мы находимся: <br /> {props.adress}
                   </Typography>
-                  <RegistryButton title="Забронировать столик" />
+                  <RegistryButton
+                    title="Забронировать столик"
+                    backgroundColor={props.backgroundColor}
+                    border={props.border}
+                    textColor={props.textColor}
+                    hoverBg={props.hoverBg}
+                    hoverBorder={props.hoverBorder}
+                    hoverTextColor={props.hoverTextColor}
+                  />
                 </motion.div>
               </Box>
             </motion.div>

@@ -17,7 +17,15 @@ import s from "./cities.module.css";
 const SpbGrande = () => {
   return (
     <div className={s.cityWrapper}>
-      <Header logo={logo} />
+      <Header
+        logo={logo}
+        textColor="black"
+        backgroundColor="#f2ee6f"
+        border="2px solid white"
+        hoverBorder="none"
+        hoverBg="black"
+        hoverTextColor="white"
+      />
       <Welcome
         title="ДОБРО ПОЖАЛОВАТЬ В МЕКСИКУ!"
         logo={logo2}
@@ -28,6 +36,14 @@ const SpbGrande = () => {
         где есть бар EL Chapo"
         adress="Литейный проспект, 57"
         bg="https://i.postimg.cc/4N1yfCSJ/image-223-1.png"
+        // registry button
+
+        textColor="black"
+        backgroundColor="#f2ee6f"
+        border="2px solid white"
+        hoverBorder="none"
+        hoverBg="black"
+        hoverTextColor="white"
       />
       <Events eventData={eventData} eventVideo={eventDataVideo} />
       <BarMenu
@@ -38,6 +54,14 @@ const SpbGrande = () => {
         subtitle3="Топовые блюда от нашего шефа по лучшей цене???"
         adress="С-ПБ / Литейный, 57"
         rightBlock={<Chief />}
+        // registry button
+
+        textColor="black"
+        backgroundColor="#f2ee6f"
+        border="2px solid white"
+        hoverBorder="none"
+        hoverBg="black"
+        hoverTextColor="white"
       />
       <Gallery gallery={gallery} />
       <Contacts

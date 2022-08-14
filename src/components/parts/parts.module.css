@@ -1,15 +1,5 @@
 /*Кнопка регистрации*/
-.registryButton {
-   cursor: pointer;
-   margin: 8px 4px;
-   border: none;
-   background-color: #f2ee6f;
-   height: 40px;
-   width: 100%;
-   border-radius: 4px;
-   padding: 0 22px;
-   text-transform: uppercase;
-}
+
 .logoButton{
    max-width: 25vw;
    max-height: 75px;
@@ -62,7 +52,7 @@
 }
 .barMenuButton{
    color: white;
-   background: inherit;
+   background: black;
    outline: 2px solid white;
    cursor: pointer;
    border: none;

@@ -1,5 +1,4 @@
 import React from "react";
-import s from "../parts.module.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import ModalForm from "../form";
@@ -19,20 +18,33 @@ const style = {
   borderRadius: 1,
 };
 
-const RegistryButton = (props, ref) => {
+const RegistryButton = (props) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
     <div>
       <motion.button
+        style={{
+          background: `${props.backgroundColor}`,
+          border: `none`,
+          outline: `${props.border}`,
+          padding: "0 22px",
+          margin: "8px 4px",
+          textTransform: "uppercase",
+          height: "40px",
+          width: "100%",
+          borderRadius: "4px",
+          color: `${props.textColor}`,
+          cursor: "pointer",
+        }}
         whileHover={{
-          background: "inherit",
-          color: "white",
+          border: `${props.hoverBorder}`,
+          backgroundColor: `${props.hoverBg}`,
           outline: "2px solid white",
+          color: `${props.hoverTextColor}`,
         }}
         onClick={handleOpen}
-        className={s.registryButton}
       >
         <Typography
           fontFamily="Oswald"

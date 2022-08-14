@@ -3,7 +3,11 @@ import { Box, Typography, CardMedia } from "@mui/material";
 
 const Cheif = () => {
   return (
-    <Box sx={{ maxWidth: "500px", m: 12 }}>
+    <Box
+      sx={{
+        maxWidth: "500px",
+      }}
+    >
       <Typography variant="h4" fontFamily="Oswald" gutterBottom>
         Дэвид Алехандро
       </Typography>

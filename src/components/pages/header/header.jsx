@@ -19,7 +19,7 @@ const pages = [
   { title: "Контакты", href: "#contacts" },
 ];
 
-const HeaderNew = (props) => {
+const Header = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -60,7 +60,15 @@ const HeaderNew = (props) => {
               ))}
             </Box>
             {/* registry button */}
-            <RegistryButton title="Забронировать" />
+            <RegistryButton
+              title="Забронировать"
+              backgroundColor={props.backgroundColor}
+              border={props.border}
+              textColor={props.textColor}
+              hoverBg={props.hoverBg}
+              hoverBorder={props.hoverBorder}
+              hoverTextColor={props.hoverTextColor}
+            />
           </Box>
 
           {/* mobile block */}
@@ -110,4 +118,4 @@ const HeaderNew = (props) => {
     </AppBar>
   );
 };
-export default HeaderNew;
+export default Header;

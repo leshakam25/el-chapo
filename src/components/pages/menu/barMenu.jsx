@@ -62,7 +62,15 @@ const BarMenuSpbGrande = (props) => {
                   </Typography>
                 }
               />
-              <RegistryButton title="Бронируй стол, Амиго" />
+              <RegistryButton
+                title="Бронируй стол, Амиго"
+                backgroundColor={props.backgroundColor}
+                border={props.border}
+                textColor={props.textColor}
+                hoverBg={props.hoverBg}
+                hoverBorder={props.hoverBorder}
+                hoverTextColor={props.hoverTextColor}
+              />
             </Box>
           </Box>
         </Box>

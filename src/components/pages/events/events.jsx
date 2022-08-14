@@ -29,7 +29,7 @@ const Events = (props) => {
         rows={1}
         gap={10}
         loop
-        autoplay={3800}
+        autoplay={10000}
         showDots
       >
         {upcomingEvents &&
@@ -110,7 +110,7 @@ const Events = (props) => {
             rows={1}
             gap={10}
             loop
-            autoplay={3800}
+            autoplay={10000}
             showDots
             hideArrow
             dot={YellowDot}
