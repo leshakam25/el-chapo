@@ -94,9 +94,9 @@ const Events = (props) => {
       </Carousel>
       {/* night partys */}
       <Box>
-        <BlockTitle title="НОЧНЫЕ ВЕЧЕРИНКИ" />
+        {/* <BlockTitle title="НОЧНЫЕ ВЕЧЕРИНКИ" /> */}
         {/* videos */}
-        <Box
+        {/* <Box
           sx={{
             display: "flex",
             flexDirection: "row",
@@ -124,7 +124,7 @@ const Events = (props) => {
                 </Carousel.Item>
               ))}
           </Carousel>
-        </Box>
+        </Box> */}
       </Box>
     </Container>
   );

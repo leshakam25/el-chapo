@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./cities.module.css";
-// import Events from "../events/events";
-// import { eventData, eventDataVideo } from "../../data/eventsDataSpbLomo";
+import Events from "../events/events";
+import { eventData, eventDataVideo } from "../../data/eventsDataSpbLomo";
 import gallery from "../../data/gallerySpbLomo";
 import menu from "../../data/menuSpbLomo";
 import Header from "../header/header";
@@ -45,7 +45,7 @@ const SpbLomo = (props) => {
         hoverBg="white"
         hoverTextColor="black"
       />
-      {/* <Events eventData={eventData} eventVideo={eventDataVideo} /> */}
+      <Events eventData={eventData} eventVideo={eventDataVideo} />
       <BarMenu
         menu={menu}
         title="МЕКСИКА МЕКСИКА"
