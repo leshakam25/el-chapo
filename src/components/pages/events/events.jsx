@@ -94,7 +94,7 @@ const Events = (props) => {
       </Carousel>
       {/* night partys */}
       <Box>
-        <BlockTitle title="НОЧНЫЕ ВЕЧЕРИНКИ" /> */}
+        <BlockTitle title="НОЧНЫЕ ВЕЧЕРИНКИ" />
         <Box
           sx={{
             display: "flex",
