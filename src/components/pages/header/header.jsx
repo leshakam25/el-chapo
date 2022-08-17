@@ -13,6 +13,7 @@ import MenuButtonMobile from "../../parts/buttons/menuButtonMobile";
 import RegistryButton from "../../parts/buttons/registryButton";
 
 const pages = [
+  { title: "Акции", href: "#discount" },
   { title: "Мероприятия", href: "#events" },
   { title: "Меню", href: "#menu" },
   { title: "Фото", href: "#photo" },
@@ -53,8 +54,8 @@ const Header = (props) => {
             <LogoButton href="#welcome" logo={props.logo} />
             {/* pc block */}
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
-              {pages.map((page) => (
-                <span key={page}>
+              {pages.map((page, i) => (
+                <span key={"pcMenu" + i}>
                   <MenuButton title={page.title} href={page.href} />
                 </span>
               ))}
@@ -106,8 +107,8 @@ const Header = (props) => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <Box key={page} onClick={handleCloseNavMenu}>
+              {pages.map((page, i) => (
+                <Box key={"mobileMenu" + i} onClick={handleCloseNavMenu}>
                   <MenuButtonMobile title={page.title} href={page.href} />
                 </Box>
               ))}

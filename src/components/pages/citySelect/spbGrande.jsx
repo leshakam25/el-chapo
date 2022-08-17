@@ -1,4 +1,5 @@
 import React from "react";
+import { discountData } from "../../data/discountSpbGrande";
 import { eventData, eventDataVideo } from "../../data/eventsDataSpbGrande";
 import logo2 from "../../../image/logoGrande2.svg";
 import Contacts from "../contacts/contacts";
@@ -13,6 +14,7 @@ import menu from "../../data/menuSpbGrande";
 import gallery from "../../data/gallerySpbGrande";
 import Chief from "../menu/cheif";
 import s from "./cities.module.css";
+import Discount from "../discount/discount";
 
 const SpbGrande = () => {
   return (
@@ -37,7 +39,6 @@ const SpbGrande = () => {
         adress="Литейный проспект, 57"
         bg="https://i.postimg.cc/4N1yfCSJ/image-223-1.png"
         // registry button
-
         textColor="black"
         backgroundColor="#f2ee6f"
         border="2px solid white"
@@ -45,6 +46,7 @@ const SpbGrande = () => {
         hoverBg="black"
         hoverTextColor="white"
       />
+      <Discount discountData={discountData} />
       <Events eventData={eventData} eventVideo={eventDataVideo} />
       <BarMenu
         menu={menu}

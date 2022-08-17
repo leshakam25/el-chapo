@@ -25,4 +25,6 @@ export const eventData = [
   },
 ];
 
-export const eventDataVideo = [{ video: "" }];
+export const eventDataVideo = [
+  { video: "https://youtube.com/shorts/keU5ciizYnk" },
+];

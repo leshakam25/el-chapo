@@ -1,12 +1,11 @@
-import { Box, CardMedia, Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import React, { useState } from "react";
 import Carousel from "better-react-carousel";
-import ReactPlayer from "react-player";
 import BlockTitle from "../../parts/blockTitle";
+import ReactPlayer from "react-player";
 
-const Events = (props) => {
-  const [eventVideos] = useState(props.eventVideo);
-  const [upcomingEvents] = useState(props.eventData);
+const Discount = (props) => {
+  const [upcomingEvents] = useState(props.discountData);
 
   const YellowDot = ({ isActive }) => (
     <span
@@ -17,11 +16,9 @@ const Events = (props) => {
       }}
     ></span>
   );
-
   return (
-    <Container id="events" maxWidth="xl">
-      {/* events */}
-      <BlockTitle title="МЕРОПРИЯТИЯ" />
+    <Container id="discount" maxWidth="xl">
+      <BlockTitle title="АКЦИИ" />
       <br />
       <Carousel
         dot={YellowDot}
@@ -78,55 +75,18 @@ const Events = (props) => {
                     {el.desc}
                   </Typography>
                 </Box>
-                <CardMedia
-                  sx={{
-                    mt: { xs: 4, md: 0 },
-                    border: "2px solid white",
-                    maxHeight: "700px",
-                    maxWidth: "700px",
-                  }}
-                  component="img"
-                  src={el.img}
-                />
+                <Box
+                  key={"video" + i}
+                  sx={{ border: "2px solid white", width: "300px" }}
+                >
+                  <ReactPlayer height="540px" width="100%" url={el.video} />
+                </Box>
               </Box>
             </Carousel.Item>
           ))}
       </Carousel>
-      {/* night partys */}
-      <Box>
-        <BlockTitle title="НОЧНЫЕ ВЕЧЕРИНКИ" /> */}
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            flexWrap: "wrap",
-            justifyContent: "space-around",
-            mt: 4,
-          }}
-        >
-          <Carousel
-            cols={1}
-            rows={1}
-            gap={10}
-            loop
-            autoplay={10000}
-            showDots
-            hideArrow
-            dot={YellowDot}
-          >
-            {eventVideos &&
-              eventVideos.map((el, i) => (
-                <Carousel.Item key={"video" + i}>
-                  <Box sx={{ border: "2px solid white" }}>
-                    <ReactPlayer height="540px" width="100%" url={el.video} />
-                  </Box>
-                </Carousel.Item>
-              ))}
-          </Carousel>
-        </Box>
-      </Box>
     </Container>
   );
 };
 
-export default Events;
+export default Discount;

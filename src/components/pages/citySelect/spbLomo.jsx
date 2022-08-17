@@ -2,6 +2,7 @@ import React from "react";
 import s from "./cities.module.css";
 import Events from "../events/events";
 import { eventData, eventDataVideo } from "../../data/eventsDataSpbLomo";
+import { discountData } from "../../data/discountSpbLomo";
 import gallery from "../../data/gallerySpbLomo";
 import menu from "../../data/menuSpbLomo";
 import Header from "../header/header";
@@ -11,6 +12,7 @@ import Gallery from "../gallery/gallery";
 import Footer from "../footer/footer";
 import BarMenu from "../menu/barMenu";
 import Contacts from "../contacts/contacts";
+import Discount from "../discount/discount";
 
 const SpbLomo = (props) => {
   return (
@@ -37,7 +39,6 @@ const SpbLomo = (props) => {
         adress="Ломоносова 1 / Грибоедова 28"
         bg="https://i.postimg.cc/cL0JVnCG/bg-spb-lomo-png.png"
         // registry button
-
         textColor="white"
         backgroundColor="black"
         border="2px solid white"
@@ -45,6 +46,7 @@ const SpbLomo = (props) => {
         hoverBg="white"
         hoverTextColor="black"
       />
+      <Discount discountData={discountData} />
       <Events eventData={eventData} eventVideo={eventDataVideo} />
       <BarMenu
         menu={menu}
