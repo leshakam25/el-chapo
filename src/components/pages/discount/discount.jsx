@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, CardMedia, Container, Typography } from "@mui/material";
 import React, { useState } from "react";
 import Carousel from "better-react-carousel";
 import BlockTitle from "../../parts/blockTitle";
@@ -75,11 +75,23 @@ const Discount = (props) => {
                     {el.desc}
                   </Typography>
                 </Box>
-                <Box
+                {/* <Box
                   key={"video" + i}
                   sx={{ border: "2px solid white", width: "300px" }}
                 >
                   <ReactPlayer height="540px" width="100%" url={el.video} />
+                </Box> */}
+                <Box>
+                  <CardMedia
+                    sx={{
+                      mt: { xs: 4, md: 0 },
+                      border: "2px solid white",
+                      maxHeight: "700px",
+                      maxWidth: "400px",
+                    }}
+                    component="img"
+                    src={el.img}
+                  />
                 </Box>
               </Box>
             </Carousel.Item>

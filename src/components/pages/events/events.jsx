@@ -83,7 +83,7 @@ const Events = (props) => {
                     mt: { xs: 4, md: 0 },
                     border: "2px solid white",
                     maxHeight: "700px",
-                    maxWidth: "700px",
+                    maxWidth: "400px",
                   }}
                   component="img"
                   src={el.img}
@@ -117,7 +117,13 @@ const Events = (props) => {
             {eventVideos &&
               eventVideos.map((el, i) => (
                 <Carousel.Item key={"video" + i}>
-                  <Box sx={{ border: "2px solid white" }}>
+                  <Box
+                    sx={{
+                      border: "2px solid white",
+                      height: "540px",
+                      maxWidth: "320px",
+                    }}
+                  >
                     <ReactPlayer height="540px" width="100%" url={el.video} />
                   </Box>
                 </Carousel.Item>

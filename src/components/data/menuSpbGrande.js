@@ -1,8 +1,7 @@
 export const imagesData = [
-  { img: "https://i.postimg.cc/9MDZwCCy/menu1.jpg" },
-  { img: "https://i.postimg.cc/QxQ5T6GY/menu2.jpg" },
-  { img: "https://i.postimg.cc/TwBmrF3F/menu3.jpg" },
-  { img: "https://i.postimg.cc/VkztBjzf/menu4.jpg" },
-  { img: "https://i.postimg.cc/wxtQ7cjn/menu5.jpg" },
+  { img: "https://i.postimg.cc/J4CC6fxc/image.png" },
+  { img: "https://i.postimg.cc/s2HRT1Hv/1.png" },
+  { img: "https://i.postimg.cc/j5WYmKBv/2.png" },
+  { img: "https://i.postimg.cc/BbH9ZpSK/image.png" },
 ];
 export default imagesData;
