@@ -81,7 +81,6 @@ const Events = (props) => {
                 <CardMedia
                   sx={{
                     mt: { xs: 4, md: 0 },
-                    border: "2px solid white",
                     maxHeight: "700px",
                     maxWidth: "400px",
                   }}
@@ -94,7 +93,7 @@ const Events = (props) => {
       </Carousel>
       {/* night partys */}
       <Box>
-        <BlockTitle title="НОЧНЫЕ ВЕЧЕРИНКИ" />
+        {/* <BlockTitle title="НОЧНЫЕ ВЕЧЕРИНКИ" /> */}
         <Box
           sx={{
             display: "flex",
@@ -119,9 +118,8 @@ const Events = (props) => {
                 <Carousel.Item key={"video" + i}>
                   <Box
                     sx={{
-                      border: "2px solid white",
-                      height: "540px",
-                      maxWidth: "320px",
+                      height: "100%",
+                      width: "100%",
                     }}
                   >
                     <ReactPlayer height="540px" width="100%" url={el.video} />

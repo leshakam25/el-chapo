@@ -85,7 +85,6 @@ const Discount = (props) => {
                   <CardMedia
                     sx={{
                       mt: { xs: 4, md: 0 },
-                      border: "2px solid white",
                       maxHeight: "700px",
                       maxWidth: "400px",
                     }}

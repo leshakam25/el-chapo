@@ -1,23 +1,46 @@
 export const eventData = [
   {
     id: 0,
-    name: "Dmitry Singer - 09.09 / 21:30",
-    date: "Las Combras / De las Cuerdas - 10.09 / 21:00",
-    img: "https://i.postimg.cc/fT7qpZnC/0909.jpg",
-    // desc: "Группа исполняет популярные испанские и латиноамериканские композиции. Вас ждет множество песен от “Bésame mucho” до “Nosa Nosa”. Коллектив также исполняет Flamenco – инструментальные композиции, канте и танец. Гитара - Андрей Смирнов Вокал - Александра Калинина Перкуссия - Давид Темираев",
-    // insta: "",
+    name: "Обучение по сальсе",
+    date: "Каждый вторник, начало в 21:30",
+    img: "https://i.postimg.cc/0Qqmct3P/photo-2022-09-15-13-25-16.jpg",
+    desc: "Каждый вторник мастер-класс по салье",
   },
   {
     id: 1,
-    name: "Mexica Mexica ",
-    date: "09.09 & 10.09",
-    img: "https://i.postimg.cc/rF2Yfsbz/0910.jpg",
-    // desc: "Группа исполняет популярные испанские и латиноамериканские композиции. Вас ждет множество песен от “Bésame mucho” до “Nosa Nosa”. Коллектив также исполняет Flamenco – инструментальные композиции, канте и танец. Гитара - Андрей Смирнов Вокал - Александра Калинина Перкуссия - Давид Темираев",
-    // insta: "",
+    name: "День покера",
+    date: "Каждую среду, в 19:00",
+    img: "https://i.postimg.cc/Y0rFwvMP/photo-2022-09-15-13-25-22.jpg",
+    insta: "",
+    desc: "Каждую среду турнир по покеру с призами от партнеров",
+  },
+  {
+    id: 2,
+    name: "Мистический четверг",
+    date: "Каждый четверг",
+    img: "https://i.postimg.cc/5NPBbSHS/photo-2022-09-15-13-25-33.jpg",
+    insta: "",
+    desc: "Каждый четверг расклад карт таро для гостей ",
+  },
+  {
+    id: 2,
+    name: "День независимости мексики",
+    date: "16.09",
+    img: "https://i.postimg.cc/6qMv6BQp/photo-2022-09-15-13-25-43.jpg",
+    insta: "",
+    desc: "День независимости Мексики. Угощение гостям, вечерняя и ночная шоу программа, живая музыка, лучшие мексиканские DJ",
+  },
+  {
+    id: 2,
+    name: "Продолжаем отмечать праздник",
+    date: "17.09 / 21:00-Dmitri Singer",
+    img: "https://i.postimg.cc/c4vGr4wm/016.jpg",
+    insta: "",
+    desc: "Фирменные коктейли от наших амиго, латино до утра, Мекс.DJ, живая музыка",
   },
 ];
 
 export const eventDataVideo = [
-  { video: "https://youtube.com/shorts/7WCANIeA7Yk" },
-  { video: "https://youtube.com/shorts/bxkFfL1hvR0" },
+  { video: "https://youtube.com/shorts/Ls3ztpKQTFc?feature=share" },
+  { video: "https://youtube.com/shorts/30h-PLLCdb4?feature=share" },
 ];

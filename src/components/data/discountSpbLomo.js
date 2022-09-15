@@ -21,6 +21,7 @@ export const discountData = [
     date: "КАЖДЫЙ ДЕНЬ",
     desc: "С-Пб, Грибоедова 28 / Ломоносова 1 | 425-30-90 все подробности уточняйте у сотрудников заведения",
     video: "",
+    img: "https://i.postimg.cc/c4vGr4wm/016.jpg",
   },
   {
     id: 3,
@@ -28,5 +29,6 @@ export const discountData = [
     date: "КАЖДЫЙ ДЕНЬ",
     desc: "С-Пб, Грибоедова 28 / Ломоносова 1 | 425-30-90 все подробности уточняйте у сотрудников заведения",
     video: "",
+    img: "https://i.postimg.cc/c4vGr4wm/016.jpg",
   },
 ];
