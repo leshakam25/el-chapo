@@ -68,7 +68,7 @@ const SpbGrande = () => {
       <Gallery gallery={gallery} />
       <Contacts
         mapLink="https://yandex.ru/map-widget/v1/-/CCURQLvQWB"
-        time="пн-вс 12.00–6.00"
+        time="ПН-ВС 12.00–6.00 / ВС-ЧТ с 12:00-01:00"
         adress="Литейный проспект, 57"
         phone="Тел: +7 (812) 425 3090"
         tgLink="https://t.me/elchapo_grande"

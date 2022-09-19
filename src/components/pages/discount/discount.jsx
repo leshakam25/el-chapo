@@ -2,7 +2,7 @@ import { Box, CardMedia, Container, Typography } from "@mui/material";
 import React, { useState } from "react";
 import Carousel from "better-react-carousel";
 import BlockTitle from "../../parts/blockTitle";
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 
 const Discount = (props) => {
   const [upcomingEvents] = useState(props.discountData);
