@@ -16,23 +16,6 @@ export const eventData = [
     insta: "",
   },
   {
-    id: 0,
-    name: "Bella me",
-    date: "16.09 / 20-22",
-    img: "https://i.postimg.cc/260hFP8R/photo-2022-09-15-11-16-33.jpg",
-    desc: `В программе - традиционная и авторская музыка в стиле фламенко`,
-    insta: "@norne_skuldx",
-  },
-  {
-    id: 1,
-    name: "Jaime Coello",
-    date: "17.09 / 20-22",
-    img: "https://i.postimg.cc/dQHtwJxc/photo-2022-09-15-11-16-43.jpg",
-    desc: `Красивые мелодии на энергичном испанском перенесут в атмосферу мексики .
-    латиноамериканский певец и композитор.`,
-    insta: "@jaime.coello.music",
-  },
-  {
     id: 2,
     name: "Hose",
     date: "23.09 / 20-22",
