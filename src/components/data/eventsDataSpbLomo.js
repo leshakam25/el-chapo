@@ -22,6 +22,15 @@ export const eventData = [
     insta: "",
     desc: "Каждый четверг расклад карт таро для гостей ",
   },
+  {
+    id: 3,
+
+    img: "https://i.postimg.cc/63jxSnXH/3001.jpg",
+  },
+  {
+    id: 4,
+    img: "https://i.postimg.cc/7L44Tq9N/photo-2022-09-30-19-17-46.jpg",
+  },
 ];
 
 export const eventDataVideo = [

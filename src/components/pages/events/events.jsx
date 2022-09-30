@@ -80,9 +80,10 @@ const Events = (props) => {
                 </Box>
                 <CardMedia
                   sx={{
+                    margin: "0 auto",
                     mt: { xs: 4, md: 0 },
                     maxHeight: "700px",
-                    maxWidth: "400px",
+                    maxWidth: { xs: "90vw", md: "40vw" },
                   }}
                   component="img"
                   src={el.img}
