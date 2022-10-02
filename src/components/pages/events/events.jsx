@@ -83,7 +83,7 @@ const Events = (props) => {
                     margin: "0 auto",
                     mt: { xs: 4, md: 0 },
                     maxHeight: "700px",
-                    maxWidth: { xs: "90vw", md: "40vw" },
+                    maxWidth: { xs: "auto", md: "auto" },
                   }}
                   component="img"
                   src={el.img}

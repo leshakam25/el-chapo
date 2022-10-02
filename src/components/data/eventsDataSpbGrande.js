@@ -14,16 +14,12 @@ export const eventData = [
   },
   {
     id: 2,
-    img: "https://i.postimg.cc/XvgbftD6/photo-2022-09-30-19-17-44.jpg",
-  },
-  {
-    id: 3,
-    img: "https://i.postimg.cc/KzvyJQdk/photo-2022-09-30-19-17-54.jpg",
+    img: "https://i.postimg.cc/7P7FMpqp/2022-09-29-23-05-10-2.jpg",
   },
 ];
 
 export const eventDataVideo = [
-  {
-    video: "https://youtube.com/shorts/9kb7JxEhRf8?feature=share",
-  },
+  // {
+  //   video: "https://youtube.com/shorts/9kb7JxEhRf8?feature=share",
+  // },
 ];
