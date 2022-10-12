@@ -1,13 +1,5 @@
 export const eventData = [
   {
-    id: 3,
-    img: "https://i.postimg.cc/cHw1Cbbr/photo-2022-10-05-15-08-35.jpg",
-  },
-  {
-    id: 4,
-    img: "https://i.postimg.cc/XqWjCkRx/photo-2022-10-05-15-09-44.jpg",
-  },
-  {
     id: 0,
     img: "https://i.postimg.cc/9XDytCzX/photo-2022-09-15-11-31-39.jpg",
     name: "Мистическая среда",
@@ -22,15 +14,14 @@ export const eventData = [
   },
   {
     id: 2,
-    img: "https://i.postimg.cc/7P7FMpqp/2022-09-29-23-05-10-2.jpg",
+    imgmd: "https://i.postimg.cc/50g0hZHP/photo-2022-10-12-15-34-56.jpg",
+    imgsm: "https://i.postimg.cc/QCMth01j/photo-2022-10-12-15-34-52.jpg",
+    imgxs: "https://i.postimg.cc/zvPfBKFK/photo-2022-10-12-15-34-54.jpg",
   },
 ];
 
 export const eventDataVideo = [
   {
     video: "https://youtube.com/shorts/1TTpXHxNE7U?feature=share",
-  },
-  {
-    video: "https://youtube.com/shorts/k-aFJ9MgKEI?feature=share",
   },
 ];

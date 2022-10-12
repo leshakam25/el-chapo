@@ -72,7 +72,7 @@ const SpbGrande = () => {
         adress="Литейный проспект, 57"
         phone="Тел: +7 (812) 425 3090"
         tgLink="https://t.me/elchapo_grande"
-        instaLink="https://www.instagram.com/elchapo_grande/"
+        instaLink="https://www.instagram.com/elchapo.spb/"
         vkLink="https://vk.com/elchapo_spb"
       />
       <Footer footerImg={logo} />

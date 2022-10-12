@@ -78,15 +78,51 @@ const Events = (props) => {
                     {el.desc}
                   </Typography>
                 </Box>
+                {el.img && (
+                  <CardMedia
+                    sx={{
+                      display: { xs: "none", sm: "none", md: "block" },
+                      margin: "0 auto",
+                      mt: { xs: 4, md: 0 },
+                      maxHeight: "700px",
+                      maxWidth: { xs: "auto", md: "auto" },
+                    }}
+                    component="img"
+                    src={el.img}
+                  />
+                )}
                 <CardMedia
                   sx={{
+                    display: { xs: "none", sm: "none", md: "block" },
                     margin: "0 auto",
                     mt: { xs: 4, md: 0 },
                     maxHeight: "700px",
                     maxWidth: { xs: "auto", md: "auto" },
                   }}
                   component="img"
-                  src={el.img}
+                  src={el.imgmd}
+                />{" "}
+                <CardMedia
+                  sx={{
+                    display: { xs: "none", sm: "block", md: "none" },
+                    margin: "0 auto",
+                    mt: { xs: 4, md: 0 },
+                    maxHeight: "700px",
+                    maxWidth: { xs: "auto", md: "auto" },
+                  }}
+                  component="img"
+                  src={el.imgsm}
+                />{" "}
+                <CardMedia
+                  sx={{
+                    display: { xs: "block", sm: "none", md: "none" },
+                    margin: "0 auto",
+                    mt: { xs: 4, md: 0 },
+                    maxHeight: "700px",
+                    maxWidth: { xs: "auto", md: "auto" },
+                  }}
+                  component="img"
+                  src={el.imgxs}
                 />
               </Box>
             </Carousel.Item>
@@ -109,7 +145,7 @@ const Events = (props) => {
             rows={1}
             gap={10}
             loop
-            autoplay={10000}
+            autoplay={15000}
             showDots
             hideArrow
             dot={YellowDot}
@@ -119,11 +155,15 @@ const Events = (props) => {
                 <Carousel.Item key={"video" + i}>
                   <Box
                     sx={{
+                      display: "flex",
+                      flexDirection: "row",
+                      flexWrap: "wrap",
+                      justifyContent: "center",
                       height: "100%",
                       width: "100%",
                     }}
                   >
-                    <ReactPlayer height="540px" width="100%" url={el.video} />
+                    <ReactPlayer height="533px" width="auto" url={el.video} />
                   </Box>
                 </Carousel.Item>
               ))}
