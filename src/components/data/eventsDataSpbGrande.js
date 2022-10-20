@@ -21,7 +21,7 @@ export const eventData = [
 ];
 
 export const eventDataVideo = [
-  {
-    video: "https://youtube.com/shorts/1TTpXHxNE7U?feature=share",
-  },
+  // {
+  //   video: "https://youtube.com/shorts/1TTpXHxNE7U?feature=share",
+  // },
 ];

@@ -1,15 +1,15 @@
 export const eventData = [
   {
     id: 0,
-    imgmd: "https://i.postimg.cc/MK7cGDDy/photo-2022-10-12-15-11-32.jpg",
-    imgsm: "https://i.postimg.cc/bYGNZTzZ/photo-2022-10-12-15-09-02.jpg",
-    imgxs: "https://i.postimg.cc/Fs3rZHkm/photo-2022-10-12-15-08-53.jpg",
+    imgmd: "https://i.postimg.cc/8PhC9cSV/photo-2022-10-20-12-53-48.jpg",
+    imgsm: "https://i.postimg.cc/6ptQXKW4/photo-2022-10-20-12-53-45.jpg",
+    imgxs: "https://i.postimg.cc/WzZ42bqg/photo-2022-10-20-12-53-47.jpg",
   },
   {
     id: 1,
-    imgmd: "https://i.postimg.cc/k5gFK4XX/photo-2022-10-12-15-17-21.jpg",
-    imgsm: "https://i.postimg.cc/QdtJWCMN/photo-2022-10-12-15-17-28.jpg",
-    imgxs: "https://i.postimg.cc/xCWKw3Gc/photo-2022-10-12-15-17-26.jpg",
+    imgmd: "https://i.postimg.cc/g2s2c7jS/photo-2022-10-20-12-53-43.jpg",
+    imgsm: "https://i.postimg.cc/6QQ58hG9/photo-2022-10-20-12-53-41.jpg",
+    imgxs: "https://i.postimg.cc/c1tC7TkC/photo-2022-10-20-12-53-40.jpg",
   },
   {
     id: 2,

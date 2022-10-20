@@ -102,7 +102,7 @@ export default function BarMenuButton(props) {
             }}
           >
             <Box>
-              <Carousel cols={2} rows={1} gap={12} loop>
+              <Carousel cols={2} rows={1} gap={1} loop>
                 {props.menu &&
                   props.menu.map((el, i) => (
                     <Carousel.Item key={"btrCarousel" + i}>
