@@ -44,7 +44,10 @@ const RegistryButton = (props) => {
           outline: "2px solid white",
           color: `${props.hoverTextColor}`,
         }}
-        onClick={handleOpen}
+        onClick={() => {
+          handleOpen();
+          window.ym(90856817, "reachGoal", "RegistryButtonClick");
+        }}
       >
         <Typography
           fontFamily="Oswald"
