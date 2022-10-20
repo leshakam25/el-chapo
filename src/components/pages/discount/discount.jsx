@@ -47,7 +47,8 @@ const Discount = (props) => {
               >
                 <Box
                   sx={{
-                    maxWidth: "600px",
+                    width: "100%",
+
                     marginRight: { xs: "0", md: "20px" },
                   }}
                 >
@@ -81,15 +82,47 @@ const Discount = (props) => {
                 >
                   <ReactPlayer height="540px" width="100%" url={el.video} />
                 </Box> */}
-                <Box>
+                <Box
+                  sx={{
+                    width: "100%",
+                  }}
+                >
                   <CardMedia
                     sx={{
                       mt: { xs: 4, md: 0 },
+
                       maxHeight: "700px",
                       maxWidth: "400px",
                     }}
                     component="img"
                     src={el.img}
+                  />
+                  <CardMedia
+                    sx={{
+                      mt: { xs: 4, md: 0 },
+                      display: { xs: "block", sm: "none", md: "none" },
+                      maxHeight: "700px",
+                    }}
+                    component="img"
+                    src={el.imgxs}
+                  />
+                  <CardMedia
+                    sx={{
+                      mt: { xs: 4, md: 0 },
+                      display: { xs: "none", sm: "block", md: "none" },
+                      maxHeight: "700px",
+                    }}
+                    component="img"
+                    src={el.imgsm}
+                  />
+                  <CardMedia
+                    sx={{
+                      mt: { xs: 4, md: 0 },
+                      display: { xs: "none", sm: "none", md: "block" },
+                      width: "100%",
+                    }}
+                    component="img"
+                    src={el.imgmd}
                   />
                 </Box>
               </Box>

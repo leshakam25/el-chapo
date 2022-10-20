@@ -1,5 +1,18 @@
 export const eventData = [
   {
+    id: 3,
+    imgmd: "https://i.postimg.cc/qR72RGRT/3.jpg",
+    imgsm: "https://i.postimg.cc/mkv9mfSL/2.jpg",
+    imgxs: "https://i.postimg.cc/pdWFGBKF/1.jpg",
+  },
+  {
+    id: 2,
+    imgmd: "https://i.postimg.cc/50g0hZHP/photo-2022-10-12-15-34-56.jpg",
+    imgsm: "https://i.postimg.cc/QCMth01j/photo-2022-10-12-15-34-52.jpg",
+    imgxs: "https://i.postimg.cc/zvPfBKFK/photo-2022-10-12-15-34-54.jpg",
+  },
+
+  {
     id: 0,
     img: "https://i.postimg.cc/9XDytCzX/photo-2022-09-15-11-31-39.jpg",
     name: "Мистическая среда",
@@ -12,16 +25,10 @@ export const eventData = [
     name: "Вечер сальсы и бочаты",
     date: "Каждый четверг с 21:00 и до утра",
   },
-  {
-    id: 2,
-    imgmd: "https://i.postimg.cc/50g0hZHP/photo-2022-10-12-15-34-56.jpg",
-    imgsm: "https://i.postimg.cc/QCMth01j/photo-2022-10-12-15-34-52.jpg",
-    imgxs: "https://i.postimg.cc/zvPfBKFK/photo-2022-10-12-15-34-54.jpg",
-  },
 ];
 
 export const eventDataVideo = [
-  // {
-  //   video: "https://youtube.com/shorts/1TTpXHxNE7U?feature=share",
-  // },
+  {
+    video: "https://youtube.com/shorts/rYpXn_rHPKo",
+  },
 ];

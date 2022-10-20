@@ -4,6 +4,7 @@ import Modal from "@mui/material/Modal";
 import ModalForm from "../form";
 import { motion } from "framer-motion";
 import { Typography } from "@mui/material";
+import { sendMetrik } from "../../../utils/metriks";
 
 const style = {
   position: "absolute",
@@ -46,7 +47,7 @@ const RegistryButton = (props) => {
         }}
         onClick={() => {
           handleOpen();
-          window.ym(90856817, "reachGoal", "RegistryButtonClick");
+          sendMetrik("reachGoal", "RegistryButtonClick");
         }}
       >
         <Typography
