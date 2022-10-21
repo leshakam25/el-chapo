@@ -52,7 +52,11 @@ const ModalForm = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <Typography fontFamily="Oswald" variant="h4" textAlign="center">
+      <Typography
+        fontFamily="Oswald"
+        textAlign="center"
+        sx={{ fontSize: { xs: 20, sm: 40 } }}
+      >
         Заявка на бронь столика
       </Typography>
       <Typography
@@ -60,7 +64,6 @@ const ModalForm = () => {
         fontWeight="light"
         variant="subtitle2"
         textAlign="center"
-        gutterBottom
       >
         Ждём вас с нетерпением!
       </Typography>
@@ -73,7 +76,7 @@ const ModalForm = () => {
             position: "relative",
           }}
         >
-          <Box sx={{ pt: "12px" }}>
+          <Box sx={{ pt: "4px" }}>
             <Typography
               fontFamily="Oswald"
               fontWeight="light"
@@ -92,7 +95,7 @@ const ModalForm = () => {
               })}
             />
           </Box>
-          <Box sx={{ height: "20px", pb: "12px", color: "#8a2727" }}>
+          <Box sx={{ height: "10px", pb: "4px", color: "#8a2727" }}>
             {errors?.firstName && (
               <Typography
                 fontFamily="Oswald"
@@ -104,7 +107,7 @@ const ModalForm = () => {
               </Typography>
             )}
           </Box>
-          <Box sx={{ pt: "12px" }}>
+          <Box sx={{ pt: 1.5 }}>
             <Typography
               fontFamily="Oswald"
               fontWeight="light"
@@ -127,12 +130,11 @@ const ModalForm = () => {
               })}
             />
           </Box>
-          <Box sx={{ height: "20px", pb: "12px", color: "#8a2727" }}>
+          <Box sx={{ height: "10px", pb: "4px", color: "#8a2727" }}>
             {errors?.phoneNumber && (
               <Typography
                 fontFamily="Oswald"
                 fontWeight="light"
-                sx={{ pb: 1 }}
                 variant="body2"
               >
                 Минимум 6 символов
@@ -179,7 +181,7 @@ const ModalForm = () => {
               <Typography
                 fontFamily="Oswald"
                 fontWeight="light"
-                sx={{ pb: 1 }}
+                sx={{}}
                 variant="body2"
               >
                 Введите количество
@@ -191,7 +193,7 @@ const ModalForm = () => {
             textAlign="center"
             fontFamily="Oswald"
             fontWeight="light"
-            sx={{ pt: 3 }}
+            sx={{ pt: 1, lineHeight: "100%" }}
             variant="body2"
             fontSize="12px"
           >

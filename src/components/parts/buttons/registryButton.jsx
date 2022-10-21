@@ -11,11 +11,11 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  minWidth: 360,
+  minWidth: 240,
   bgcolor: "background.paper",
   boxShadow: 24,
   border: "none",
-  p: "52px 48px",
+  p: { sm: "52px 48px", xs: "7px 20px" },
   borderRadius: 1,
 };
 

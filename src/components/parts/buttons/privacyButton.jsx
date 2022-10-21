@@ -73,7 +73,11 @@ export default function PrivacyButton(props) {
               >
                 <CloseIcon />
               </IconButton>
-              <Typography variant="h3" fontFamily="Oswald" fontWeight="600">
+              <Typography
+                fontFamily="Oswald"
+                fontWeight="600"
+                fontSize={{ xs: 16, sm: 25 }}
+              >
                 Политика в отношении обработки персональных данных
               </Typography>
             </Toolbar>

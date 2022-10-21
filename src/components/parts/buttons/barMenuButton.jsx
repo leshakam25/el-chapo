@@ -102,15 +102,17 @@ export default function BarMenuButton(props) {
             }}
           >
             <Box>
-              <Carousel cols={2} rows={1} gap={1} loop>
+              <Carousel cols={1} rows={1} gap={1} loop>
                 {props.menu &&
                   props.menu.map((el, i) => (
                     <Carousel.Item key={"btrCarousel" + i}>
-                      <CardMedia
-                        component="img"
-                        image={el.img}
-                        alt="no photo"
-                      />
+                      <Box>
+                        <CardMedia
+                          component="img"
+                          image={el.img}
+                          alt="no photo"
+                        />
+                      </Box>
                     </Carousel.Item>
                   ))}
               </Carousel>
