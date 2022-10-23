@@ -101,7 +101,13 @@ export default function BarMenuButton(props) {
               duration: 0.5,
             }}
           >
-            <Box sx={{ width: { xs: "100vw", md: "50px" } }}>
+            <Box
+              sx={{
+                margin: "0 auto",
+                px: "8px",
+                width: { xs: "100vw", md: "60vw" },
+              }}
+            >
               {props.menu &&
                 props.menu.map((el, i) => (
                   <CardMedia
