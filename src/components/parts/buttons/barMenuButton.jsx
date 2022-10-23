@@ -8,7 +8,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Slide from "@mui/material/Slide";
 import { Box, Typography, CardMedia } from "@mui/material";
 import { motion } from "framer-motion";
-import Carousel from "better-react-carousel";
+// import Carousel from "better-react-carousel";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -101,7 +101,7 @@ export default function BarMenuButton(props) {
               duration: 0.5,
             }}
           >
-            <Box>
+            <Box sx={{ width: { xs: "100vw", md: "50px" } }}>
               {props.menu &&
                 props.menu.map((el, i) => (
                   <CardMedia

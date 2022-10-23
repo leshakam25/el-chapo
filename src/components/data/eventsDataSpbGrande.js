@@ -1,11 +1,5 @@
 export const eventData = [
   {
-    id: 3,
-    imgmd: "https://i.postimg.cc/qR72RGRT/3.jpg",
-    imgsm: "https://i.postimg.cc/mkv9mfSL/2.jpg",
-    imgxs: "https://i.postimg.cc/pdWFGBKF/1.jpg",
-  },
-  {
     id: 2,
     imgmd: "https://i.postimg.cc/50g0hZHP/photo-2022-10-12-15-34-56.jpg",
     imgsm: "https://i.postimg.cc/QCMth01j/photo-2022-10-12-15-34-52.jpg",
@@ -27,8 +21,4 @@ export const eventData = [
   },
 ];
 
-export const eventDataVideo = [
-  {
-    video: "https://youtube.com/shorts/rYpXn_rHPKo",
-  },
-];
+export const eventDataVideo = [];

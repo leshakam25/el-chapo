@@ -67,7 +67,6 @@ const ModalForm = () => {
       >
         Ждём вас с нетерпением!
       </Typography>
-
       <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
         <Box
           sx={{
