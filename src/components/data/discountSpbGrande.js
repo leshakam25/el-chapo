@@ -1,5 +1,11 @@
 export const discountData = [
   {
+    id: 1,
+    imgxs: "https://i.postimg.cc/k4Hk2PKB/2.jpg",
+    imgsm: "https://i.postimg.cc/cHCp1LKp/3.jpg",
+    imgmd: "https://i.postimg.cc/q7JfYLpM/1.jpg",
+  },
+  {
     id: 0,
     // name: "СКИДКА НА ВСЕ МЕНЮ 30%",
     // date: "Каждый будний день с 12:00 до 17:00. ",
