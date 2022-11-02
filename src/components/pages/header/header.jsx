@@ -13,6 +13,7 @@ import MenuButtonMobile from "../../parts/buttons/menuButtonMobile";
 import RegistryButton from "../../parts/buttons/registryButton";
 
 const pages = [
+  { title: "Доставка", href: "https://elchapogrande.store/menu" },
   { title: "Акции", href: "#discount" },
   { title: "Мероприятия", href: "#events" },
   { title: "Меню", href: "#menu" },
@@ -60,6 +61,7 @@ const Header = (props) => {
                 </span>
               ))}
             </Box>
+
             {/* registry button */}
             <RegistryButton
               title="Забронировать"

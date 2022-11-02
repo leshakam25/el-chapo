@@ -2,6 +2,8 @@ import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import BlockTitle from "../../parts/blockTitle";
 import BarMenuButton from "../../parts/buttons/barMenuButton";
+import DeliveryButton from "../../parts/buttons/deliveryButton";
+import MenuButton from "../../parts/buttons/menuButton";
 import RegistryButton from "../../parts/buttons/registryButton";
 
 const BarMenuSpbGrande = (props) => {
@@ -28,8 +30,7 @@ const BarMenuSpbGrande = (props) => {
               fontWeight="bold"
             >
               {props.title}
-            </Typography>
-            <br />
+            </Typography>{" "}
             <Typography
               fontFamily="Oswald"
               variant="body1"
@@ -61,7 +62,16 @@ const BarMenuSpbGrande = (props) => {
                     Меню иммерсивного ресторана Эль-Чапо
                   </Typography>
                 }
-              />
+              />{" "}
+              {/* <DeliveryButton
+                title="ЗАКАЖИ ДОСТАВКУ"
+                backgroundColor={props.backgroundColor}
+                border={props.border}
+                textColor={props.textColor}
+                hoverBg={props.hoverBg}
+                hoverBorder={props.hoverBorder}
+                hoverTextColor={props.hoverTextColor}
+              /> */}
               <RegistryButton
                 title="Бронируй стол, Амиго"
                 backgroundColor={props.backgroundColor}

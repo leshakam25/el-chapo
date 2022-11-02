@@ -47,7 +47,10 @@ const CitySelect = (props) => {
           </Typography>
         </motion.div>
         <motion.div custom={2} variants={textAnimation}>
-          <CityButton title="Санкт-Петербург Grande" link="spb-grande" />
+          <CityButtonOuter
+            title="Санкт-Петербург Grande"
+            link="https://elchapogrande.store/"
+          />
         </motion.div>
         <motion.div custom={3} variants={textAnimation}>
           <CityButton title="Санкт-Петербург Lomonosova" link="spb-lomo" />
